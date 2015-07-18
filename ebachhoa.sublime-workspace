@@ -1,0 +1,1558 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tr",
+				"tr--large"
+			],
+			[
+				"coc-",
+				"coc-rules"
+			],
+			[
+				"coc-rules-de",
+				"coc-rules-detail-section"
+			],
+			[
+				"gnb-menu",
+				"gnb-menu--active"
+			],
+			[
+				"under",
+				"understand"
+			],
+			[
+				"target",
+				"targetColumn"
+			],
+			[
+				"bread",
+				"breadcrumb-menu-column"
+			],
+			[
+				"ov",
+				"overviewItems"
+			],
+			[
+				"class",
+				"classes"
+			],
+			[
+				"border-bot",
+				"border-bottom: "
+			],
+			[
+				"back",
+				"background-color: "
+			],
+			[
+				"brea",
+				"breadcrumb-item"
+			],
+			[
+				"main-b",
+				"main-breadcrumb__items"
+			],
+			[
+				"main-",
+				"main-breadcrumb__item"
+			],
+			[
+				"op",
+				"opinion"
+			],
+			[
+				"coc",
+				"coc-rules"
+			],
+			[
+				"primar",
+				"primary-red"
+			],
+			[
+				"first",
+				"first-child"
+			],
+			[
+				"pad",
+				"padding: "
+			],
+			[
+				"marg",
+				"margin-bottom: "
+			],
+			[
+				"cons",
+				"console.log('$0');"
+			],
+			[
+				"margin-",
+				"margin-right: "
+			],
+			[
+				"__prima",
+				"__primary-steps"
+			],
+			[
+				"margin",
+				"margin-bottom: "
+			],
+			[
+				"over",
+				"overflow: "
+			],
+			[
+				"pop",
+				"popup"
+			],
+			[
+				"a",
+				"assets"
+			],
+			[
+				"unde",
+				"understandItems1"
+			],
+			[
+				"gnb",
+				"gnb-menu__list"
+			],
+			[
+				"gn",
+				"gnb-menu"
+			],
+			[
+				"lo",
+				"login-popup"
+			],
+			[
+				"login",
+				"login-layout"
+			],
+			[
+				"ma",
+				"margin-top: "
+			],
+			[
+				"log",
+				"login"
+			],
+			[
+				"padd",
+				"padding-right: "
+			],
+			[
+				"tran",
+				"transition: "
+			],
+			[
+				"site-",
+				"sitemap-columns"
+			],
+			[
+				"site",
+				"sitemap-column"
+			],
+			[
+				"sitem",
+				"sitemap-logo"
+			],
+			[
+				"sitemap",
+				"sitemap-column"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"com",
+				"comment-reply"
+			],
+			[
+				"co",
+				"comments"
+			],
+			[
+				"opi",
+				"Opinion"
+			],
+			[
+				"tab",
+				"table-layout__cell-with-sep"
+			],
+			[
+				"head",
+				"heading-line"
+			],
+			[
+				"section-",
+				"section--x-small-margin"
+			],
+			[
+				"section",
+				"section--x-small-margin"
+			],
+			[
+				"contest",
+				"contest-detail"
+			],
+			[
+				"se",
+				"section--x-small-margin"
+			],
+			[
+				"sl",
+				"select-box"
+			],
+			[
+				"min",
+				"min-height: "
+			],
+			[
+				"navi",
+				"navigation-buttons"
+			],
+			[
+				"ali",
+				"align-items: "
+			],
+			[
+				"result",
+				"result-cover"
+			],
+			[
+				"layout",
+				"layouts"
+			],
+			[
+				"table",
+				"table-layout"
+			],
+			[
+				"tabl",
+				"table-layout"
+			],
+			[
+				"col",
+				"colspan"
+			],
+			[
+				"fo",
+				"form/"
+			],
+			[
+				"coc-r",
+				"coc-rules-detail"
+			],
+			[
+				"understand-sq",
+				"understand-question"
+			],
+			[
+				"bac",
+				"background-image: "
+			],
+			[
+				"coc-ru",
+				"coc-rules-figure"
+			],
+			[
+				"cop-sp",
+				"cop-sp-icon"
+			],
+			[
+				"pro",
+				"process-step__step-2-figure-1"
+			],
+			[
+				"sub",
+				"process-step__sub-heading"
+			],
+			[
+				"selec",
+				"selectedTab"
+			],
+			[
+				"enact",
+				"enactment-link"
+			],
+			[
+				"primary-",
+				"primary-steps"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"posit",
+				"position"
+			],
+			[
+				"flex-",
+				"flex-direction: "
+			],
+			[
+				"map",
+				"map-section"
+			],
+			[
+				"banner",
+				"banner__description"
+			],
+			[
+				"bann",
+				"banner__primary"
+			],
+			[
+				"js",
+				"justify-content: "
+			],
+			[
+				"bi-key",
+				"bi-keywords"
+			],
+			[
+				"bi-suma",
+				"bi-summaries"
+			],
+			[
+				"bi-color",
+				"bi-color-section__color"
+			],
+			[
+				"bi-section",
+				"bi-section__header"
+			],
+			[
+				"bi-ov",
+				"bi-overview-section__figure"
+			],
+			[
+				"gover",
+				"governance"
+			],
+			[
+				"gov",
+				"governance"
+			],
+			[
+				"governa",
+				"governance-figures"
+			],
+			[
+				"border-ri",
+				"border-right-color: "
+			],
+			[
+				"left",
+				"leftLink"
+			],
+			[
+				"right",
+				"rightLink"
+			],
+			[
+				"e",
+				"ethical-management-system"
+			],
+			[
+				"ceo",
+				"ceo-greeting-page"
+			],
+			[
+				"clas",
+				"classList"
+			],
+			[
+				"ligh",
+				"lighten	Sass-function"
+			],
+			[
+				"lig",
+				"lighten	Sass-function"
+			],
+			[
+				"sat",
+				"saturate	Sass-function"
+			],
+			[
+				"box-s",
+				"box-shadow: "
+			],
+			[
+				"im",
+				"images"
+			],
+			[
+				"le",
+				"letter-spacing: "
+			],
+			[
+				"font",
+				"font-size: "
+			],
+			[
+				"align",
+				"align-items: "
+			],
+			[
+				"document",
+				"document-counter"
+			],
+			[
+				"count",
+				"counter-reset: "
+			],
+			[
+				"scro",
+				"scrollTo"
+			],
+			[
+				"play",
+				"playlistId"
+			],
+			[
+				"pla",
+				"playlistId"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"font-s",
+				"font-size-small"
+			],
+			[
+				"counter",
+				"counter-increment"
+			],
+			[
+				"li",
+				"li-margin"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"firs",
+				"first-child"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"border",
+				"border-right"
+			],
+			[
+				"massa",
+				"massage_services"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 203.0,
+		"last_filter": "remo",
+		"selected_items":
+		[
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"fix",
+				"GutterColor: Fix Current Color Scheme"
+			],
+			[
+				"colo",
+				"GutterColor: Fix Current Color Scheme"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 451.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/thiendo/Dropbox/Work/xa-lach/code"
+	],
+	"file_history":
+	[
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/hi.html",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/pages/speak.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/cuongpnh/speak.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/speak/opinion/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/cop-examples/detail.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/pages/act.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/table.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/act/dianosis-result/detail.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/act/dianosis-result/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/pages/understand.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/javascripts/script.js",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/popup.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/act/dianosis-result/layout.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/text.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/form/text-box.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/layout.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/cop-structure-feature/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-rules/detail.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/cop-examples/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/form/button.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-poster/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-1.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-structure-feature/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/layouts/breadcrumb.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/layouts/header.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/header.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/banner.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/base/fonts.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/overview/governance/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/overview/ceo-message/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/overview/about-bi/understand.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/overview/about-bi/layout.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/pages/overview.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/pages/home.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/speak/contest/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/lotte.sublime-project",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-rules/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-poster/detail.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/overview/ethical-management-system/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/overview/ethical-management-background/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/act/news/detail.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/act/news/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/act/documents-download/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/speak/contest/detail.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/speak/opinion/form.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/speak/opinion/detail.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/speak/contest/join.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/speak/complaint/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/README.md",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/gnb-menu.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/breadcrumb.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/layouts/layout.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/overview/about-bi/speak.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/overview/about-bi/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/etc/sitemap/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/etc/login/popup-2.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/etc/login/popup-1.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/etc/login/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/overview/about-bi/act.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-layout.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/layouts/footer.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/understand-cards.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-1-1.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/section.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/grid.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-5-1.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-3-1.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-7.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-6.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-5.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-4.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-3.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-2.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/container.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/panel.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/app.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/pages/etc.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/heading.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/layouts/head.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/base/reset.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/badge.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/form/radio-button.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/form/select-box.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/form/label.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/form/form.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/layouts/navigation.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/pagination.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/layouts/pagination.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/base/mixins.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/hr.scss",
+		"/Users/thiendo/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/thiendo/Library/Application Support/Sublime Text 3/Packages/AutoFileName/autofilename.sublime-settings",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/image.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/tab.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/base/colors.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/overview/governance.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/footer.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/overview/ethical-management-background.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/overview/ceo-greeting.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/overview/ethical-management-system.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/overview/ethical-management-background.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/overview/ceo-greeting.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/overview/ethical-manament-system.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/quick-menu-column.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/home-visual.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/navigation.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/layouts/home.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/index.html",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/layouts/all.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/base/all.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/form/all.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/all.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/layouts/_head.jade",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/normalize.scss",
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/normalize.css",
+		"/Users/thiendo/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/thiendo/Desktop/foundation-5.5.2/css/normalize.css",
+		"/Users/thiendo/Desktop/foundation-5.5.2/css/foundation.css",
+		"/Users/thiendo/Documents/Development/dwork/evcare/app/assets/stylesheets/partials/_footer.scss",
+		"/Users/thiendo/Documents/Development/dwork/evcare/Gemfile",
+		"/Users/thiendo/Documents/Development/dwork/evcare/app/controllers/requests_controller.rb",
+		"/Users/thiendo/Documents/Development/dwork/evcare/app/views/requests/insurers_select_new.slim",
+		"/Users/thiendo/Documents/Development/dwork/evcare/app/assets/stylesheets/partials/_header.scss",
+		"/Users/thiendo/Documents/Development/dwork/evcare/app/assets/stylesheets/modules/_bits.scss",
+		"/Users/thiendo/Documents/Development/web/rau-muong/colde_old/app/elements/elements.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 106.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".news-article",
+			"  ",
+			"_link",
+			"\")\n",
+			"-page(\"신문고 LINK\", \"#\")",
+			"-page(\"실천지침\", \"#\")",
+			"-page(\"윤리경영  소식  및  사례\", \"#\")",
+			"-page(\"윤리경영  진단결과  공유\", \"#\")",
+			"-page(\"윤리경영  관련서식\", \"#\")",
+			"-page(\"행동강령  구성  및  특징\", \"#\")",
+			"-page(\"윤리경영  배경\", \"#\")",
+			"-page(\"회장님 Message\", \"#\")",
+			"-page(\"GOVERNANCE\", \"#\")",
+			"-page(\"BI 소개\", \"#\")",
+			"-page(\"신문고\", \"#\")",
+			"신문고",
+			"-page(\"윤리경영  체계도\", linkTo(\"overview.ethical-management-system.\")",
+			"-page(\"윤리경영  체계도\", \"#\")",
+			"linkTo()",
+			"\", \"",
+			"[\"current\", \"arrow\"]))",
+			"[\"current\", \"arrow\"]",
+			"(\\+breadcrumb-item\\(\".*\", \"#\")\\)",
+			"[\"top-level\", \"arrow\"], [\"top-level\", \"arrow\"]",
+			"(\\+breadcrumb-item\\(\".*\", \"#\", \".*)\\)",
+			"(\\+breadcrumb-item\\(\".*\", \"#\", \".*\\))",
+			", ",
+			"main-b",
+			"main-",
+			"understand.cop-examples",
+			"understand.coc-enactment-procedure",
+			"overview.about-bi",
+			"\"#\"",
+			"href = \"detail.html\"",
+			"href = \"index.html\"",
+			"linkTo(\"act.news.detail\")",
+			"td",
+			"\"#\"",
+			"\\], \\[",
+			"], [",
+			"\"#\"",
+			"\", \"",
+			"=\"#\"",
+			"윤리경영 공모전",
+			"신문고",
+			"윤리경영 서식 다운로드",
+			"윤리경영 소식 및 사례",
+			"윤리경영 진단결과",
+			"실전지침 (사례)",
+			"실전지침 구성 및 특징",
+			"행동강령 포스터",
+			"행동강령 (규정)",
+			"행동강령 제정절차",
+			"linkTo(\"\")",
+			"행동강령 구성 및 특징",
+			"윤리경영 배경",
+			"\"#\"",
+			"\\n.*index:.*",
+			"path",
+			".html",
+			"path: \\\"(.*)/\"",
+			"path: \\\"(.*)/",
+			"110",
+			"currentPathNam",
+			"sf-icon",
+			"letter",
+			"\\n",
+			"(\\n\\ttd .*\\n\\ttd .*)",
+			"\\n",
+			"\\n\\n",
+			"\\n",
+			"table",
+			"· (.*)",
+			"\\n",
+			"· (.*)",
+			"· ",
+			"contest-join-form",
+			"opinion-form",
+			"badge",
+			"\\n",
+			"\\n\\n",
+			"\\n",
+			"navigation-button",
+			"0.1s",
+			"0.2s",
+			"\\ttr",
+			"\\n\\n",
+			"\\n",
+			"detail-table",
+			"   l   ",
+			"-sp",
+			".flex",
+			"\\+enactment-link\\((.*)\\)",
+			"li.enactment-tab__link: a\\(href=(\".\")\\) (.*)",
+			"            ",
+			".banner__tab-",
+			"            ",
+			"\"#\"\\)\\n\\t{5}",
+			"h1.primary-step__title (.*)\\n\\t*.*\\n.*each item in (.*)",
+			"gray-bor",
+			"gray-border",
+			"        ",
+			"+bi-icon(\"#{imgPath}",
+			"10px",
+			"        ",
+			"<br>",
+			"\\n\\t\\t\\t\\tbr\\n\\t\\t\\t\\t\\| ",
+			"selected",
+			"active",
+			"prevPage",
+			"nextPage",
+			"breadcrumbItem",
+			"tdR",
+			"spanSubText",
+			"spanR",
+			"spanA",
+			"spanD",
+			"윤리경영팀",
+			"윤리기획팀",
+			"each",
+			"/assets",
+			"assets/",
+			"	```",
+			"each",
+			"td",
+			" \"",
+			"modules/",
+			"\"//"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"\\t",
+			"-page(\"신문고 LINK\", linkTo(\"speak.complaint\"))",
+			"-page(\"실천지침\", linkTo(\"understand.cop-examples\"))",
+			"-page(\"윤리경영  소식  및  사례\", linkTo(\"act.news\"))",
+			"-page(\"윤리경영  진단결과  공유\", linkTo(\"act.dianosis-result\"))",
+			"-page(\"윤리경영  관련서식\", linkTo(\"act.documents-download\"))",
+			"-page(\"행동강령  구성  및  특징\", linkTo(\"understand.coc-structure-feature\"))",
+			"-page(\"윤리경영  배경\", linkTo(\"overview.ethical-management-background\"))",
+			"-page(\"회장님 Message\", linkTo(\"overview.ceo-message\"))",
+			"-page(\"GOVERNANCE\", linkTo(\"overview.governance\"))",
+			"-page(\"BI 소개\", linkTo(\"overview.about-bi\"))",
+			"-page(\"신문고\", linkTo(\"speak.complaint.\"))",
+			"-page(\"윤리경영  체계도\", linkTo(\"overview.ethical-management-system.\"))",
+			"-page(\"윤리경영  체계도\", linkTo(\"overview.ethical-management-system.\")",
+			"linkTo(\"\")",
+			"\", linkTo()], \"",
+			"[\"current\", \"arrow\"])",
+			"$1, false, [\"current\", \"arrow\"]",
+			"$1, false, [\"current\", \"arrow\"])",
+			"[\"top-level\", \"arrow\"]",
+			"$1, [\"top-level\", \"arrow\"])",
+			"$1[\"top-level\", \"arrow\"])",
+			"$1[\"top-level\", \"arrow\"]",
+			"], [\"\", ",
+			"b",
+			"",
+			"href = linkTo(\".detail\")",
+			"href = linkTo(\".\")",
+			"\"detail.html\"",
+			"td: a(href = \"detail.html\")",
+			"td: a(href = linkTo(\"speak.opinion.detail\"))",
+			"td: a(href = linkTo(\"act.news.detail\"))",
+			"linkTo(\"understand.coc-enactment-procedure.step-\")",
+			"\\],\\n\\[",
+			"],\\n[",
+			"linkTo(\"understand.coc-enactment-procedure.step-\")",
+			"\", linkTo(\"overview.about-bi.\")], [\"",
+			" = linkTo(\"speak..\")",
+			" = linkTo(\"act..\")",
+			" = linkTo(\"understand..\")",
+			" = linkTo(\"overview..\")",
+			"linkTo(\"understand.\")",
+			"linkTo(\"\")",
+			"",
+			"_path",
+			"",
+			"path: \\\"$1\\\"",
+			"path: \\\"$1",
+			"path: \\\"$1\\\"",
+			"\", \"",
+			"tr$1\\n",
+			"tr$1",
+			"\\ntd ",
+			"\\n\\n",
+			"\\ntr\\n",
+			"\\ntd ",
+			"[\"#\", \"$1\"],",
+			" ",
+			"[\"#\", \"$1\"],",
+			"\"#\", \"",
+			"li.gnb-menu__list-item: a(href=\"#\") ",
+			"some-form",
+			"badge--large",
+			"\\ntd",
+			"\\ntr\\n",
+			"\\ntd ",
+			"0.2s",
+			"0.1s",
+			"tr",
+			"\\ntr\\n",
+			"\\ntr",
+			"\\ntd ",
+			"\\n td ",
+			"table-layout",
+			"\\nli ",
+			"-sf",
+			"[$1]",
+			"enactment-link(\"$2\", $1)",
+			"\", \"",
+			".enactment-tab__",
+			"\\n",
+			"\"#\", ",
+			"\\\"$1\\\", $2",
+			"$1 $2",
+			"\", \"",
+			"+bi-icon(imgPath + \"",
+			"20px",
+			"\", \"",
+			" <br> ",
+			"<br>",
+			"prev-page",
+			"next-page",
+			"breadcrumb-item",
+			"td-r",
+			"span-sub-text",
+			"span-r",
+			"span-a",
+			"span-d",
+			"td 윤리경영팀",
+			"td 윤리기획팀",
+			"/assets/",
+			"/assets",
+			"```",
+			"td.ethical-table__cell",
+			" \"modules/",
+			"",
+			"\"http://",
+			",\\n",
+			"\"",
+			"$header-height",
+			"li.main-header__lang-item:",
+			"\"",
+			"'",
+			"//- ",
+			"meta(",
+			" ",
+			"",
+			"nfap-play",
+			"nfap-playlist",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ebachhoa.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"bread",
+				"layouts/breadcrumb.jade"
+			],
+			[
+				"app",
+				"assets/stylesheets/app.scss"
+			],
+			[
+				"sc",
+				"assets/javascripts/script.js"
+			],
+			[
+				"act",
+				"assets/stylesheets/pages/act.scss"
+			],
+			[
+				"spea",
+				"assets/stylesheets/pages/speak.scss"
+			],
+			[
+				"speak",
+				"assets/stylesheets/pages/speak.scss"
+			],
+			[
+				"tabl",
+				"assets/stylesheets/modules/table.scss"
+			],
+			[
+				"tab",
+				"assets/stylesheets/modules/table.scss"
+			],
+			[
+				"te",
+				"assets/stylesheets/modules/text.scss"
+			],
+			[
+				"text",
+				"assets/stylesheets/modules/form/text-box.scss"
+			],
+			[
+				"layout",
+				"views/understand/coc-enactment-procedure/layout.jade"
+			],
+			[
+				"popu",
+				"assets/stylesheets/modules/popup.scss"
+			],
+			[
+				"pop",
+				"assets/stylesheets/modules/popup.scss"
+			],
+			[
+				"scr",
+				"assets/javascripts/script.js"
+			],
+			[
+				"butt",
+				"assets/stylesheets/modules/form/button.scss"
+			],
+			[
+				"under",
+				"assets/stylesheets/pages/understand.scss"
+			],
+			[
+				"step-1",
+				"views/understand/coc-enactment-procedure/step-1.jade"
+			],
+			[
+				"enacment",
+				"views/understand/coc-enactment-procedure/index.jade"
+			],
+			[
+				"coc-st",
+				"views/understand/coc-structure-feature/index.jade"
+			],
+			[
+				"inde",
+				"views/index.jade"
+			],
+			[
+				"head",
+				"layouts/header.jade"
+			],
+			[
+				"header",
+				"assets/stylesheets/modules/header.scss"
+			],
+			[
+				"scrip",
+				"assets/javascripts/script.js"
+			],
+			[
+				"font",
+				"assets/stylesheets/base/fonts.scss"
+			],
+			[
+				"banner",
+				"assets/stylesheets/modules/banner.scss"
+			],
+			[
+				"gover",
+				"views/overview/governance/index.jade"
+			],
+			[
+				"over",
+				"assets/stylesheets/pages/overview.scss"
+			],
+			[
+				"understa",
+				"assets/stylesheets/pages/understand.scss"
+			],
+			[
+				"ceo",
+				"views/overview/ceo-message/index.jade"
+			],
+			[
+				"home",
+				"assets/stylesheets/pages/home.scss"
+			],
+			[
+				"ceo-me",
+				"views/overview/ceo-message/index.jade"
+			],
+			[
+				"gnb",
+				"assets/stylesheets/modules/gnb-menu.scss"
+			],
+			[
+				"brea",
+				"layouts/breadcrumb.jade"
+			],
+			[
+				"layou",
+				"layouts/layout.jade"
+			],
+			[
+				"sitema",
+				"views/etc/sitemap/index.jade"
+			],
+			[
+				"ov",
+				"views/overview/about-bi/act.jade"
+			],
+			[
+				"dainos",
+				"views/act/dianosis-result/detail.jade"
+			],
+			[
+				"sitem",
+				"views/etc/sitemap/index.jade"
+			],
+			[
+				"foot",
+				"layouts/footer.jade"
+			],
+			[
+				"understand",
+				"assets/stylesheets/pages/understand.scss"
+			],
+			[
+				"gov",
+				"views/overview/governance/index.jade"
+			],
+			[
+				"ind",
+				"views/index.jade"
+			],
+			[
+				"docu",
+				"views/act/documents-download/index.jade"
+			],
+			[
+				"s",
+				"assets/javascripts/script.js"
+			],
+			[
+				"site",
+				"views/etc/sitemap/index.jade"
+			],
+			[
+				"lay",
+				"views/understand/coc-enactment-procedure/layout.jade"
+			],
+			[
+				"coc-e",
+				"views/understand/coc-enactment-procedure/index.jade"
+			],
+			[
+				"gri",
+				"assets/stylesheets/modules/grid.scss"
+			],
+			[
+				"cop-str",
+				"views/understand/cop-structure-feature/index.jade"
+			],
+			[
+				"sect",
+				"assets/stylesheets/modules/section.scss"
+			],
+			[
+				"coc-stru",
+				"views/understand/coc-structure-feature/index.jade"
+			],
+			[
+				"governa",
+				"views/overview/governance/index.jade"
+			],
+			[
+				"grid",
+				"assets/stylesheets/modules/grid.scss"
+			],
+			[
+				"cona",
+				"assets/stylesheets/modules/container.scss"
+			],
+			[
+				"step-1-1",
+				"views/understand/coc-enactment-procedure/step-1-1.jade"
+			],
+			[
+				"step-2",
+				"views/understand/coc-enactment-procedure/step-2.jade"
+			],
+			[
+				"pane",
+				"assets/stylesheets/modules/panel.scss"
+			],
+			[
+				"sec",
+				"assets/stylesheets/modules/section.scss"
+			],
+			[
+				"unde",
+				"assets/stylesheets/pages/understand.scss"
+			],
+			[
+				"etc",
+				"assets/stylesheets/pages/etc.scss"
+			],
+			[
+				"heading",
+				"assets/stylesheets/modules/heading.scss"
+			],
+			[
+				"hea",
+				"layouts/head.jade"
+			],
+			[
+				"conta",
+				"assets/stylesheets/modules/container.scss"
+			],
+			[
+				"reset",
+				"assets/stylesheets/base/reset.scss"
+			],
+			[
+				"ap",
+				"assets/stylesheets/app.scss"
+			],
+			[
+				"but",
+				"assets/stylesheets/modules/form/button.scss"
+			],
+			[
+				"radio",
+				"assets/stylesheets/modules/form/radio-button.scss"
+			],
+			[
+				"spe",
+				"assets/stylesheets/pages/speak.scss"
+			],
+			[
+				"badge",
+				"assets/stylesheets/modules/badge.scss"
+			],
+			[
+				"panel",
+				"assets/stylesheets/modules/panel.scss"
+			],
+			[
+				"sele",
+				"assets/stylesheets/modules/form/select-box.scss"
+			],
+			[
+				"gr",
+				"assets/stylesheets/modules/grid.scss"
+			],
+			[
+				"lab",
+				"assets/stylesheets/modules/form/label.scss"
+			],
+			[
+				"form",
+				"assets/stylesheets/modules/form/form.scss"
+			],
+			[
+				"bann",
+				"assets/stylesheets/modules/banner.scss"
+			],
+			[
+				"table",
+				"assets/stylesheets/modules/table.scss"
+			],
+			[
+				"coc-rule",
+				"views/understand/coc-rules/detail.jade"
+			],
+			[
+				"navig",
+				"layouts/navigation.jade"
+			],
+			[
+				"pag",
+				"assets/stylesheets/modules/pagination.scss"
+			],
+			[
+				"pa",
+				"layouts/pagination.jade"
+			],
+			[
+				"pagi",
+				"layouts/pagination.jade"
+			],
+			[
+				"bad",
+				"assets/stylesheets/modules/badge.scss"
+			],
+			[
+				"badg",
+				"assets/stylesheets/modules/badge.scss"
+			],
+			[
+				"mixi",
+				"assets/stylesheets/base/mixins.scss"
+			],
+			[
+				"pagin",
+				"layouts/pagination.jade"
+			],
+			[
+				"understandposter",
+				"views/understand/coc-poster/index.jade"
+			],
+			[
+				"hr",
+				"assets/stylesheets/modules/hr.scss"
+			],
+			[
+				"ethic",
+				"views/overview/ethical-management-system/index.jade"
+			],
+			[
+				"res",
+				"assets/stylesheets/base/reset.scss"
+			],
+			[
+				"image",
+				"assets/stylesheets/modules/image.scss"
+			],
+			[
+				"headin",
+				"assets/stylesheets/modules/heading.scss"
+			],
+			[
+				"step-6",
+				"views/understand/coc-enactment-procedure/step-6.jade"
+			],
+			[
+				"headi",
+				"assets/stylesheets/modules/heading.scss"
+			],
+			[
+				"con",
+				"assets/stylesheets/modules/container.scss"
+			],
+			[
+				"cocstruc",
+				"views/understand/coc-structure-feature/index.jade"
+			],
+			[
+				"structu",
+				"views/understand/coc-structure-feature/index.jade"
+			],
+			[
+				"struct-",
+				"views/understand/coc-structure-feature/index.jade"
+			],
+			[
+				"base",
+				"assets/stylesheets/base/colors.scss"
+			],
+			[
+				"coin",
+				"assets/stylesheets/modules/container.scss"
+			],
+			[
+				"layo",
+				"layouts/layout.jade"
+			],
+			[
+				"quic",
+				"assets/stylesheets/modules/quick-menu-column.scss"
+			],
+			[
+				"homvi",
+				"assets/stylesheets/modules/home-visual.scss"
+			],
+			[
+				"homevi",
+				"assets/stylesheets/modules/home-visual.scss"
+			],
+			[
+				"nav",
+				"assets/stylesheets/modules/navigation.scss"
+			],
+			[
+				"na",
+				"assets/stylesheets/modules/navigation.scss"
+			],
+			[
+				"navi",
+				"layouts/navigation.jade"
+			],
+			[
+				"footer",
+				"layouts/footer.jade"
+			],
+			[
+				"contain",
+				"assets/stylesheets/modules/container.scss"
+			],
+			[
+				"conia",
+				"assets/stylesheets/modules/container.scss"
+			],
+			[
+				"headscs",
+				"assets/stylesheets/modules/header.scss"
+			],
+			[
+				"heade",
+				"assets/stylesheets/modules/header.scss"
+			],
+			[
+				"o",
+				"overview/ceo-greeting.jade"
+			],
+			[
+				"header.scs",
+				"assets/stylesheets/modules/header.scss"
+			],
+			[
+				"mix",
+				"assets/stylesheets/base/mixins.scss"
+			],
+			[
+				"col",
+				"assets/stylesheets/modules/quick-menu-column.scss"
+			],
+			[
+				"all",
+				"assets/stylesheets/modules/form/all.scss"
+			],
+			[
+				"foote",
+				"app/assets/stylesheets/partials/_footer.scss"
+			],
+			[
+				"request",
+				"app/assets/stylesheets/requests.scss"
+			],
+			[
+				"gemf",
+				"Gemfile"
+			],
+			[
+				"requ",
+				"app/controllers/requests_controller.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"bit",
+				"app/assets/stylesheets/modules/_bits.scss"
+			],
+			[
+				"nfap-pla",
+				"app/elements/nfap-playlist-page/nfap-playlist-page.slim"
+			],
+			[
+				"nfap-hom",
+				"app/elements/nfap-home-page/nfap-home-page.slim"
+			],
+			[
+				"gul",
+				"gulpfile.js"
+			],
+			[
+				"playlistpagehtml",
+				"app/elements/nfap-playlist-page/nfap-playlist-page.html"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"play",
+				"app/elements/nfap-playlist-page/nfap-playlist-page.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
