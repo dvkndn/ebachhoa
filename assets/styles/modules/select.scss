@@ -8,7 +8,7 @@
 	appearance: none;
 	outline: none;
 
-	background-color: #EEEEEE;
+	background-color: $button-gray;
 	background-image: url(img/select-arrow.png);
 	background-size: 6px 4px;
 	background-repeat: no-repeat;
@@ -23,6 +23,17 @@
 
 	&--transparent {
 		background-color: transparent;
+	}
+
+	&--line {
+		background-color: transparent;
+		box-shadow: $border-gray 0 0 0 1px inset;
+		color: $dark-text;
+	}
+
+	&--full-width {
+		display: block;
+		width: 100%;
 	}
 
 	&--full-width {

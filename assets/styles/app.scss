@@ -8,10 +8,25 @@
 @import "modules/icon";
 @import "modules/text-box";
 @import "modules/select";
+@import "modules/container";
+@import "modules/text";
+@import "modules/hr";
+@import "modules/tab";
 
 @import "modules/user-bar";
 @import "modules/top-search";
+@import "modules/breadcrumb";
+@import "modules/preview";
+
+@import "pages/product";
 
 body {
 	font-family: 'Lato', sans-serif;
+	color: $dark-text;
+}
+
+#main-content {
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
 }

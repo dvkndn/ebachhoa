@@ -15,3 +15,9 @@
 		background-color: rgba(black, 0.05);
 	}	
 }
+
+@mixin pseudo-base() {
+	content: "";
+	display: block;
+	position: absolute;
+}

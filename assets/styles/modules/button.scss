@@ -14,7 +14,12 @@
 	text-align: center;
 
 	&--gray {
-		background-color: #DDD;
+		background-color: $button-gray;
+		color: $dark-text;
+	}
+	&--line {
+		background-color: transparent;
+		box-shadow: $border-gray 0 0 0 1px inset;
 		color: $dark-text;
 	}
 
@@ -25,5 +30,10 @@
 	&--full-width {
 		display: block;
 		width: 100%;
+	}
+	&--large {
+		height: 50px; line-height: 50px;
+		font-size: 14px;
+		letter-spacing: 2px;
 	}
 }

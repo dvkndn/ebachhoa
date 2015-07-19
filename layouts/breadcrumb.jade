@@ -1,0 +1,7 @@
+mixin breadcrumb-item(title, link)
+	li.breadcrumb__item: a(href = link)= title
+
+.breadcrumb
+	.breadcrumb__content
+		ul.breadcrumb__items
+			block breadcrumb

@@ -1,0 +1,46 @@
+.tabs {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+	background-color: $button-gray;
+	border-radius: 10px 10px 0 0;
+
+	&__title {
+		flex: 1 auto;
+		order: 1;
+
+		display: block;
+		width: 220px; height: 40px;
+		
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 40px;
+		text-align: center;
+
+		cursor: pointer;
+		
+		&.selected {
+			background-color: $dark-text;
+			border-radius: 10px 10px 0 0;
+			color: white;
+		}
+	}
+	&__content {
+		flex: 1 100%;
+		order: 2;
+
+		display: none;
+		width: 100%;
+		padding: 20px;
+		
+		background-color: white;
+		border: solid 1px $border-gray;
+
+	}
+
+	// show the selected
+	&__title.selected + &__content {
+		display: block;
+	}
+}

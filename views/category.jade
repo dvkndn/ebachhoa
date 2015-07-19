@@ -1,0 +1,36 @@
+extend ../layouts/layout.jade
+
+block title
+	| Category
+
+block breadcrumb
+	+breadcrumb-item("browse", "#")
+	+breadcrumb-item("category", "#")
+
+block content
+	aside.category-tree
+		ul
+			li.accordion
+				h1.accordion__title mỹ phẩm
+				ul.accordion__content
+					li.accordion
+						h1.accordion__title trang điểm - làm đẹp
+						ul.accordion__content
+							each title in ["Toàn thân", "Vùng mắt", "Vùng mặt", "Vùng môi", "Móng tay - chân", "Bộ trang điểm All-in-one", "Dụng cụ làm đẹp"]
+								li.category-tree__sub3: a(href = "#")= title
+					li.accordion
+						h1.accordion__title chăm sóc da
+						ul.accordion__content
+							li Toàn thân
+					li.accordion
+						h1.accordion__title chăm sóc móng
+						ul.accordion__content
+							li Toàn thân
+					li.accordion
+						h1.accordion__title phòng tắm - spa
+						ul.accordion__content
+							li Toàn thân
+			li.accordion
+				h1.accordion__title nước hoa
+				ul.accordion__content
+					li abc
