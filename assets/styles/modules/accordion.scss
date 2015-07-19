@@ -1,0 +1,12 @@
+.accordion {
+	&__content {
+		display: none;
+	}
+
+	&--selected > &__content {
+		display: block;
+	}
+	&--selected > &__title {
+		pointer-events: none;
+	}
+}
