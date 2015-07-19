@@ -1,0 +1,32 @@
+.select {
+	display: inline-block;	
+	width: auto; height: 40px;
+	padding: 0 40px 0 15px;
+	
+	border: none;
+	border-radius: 0;
+	appearance: none;
+	outline: none;
+
+	background-color: #EEEEEE;
+	background-image: url(img/select-arrow.png);
+	background-size: 6px 4px;
+	background-repeat: no-repeat;
+	background-position: right 20px center;
+
+	color: $dark-text;
+	font-size: 10px;
+	font-weight: 700;
+	line-height: 40px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+	&--transparent {
+		background-color: transparent;
+	}
+
+	&--full-width {
+		display: block;
+		width: 100%;
+	}
+}

@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"back",
+				"background-color: "
+			],
+			[
+				"top-search",
+				"top-search-box"
+			],
+			[
 				"tr",
 				"tr--large"
 			],
@@ -42,10 +50,6 @@
 			[
 				"border-bot",
 				"border-bottom: "
-			],
-			[
-				"back",
-				"background-color: "
 			],
 			[
 				"brea",
@@ -467,6 +471,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "views/index.jade",
+			"settings":
+			{
+				"buffer_size": 1196,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/styles/modules/top-search.scss",
+			"settings":
+			{
+				"buffer_size": 713,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -541,10 +561,39 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/thiendo/Dropbox/Work/xa-lach/code"
+		"/Users/thiendo/Dropbox/Work/xa-lach/code",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/images",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/scripts",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/styles",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/styles/base",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/styles/modules",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/layouts",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/vendors",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/views"
 	],
 	"file_history":
 	[
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/styles/modules/text-box.scss",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/styles/modules/top-search.scss",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/styles/base/colors.scss",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/styles/app.scss",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/styles/modules/select.scss",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/styles/base/reset.scss",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/styles/modules/button.scss",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/styles/modules/user-bar.scss",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/scripts/app.js",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/styles/modules/icon.scss",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/styles/base/fonts.scss",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/styles/base/icons.scss",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/layouts/header.jade",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/layouts/breadcrumb.jade",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/views/index.jade",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/layouts/layout.jade",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/layouts/head.jade",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/app.scss",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/vendors/jquery.min.js",
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/ebachhoa.sublime-project",
 		"/Users/thiendo/Dropbox/Work/xa-lach/code/hi.html",
 		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/pages/speak.scss",
 		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/cuongpnh/speak.scss",
@@ -652,27 +701,7 @@
 		"/Users/thiendo/Documents/Development/dwork/lotte/overview/ethical-manament-system.jade",
 		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/quick-menu-column.scss",
 		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/home-visual.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/navigation.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/index.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/layouts/home.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/index.html",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/layouts/all.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/base/all.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/form/all.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/all.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/layouts/_head.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/normalize.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/normalize.css",
-		"/Users/thiendo/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/Users/thiendo/Desktop/foundation-5.5.2/css/normalize.css",
-		"/Users/thiendo/Desktop/foundation-5.5.2/css/foundation.css",
-		"/Users/thiendo/Documents/Development/dwork/evcare/app/assets/stylesheets/partials/_footer.scss",
-		"/Users/thiendo/Documents/Development/dwork/evcare/Gemfile",
-		"/Users/thiendo/Documents/Development/dwork/evcare/app/controllers/requests_controller.rb",
-		"/Users/thiendo/Documents/Development/dwork/evcare/app/views/requests/insurers_select_new.slim",
-		"/Users/thiendo/Documents/Development/dwork/evcare/app/assets/stylesheets/partials/_header.scss",
-		"/Users/thiendo/Documents/Development/dwork/evcare/app/assets/stylesheets/modules/_bits.scss",
-		"/Users/thiendo/Documents/Development/web/rau-muong/colde_old/app/elements/elements.html"
+		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/navigation.scss"
 	],
 	"find":
 	{
@@ -691,6 +720,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"=\"",
+			"'",
 			".news-article",
 			"  ",
 			"_link",
@@ -816,16 +847,16 @@
 			"	```",
 			"each",
 			"td",
-			" \"",
-			"modules/",
-			"\"//"
+			" \""
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			" = \"",
+			"\"",
 			"\\t",
 			"-page(\"신문고 LINK\", linkTo(\"speak.complaint\"))",
 			"-page(\"실천지침\", linkTo(\"understand.cop-examples\"))",
@@ -956,8 +987,112 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "views/index.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1196,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								455,
+								455
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "assets/styles/modules/top-search.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 713,
+						"regions":
+						{
+							"gutter_color_325":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#666.png",
+								"regions":
+								[
+									[
+										325,
+										344
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_407":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#ddd.png",
+								"regions":
+								[
+									[
+										407,
+										441
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_43":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#EEEEEE.png",
+								"regions":
+								[
+									[
+										43,
+										77
+									]
+								],
+								"scope": "gutter_color"
+							}
+						},
+						"selection":
+						[
+							[
+								708,
+								708
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -978,11 +1113,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -1000,7 +1142,7 @@
 	"project": "ebachhoa.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1010,12 +1152,64 @@
 		"selected_items":
 		[
 			[
-				"bread",
-				"layouts/breadcrumb.jade"
+				"top",
+				"assets/styles/modules/top-search.scss"
+			],
+			[
+				"te",
+				"assets/styles/modules/text-box.scss"
+			],
+			[
+				"res",
+				"assets/styles/base/reset.scss"
+			],
+			[
+				"but",
+				"assets/styles/modules/button.scss"
+			],
+			[
+				"col",
+				"assets/styles/base/colors.scss"
 			],
 			[
 				"app",
-				"assets/stylesheets/app.scss"
+				"assets/styles/app.scss"
+			],
+			[
+				"us",
+				"assets/styles/modules/user-bar.scss"
+			],
+			[
+				"a",
+				"assets/styles/app.scss"
+			],
+			[
+				"font",
+				"assets/styles/base/fonts.scss"
+			],
+			[
+				"icon",
+				"assets/styles/modules/icon.scss"
+			],
+			[
+				"colo",
+				"assets/styles/base/colors.scss"
+			],
+			[
+				"fo",
+				"assets/styles/base/fonts.scss"
+			],
+			[
+				"hea",
+				"layouts/head.jade"
+			],
+			[
+				"lay",
+				"layouts/layout.jade"
+			],
+			[
+				"bread",
+				"layouts/breadcrumb.jade"
 			],
 			[
 				"sc",
@@ -1040,10 +1234,6 @@
 			[
 				"tab",
 				"assets/stylesheets/modules/table.scss"
-			],
-			[
-				"te",
-				"assets/stylesheets/modules/text.scss"
 			],
 			[
 				"text",
@@ -1100,10 +1290,6 @@
 			[
 				"scrip",
 				"assets/javascripts/script.js"
-			],
-			[
-				"font",
-				"assets/stylesheets/base/fonts.scss"
 			],
 			[
 				"banner",
@@ -1190,10 +1376,6 @@
 				"views/etc/sitemap/index.jade"
 			],
 			[
-				"lay",
-				"views/understand/coc-enactment-procedure/layout.jade"
-			],
-			[
 				"coc-e",
 				"views/understand/coc-enactment-procedure/index.jade"
 			],
@@ -1254,10 +1436,6 @@
 				"assets/stylesheets/modules/heading.scss"
 			],
 			[
-				"hea",
-				"layouts/head.jade"
-			],
-			[
 				"conta",
 				"assets/stylesheets/modules/container.scss"
 			],
@@ -1268,10 +1446,6 @@
 			[
 				"ap",
 				"assets/stylesheets/app.scss"
-			],
-			[
-				"but",
-				"assets/stylesheets/modules/form/button.scss"
 			],
 			[
 				"radio",
@@ -1360,10 +1534,6 @@
 			[
 				"ethic",
 				"views/overview/ethical-management-system/index.jade"
-			],
-			[
-				"res",
-				"assets/stylesheets/base/reset.scss"
 			],
 			[
 				"image",
@@ -1466,10 +1636,6 @@
 				"assets/stylesheets/base/mixins.scss"
 			],
 			[
-				"col",
-				"assets/stylesheets/modules/quick-menu-column.scss"
-			],
-			[
 				"all",
 				"assets/stylesheets/modules/form/all.scss"
 			],
@@ -1496,30 +1662,6 @@
 			[
 				"bit",
 				"app/assets/stylesheets/modules/_bits.scss"
-			],
-			[
-				"nfap-pla",
-				"app/elements/nfap-playlist-page/nfap-playlist-page.slim"
-			],
-			[
-				"nfap-hom",
-				"app/elements/nfap-home-page/nfap-home-page.slim"
-			],
-			[
-				"gul",
-				"gulpfile.js"
-			],
-			[
-				"playlistpagehtml",
-				"app/elements/nfap-playlist-page/nfap-playlist-page.html"
-			],
-			[
-				"gulp",
-				"gulpfile.js"
-			],
-			[
-				"play",
-				"app/elements/nfap-playlist-page/nfap-playlist-page.html"
 			]
 		],
 		"width": 0.0

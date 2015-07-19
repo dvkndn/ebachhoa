@@ -1,0 +1,29 @@
+.button {
+	display: inline-block;	
+	background-color: $orange;
+	width: auto; height: 40px;
+	border-radius: 40px;
+	padding: 0 18px;
+
+	color: white;
+	font-size: 10px;
+	font-weight: 900;
+	line-height: 40px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+
+	&--gray {
+		background-color: #DDD;
+		color: $dark-text;
+	}
+
+	&--rect {
+		border-radius: 0;
+	}
+
+	&--full-width {
+		display: block;
+		width: 100%;
+	}
+}

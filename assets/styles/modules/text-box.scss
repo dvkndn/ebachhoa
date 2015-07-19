@@ -1,0 +1,30 @@
+.text-box {
+	display: inline-block;	
+	width: auto; height: 40px;
+	padding: 0 15px;
+	
+	border: none;
+	border-radius: 0;
+	appearance: none;
+	outline: none;
+
+	background-color: #EEEEEE;
+	
+	color: $dark-text;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 40px;
+
+	&--transparent {
+		background-color: transparent;
+	}
+
+	&--no-padding {
+		padding: 0;
+	}
+
+	&--full-width {
+		display: block;
+		width: 100%;
+	}
+}

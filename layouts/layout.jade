@@ -1,0 +1,14 @@
+html
+	head
+		title
+			| EBachHoa - 
+			block title
+		include head.jade
+	body
+		#page-container
+			include ./header.jade
+			include ./breadcrumb.jade
+			#main-content
+				block content
+					h1 Place page content here
+			script(src = "/assets/scripts/app.js")

@@ -1,1 +1,32 @@
-h1 a
+extend ../layouts/layout.jade
+
+block content
+	header.main-header
+		.user-bar
+			.user-bar__content
+				.user-bar__left
+					a.user-bar__hello(href = "#") Chào bạn, Tuấn Minh!
+					a.button.button--rect(href = "#") bán
+					a.user-bar__link(href = "#") Liên hệ &amp; Giúp đỡ
+				.user-bar__right
+					a.user-bar__link(href = "#") Quản lý &amp; Mua bán
+					a.user-bar__icon(href = "#"): .icon
+						i.icon__icon.material-icons chat
+						span.icon__badge 4
+					a.user-bar__icon(href = "#"): .icon
+						i.icon__icon.material-icons shopping_cart
+						span.icon__badge 2
+		.top-search
+			.top-search__content
+				.top-search__logo
+				.top-search__search-box: form.top-search-box
+					.top-search-box__icon.icon
+						i.icon__icon.material-icons search
+					input.top-search-box__input.text-box.text-box--transparent.text-box--no-padding(type = "text")
+					select.top-search-box__select.select.select--transparent
+						option Tất cả danh mục
+					.top-search-box__button.top-search-box__submit-button
+						a.button.button--full-width(href = "#") tìm kiếm
+					.top-search-box__button.top-search-box__more-button
+						a.button.button--gray.button--rect.button--full-width(href = "#") nâng cao
+

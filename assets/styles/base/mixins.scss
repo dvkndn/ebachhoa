@@ -1,0 +1,17 @@
+@mixin white-on-hover($duration: 0.2s) {
+	transition: background-color $duration;
+	&:hover {
+		background-color: rgba(white, 0.3);
+	}
+}
+@mixin black-on-hover($duration: 0.2s) {
+	transition: background-color $duration;
+	&:hover {
+		background-color: rgba(black, 0.15);
+	}
+}
+@mixin light-black-on-hover() {
+	&:hover {
+		background-color: rgba(black, 0.05);
+	}	
+}
