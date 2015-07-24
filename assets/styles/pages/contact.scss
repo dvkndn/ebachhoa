@@ -1,0 +1,33 @@
+.contact-info {
+	color: $secondary-text;
+	font-size: 14px;
+	padding-left: 30px;
+	line-height: 16px;
+	position: relative;
+
+	&__icon {
+		font-size: 16px;
+		position: absolute;
+		top: 0; left: 0;
+	}
+}
+.contact-page {
+	&__form {
+		padding-left: 50px;
+		border-left: solid 1px $border-gray;
+	}
+	&__map {
+		padding-right: 50px;
+	}
+}
+.contact-map {
+	&__map {
+		margin-bottom: 20px;
+	}
+	&__info-title {
+		margin-bottom: 20px;
+	}
+	&__info-item {
+		margin-bottom: 10px;
+	}
+}

@@ -1,0 +1,37 @@
+extend ../../layouts/layout.jade
+
+block title
+	| Contact
+
+block breadcrumb
+	+breadcrumb-item("liên hệ", "#")
+
+block content
+	.contact-page
+		h1.page-title Liên hệ
+		flex.flex.flex--equal
+			div.contact-map.contact-page__map
+				.contact-map__map
+					iframe(src = "https://www.google.com/maps/embed/v1/place?key=AIzaSyBqoUBLx4tj8W6QWg-mQIDwdgRXCRMDlHA&q=Space+Needle,Seattle+WA",
+						width="100%", height="300", frameborder="0", style="border:0" allowfullscreen)
+				.contact-map__info
+					h1.label.contact-map__info-title ebachhoa
+					ul
+						li.contact-info.contact-map__info-item
+							i.material-icons.contact-info__icon location_on
+							| Địa chỉ
+						li.contact-info.contact-map__info-item
+							i.material-icons.contact-info__icon email
+							| hello@basis.com
+						li.contact-info.contact-map__info-item
+							i.material-icons.contact-info__icon phone
+							| +1 650-253-0000
+			div.contact-form.contact-page__form
+				form.form.form--contact
+					input(type = "text", placeholder = "Họ và tên").text-box.text-box--full-width
+					input(type = "text", placeholder = "Email").text-box.text-box--full-width
+					input(type = "text", placeholder = "Điện thoại").text-box.text-box--full-width
+					select.select.select--full-width
+						option tiêu đề
+					textarea(type = "text", placeholder = "Nội dung tin nhắn", row = "3").text-box.text-box--multi-lines.text-box--full-width
+					input(type = "submit", value = "gửi").button.button--full-width

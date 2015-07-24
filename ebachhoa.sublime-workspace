@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text-box"
+			],
+			[
+				"button",
+				"button--line"
+			],
+			[
 				"curre",
 				"currentTarget	Event"
 			],
@@ -468,10 +476,6 @@
 				"li-margin"
 			],
 			[
-				"text",
-				"text-align"
-			],
-			[
 				"tex",
 				"text-align"
 			],
@@ -571,15 +575,45 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/Users/thiendo/Documents/Development/ebachhoa/code"
-	],
 	"file_history":
 	[
+		"/Users/thiendo/Documents/Development/ebachhoa/code/ebachhoa.sublime-project",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/views/index.html",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/base/fonts.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/base/icons.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/icon.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/views/search/index.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/views/product/index.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/views/category/index.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/layouts/head.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/layouts/layout.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/views/category/category.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/views/product/product.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/views/search/search.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/views/help-faq.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/form.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/views/search.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/label.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/range.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/radio.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/app.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/category.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/flex.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/container.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/base/mixins.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/views/category.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/text-box.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/button.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/browse.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/search.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/hr.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/category.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/layouts/pagination.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/views/product.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/layouts/header.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/pagination.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/product.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/footer.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/select.scss",
 		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/styles/modules/category-tree.scss",
 		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/scripts/app.js",
 		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/styles/modules/accordion.scss",
@@ -670,41 +704,7 @@
 		"/Users/thiendo/Documents/Development/dwork/lotte/views/overview/about-bi/speak.jade",
 		"/Users/thiendo/Documents/Development/dwork/lotte/views/overview/about-bi/index.jade",
 		"/Users/thiendo/Documents/Development/dwork/lotte/views/etc/sitemap/index.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/views/etc/login/popup-2.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/views/etc/login/popup-1.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/views/etc/login/index.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/views/overview/about-bi/act.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-layout.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/layouts/footer.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/understand-cards.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-1-1.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/section.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/grid.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-5-1.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-3-1.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-7.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-6.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-5.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-4.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-3.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/views/understand/coc-enactment-procedure/step-2.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/container.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/panel.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/app.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/pages/etc.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/heading.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/layouts/head.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/base/reset.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/badge.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/form/radio-button.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/form/select-box.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/form/label.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/form/form.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/layouts/navigation.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/pagination.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/layouts/pagination.jade",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/base/mixins.scss",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/modules/hr.scss"
+		"/Users/thiendo/Documents/Development/dwork/lotte/views/etc/login/popup-2.jade"
 	],
 	"find":
 	{
@@ -715,6 +715,8 @@
 		"height": 106.0,
 		"where_history":
 		[
+			"",
+			"-*.html,-*.css",
 			""
 		]
 	},
@@ -723,6 +725,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"../",
+			"../a",
+			"../",
+			"category-search",
+			"__title",
+			"title",
+			"/assets",
 			"\\n",
 			"li.accordion.category-tree__item-2\\n\\t{6}h1.accordion__title: a\\(href = \"#\"\\)",
 			"li\\.accordion\\.category\\-tree__item-2\\n\\t*h1.accordion__title: a\\(href = \"#\")",
@@ -843,21 +852,19 @@
 			"prevPage",
 			"nextPage",
 			"breadcrumbItem",
-			"tdR",
-			"spanSubText",
-			"spanR",
-			"spanA",
-			"spanD",
-			"윤리경영팀",
-			"윤리기획팀",
-			"each"
+			"tdR"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"../../",
+			"../../a",
+			"../../",
+			"category-sort",
+			"../assets",
 			"\", \"",
 			"li.accordion\\n\\t\\t\\t\\t\\t\\th1.accordion__title.category-tree__item-2\\n\\ta(href = \"#\")",
 			"li.accordion\\t\\t\\t\\t\\t\\th1.accordion__title.category-tree__item-2\\n\\ta(href = \"#\")",
@@ -980,12 +987,7 @@
 			"\"",
 			"'",
 			"//- ",
-			"meta(",
-			" ",
-			"",
-			"nfap-play",
-			"nfap-playlist",
-			""
+			"meta("
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1062,8 +1064,108 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"assets/styles/base/fonts.scss"
+			],
+			[
+				"ico",
+				"assets/styles/base/icons.scss"
+			],
+			[
+				"icon",
+				"assets/styles/modules/icon.scss"
+			],
+			[
+				"form",
+				"assets/styles/modules/form.scss"
+			],
+			[
+				"conta",
+				"assets/styles/modules/container.scss"
+			],
+			[
+				"mix",
+				"assets/styles/base/mixins.scss"
+			],
+			[
+				"for",
+				"assets/styles/modules/form.scss"
+			],
+			[
+				"labe",
+				"assets/styles/modules/label.scss"
+			],
+			[
+				"ran",
+				"assets/styles/modules/range.scss"
+			],
+			[
+				"but",
+				"assets/styles/modules/button.scss"
+			],
+			[
+				"tet",
+				"assets/styles/modules/text-box.scss"
+			],
+			[
+				"ap",
+				"assets/styles/app.scss"
+			],
+			[
+				"hr",
+				"assets/styles/modules/hr.scss"
+			],
+			[
+				"bro",
+				"assets/styles/pages/browse.scss"
+			],
+			[
+				"sear",
+				"assets/styles/pages/search.scss"
+			],
+			[
 				"app",
 				"assets/styles/app.scss"
+			],
+			[
+				"sera",
+				"assets/styles/pages/search.scss"
+			],
+			[
+				"cate",
+				"assets/styles/pages/category.scss"
+			],
+			[
+				"lay",
+				"layouts/layout.jade"
+			],
+			[
+				"h",
+				"layouts/head.jade"
+			],
+			[
+				"head",
+				"layouts/header.jade"
+			],
+			[
+				"layout",
+				"layouts/layout.jade"
+			],
+			[
+				"butt",
+				"assets/styles/modules/button.scss"
+			],
+			[
+				"pagi",
+				"assets/styles/modules/pagination.scss"
+			],
+			[
+				"icons",
+				"assets/styles/base/icons.scss"
+			],
+			[
+				"sele",
+				"assets/styles/modules/select.scss"
 			],
 			[
 				"script",
@@ -1074,28 +1176,12 @@
 				"assets/styles/modules/text.scss"
 			],
 			[
-				"sele",
-				"assets/styles/modules/select.scss"
-			],
-			[
-				"font",
-				"assets/styles/base/fonts.scss"
-			],
-			[
-				"icons",
-				"assets/styles/base/icons.scss"
-			],
-			[
 				"prod",
 				"assets/styles/pages/product.scss"
 			],
 			[
 				"re",
 				"assets/styles/base/reset.scss"
-			],
-			[
-				"ap",
-				"assets/styles/app.scss"
 			],
 			[
 				"col",
@@ -1106,28 +1192,12 @@
 				"assets/styles/modules/preview.scss"
 			],
 			[
-				"butt",
-				"assets/styles/modules/button.scss"
-			],
-			[
 				"coin",
 				"assets/styles/modules/container.scss"
 			],
 			[
-				"lay",
-				"layouts/layout.jade"
-			],
-			[
 				"color",
 				"assets/styles/base/colors.scss"
-			],
-			[
-				"ico",
-				"assets/styles/base/icons.scss"
-			],
-			[
-				"icon",
-				"assets/styles/modules/icon.scss"
 			],
 			[
 				"hea",
@@ -1148,10 +1218,6 @@
 			[
 				"res",
 				"assets/styles/base/reset.scss"
-			],
-			[
-				"but",
-				"assets/styles/modules/button.scss"
 			],
 			[
 				"a",
@@ -1194,10 +1260,6 @@
 				"assets/stylesheets/modules/form/text-box.scss"
 			],
 			[
-				"layout",
-				"views/understand/coc-enactment-procedure/layout.jade"
-			],
-			[
 				"popu",
 				"assets/stylesheets/modules/popup.scss"
 			],
@@ -1228,10 +1290,6 @@
 			[
 				"inde",
 				"views/index.jade"
-			],
-			[
-				"head",
-				"layouts/header.jade"
 			],
 			[
 				"header",
@@ -1386,10 +1444,6 @@
 				"assets/stylesheets/modules/heading.scss"
 			],
 			[
-				"conta",
-				"assets/stylesheets/modules/container.scss"
-			],
-			[
 				"reset",
 				"assets/stylesheets/base/reset.scss"
 			],
@@ -1418,10 +1472,6 @@
 				"assets/stylesheets/modules/form/label.scss"
 			],
 			[
-				"form",
-				"assets/stylesheets/modules/form/form.scss"
-			],
-			[
 				"bann",
 				"assets/stylesheets/modules/banner.scss"
 			],
@@ -1446,10 +1496,6 @@
 				"layouts/pagination.jade"
 			],
 			[
-				"pagi",
-				"layouts/pagination.jade"
-			],
-			[
 				"bad",
 				"assets/stylesheets/modules/badge.scss"
 			],
@@ -1468,10 +1514,6 @@
 			[
 				"understandposter",
 				"views/understand/coc-poster/index.jade"
-			],
-			[
-				"hr",
-				"assets/stylesheets/modules/hr.scss"
 			],
 			[
 				"ethic",
@@ -1532,46 +1574,6 @@
 			[
 				"nav",
 				"assets/stylesheets/modules/navigation.scss"
-			],
-			[
-				"na",
-				"assets/stylesheets/modules/navigation.scss"
-			],
-			[
-				"navi",
-				"layouts/navigation.jade"
-			],
-			[
-				"footer",
-				"layouts/footer.jade"
-			],
-			[
-				"contain",
-				"assets/stylesheets/modules/container.scss"
-			],
-			[
-				"conia",
-				"assets/stylesheets/modules/container.scss"
-			],
-			[
-				"headscs",
-				"assets/stylesheets/modules/header.scss"
-			],
-			[
-				"heade",
-				"assets/stylesheets/modules/header.scss"
-			],
-			[
-				"o",
-				"overview/ceo-greeting.jade"
-			],
-			[
-				"header.scs",
-				"assets/stylesheets/modules/header.scss"
-			],
-			[
-				"mix",
-				"assets/stylesheets/base/mixins.scss"
 			]
 		],
 		"width": 0.0

@@ -1,0 +1,84 @@
+
+<html>
+  <head>
+    <title>EBachHoa - Contact</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../assets/styles/app.css"/>
+    <script src="../../vendors/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="page-container">
+      <header class="main-header">
+        <div class="user-bar">
+          <div class="user-bar__content">
+            <div class="user-bar__left"><a href="#" class="user-bar__hello">Chào bạn, Tuấn Minh!</a><a href="#" class="button button--rect">bán</a><a href="#" class="user-bar__link">Liên hệ &amp; Giúp đỡ</a></div>
+            <div class="user-bar__right"><a href="#" class="user-bar__link">Quản lý &amp; Mua bán</a><a href="#" class="user-bar__icon">
+                <div class="icon"><i class="icon__icon material-icons">chat</i><span class="icon__badge">4</span></div></a><a href="#" class="user-bar__icon">
+                <div class="icon"><i class="icon__icon material-icons">shopping_cart</i><span class="icon__badge">2</span></div></a></div>
+          </div>
+        </div>
+        <div class="top-search">
+          <div class="top-search__content">
+            <div class="top-search__logo"></div>
+            <div class="top-search__search-box">
+              <form class="top-search-box">
+                <div class="top-search-box__icon icon"><i class="icon__icon material-icons">search</i></div>
+                <input type="text" class="top-search-box__input text-box text-box--transparent text-box--no-padding"/>
+                <select class="top-search-box__select select select--transparent">
+                  <option>Tất cả danh mục</option>
+                </select>
+                <div class="top-search-box__button top-search-box__submit-button"><a href="#" class="button button--full-width">tìm kiếm</a></div>
+                <div class="top-search-box__button top-search-box__more-button"><a href="#" class="button button--gray button--rect button--full-width">nâng cao</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="breadcrumb">
+        <div class="breadcrumb__content">
+          <ul class="breadcrumb__items">
+                  <li class="breadcrumb__item"><a href="#">trang chủ</a></li>
+                  <li class="breadcrumb__item"><a href="#">liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="main-content">
+        <div class="contact-page">
+          <h1 class="page-title">Liên hệ</h1>
+          <flex class="flex flex--equal">
+            <div class="contact-map contact-page__map">
+              <div class="contact-map__map">
+                <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBqoUBLx4tj8W6QWg-mQIDwdgRXCRMDlHA&amp;q=Space+Needle,Seattle+WA" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+              <div class="contact-map__info">
+                <h1 class="label contact-map__info-title">ebachhoa</h1>
+                <ul>
+                  <li class="contact-info contact-map__info-item"><i class="material-icons contact-info__icon">location_on</i>Địa chỉ</li>
+                  <li class="contact-info contact-map__info-item"><i class="material-icons contact-info__icon">email</i>hello@basis.com</li>
+                  <li class="contact-info contact-map__info-item"><i class="material-icons contact-info__icon">phone</i>+1 650-253-0000</li>
+                </ul>
+              </div>
+            </div>
+            <div class="contact-form contact-page__form">
+              <form class="form form--contact">
+                <input type="text" placeholder="Họ và tên" class="text-box text-box--full-width"/>
+                <input type="text" placeholder="Email" class="text-box text-box--full-width"/>
+                <input type="text" placeholder="Điện thoại" class="text-box text-box--full-width"/>
+                <select class="select select--full-width">
+                  <option>tiêu đề</option>
+                </select>
+                <textarea type="text" placeholder="Nội dung tin nhắn" row="3" class="text-box text-box--multi-lines text-box--full-width"></textarea>
+                <input type="submit" value="gửi" class="button button--full-width"/>
+              </form>
+            </div>
+          </flex>
+        </div>
+      </div>
+      <footer class="footer footer--100"></footer>
+      <script src="../../assets/scripts/app.js"></script>
+    </div>
+  </body>
+</html>

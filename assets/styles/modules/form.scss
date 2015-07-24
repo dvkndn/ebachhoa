@@ -17,4 +17,14 @@
 			margin-bottom: 10px;
 		}
 	}
+	&--contact {
+		.text-box, .select {
+			margin-bottom: 15px;
+		}
+		.button {
+			width: 30%;
+			margin-right: 0;
+			margin-left: auto;
+		}
+	}
 }
