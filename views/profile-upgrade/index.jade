@@ -1,0 +1,32 @@
+extend ../../layouts/layout.jade
+
+block title
+	| Profile Upgrade
+
+block breadcrumb
+	+breadcrumb-item("cá nhân", "#")
+	+breadcrumb-item("Nâng cấp tài khoản", "#")
+
+block content
+	.upgrade-page.step-page
+		.steps.step-page__steps
+			ul.steps__list
+				li.steps__item.selected
+					a(href = "#") bước 1
+				li.steps__item
+					a(href = "#") bước 2
+		h1.page-title.page-title--small.
+			Chúc mừng bạn đã chọn làm giàu từ Ebachhoa<br>
+			 - Sàn giao dịch ảo với những giá trị thực.
+		.upgrade-page__price-cols
+			- for (var i = 0; i < 3; i++)
+				.upgrade-page__price-col
+					.price-col
+						.price-col__body
+							div.price-col__img
+							h1.price-col__title Người bán Cơ bản
+							ul.price-col__description
+								li Đăng bán với công cụ hỗ trợ
+								li Hạn mức 30 sản phẩm/tháng
+						.price-col__footer
+							a(href = "#").button.button--full-width đăng ký

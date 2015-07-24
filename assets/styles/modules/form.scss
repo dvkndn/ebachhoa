@@ -1,4 +1,22 @@
 .form {
+	&--vertical {
+		.label {
+			margin-bottom: 10px;
+		}
+
+		.text-box, .select {
+			margin-bottom: 20px;
+		}
+
+		.fieldset {
+			margin-bottom: 30px;
+		}
+
+		.form-group {
+			margin-bottom: 40px;
+		}
+	}
+	
 	&--narrow {
 		.fieldset {
 			margin-bottom: 20px;
@@ -26,5 +44,8 @@
 			margin-right: 0;
 			margin-left: auto;
 		}
+	}
+	&--upgrade {
+
 	}
 }

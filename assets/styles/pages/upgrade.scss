@@ -1,0 +1,14 @@
+.upgrade-page {
+	&__price-cols {
+		display: flex;
+		margin: 0 -10px;
+	}
+	&__price-col {
+		padding: 0 10px;
+		flex-basis: 33%;
+	}
+	&__form {
+		width: 420px;
+		margin: auto;
+	}
+}

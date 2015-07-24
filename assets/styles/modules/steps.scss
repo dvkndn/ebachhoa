@@ -1,0 +1,27 @@
+.steps {
+	text-align: center;
+
+	&__list {
+		display: inline-block;
+		border-radius: 40px;
+		box-shadow: $border-gray 0 0 0 1px inset;
+
+		font-size: 0;
+	}
+
+	&__item {
+		display: inline-block;
+		width: 250px;
+		border-radius: 40px;
+
+		font-size: 10px;
+		font-weight: 900;
+		text-transform: uppercase;
+		line-height: 40px;
+
+		&.selected {
+			background-color: $dark-text;
+			color: white;
+		}
+	}
+}

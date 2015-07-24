@@ -1,0 +1,42 @@
+extend ../../layouts/layout.jade
+
+block title
+	| Profile Upgrade 2
+
+block breadcrumb
+	+breadcrumb-item("cá nhân", "#")
+	+breadcrumb-item("Nâng cấp tài khoản", "#")
+
+block content
+	.upgrade-page.step-page
+		.steps.step-page__steps
+			ul.steps__list
+				li.steps__item
+					a(href = "#") bước 1
+				li.steps__item.selected
+					a(href = "#") bước 2
+		h1.page-title.page-title--small.
+			Kiếm tiền từ Ebachhoa không thể đơn giản hơn
+		.upgrade-page__form
+			form.form.form--vertical
+				label.label Số CMND
+				input(type = "text").text-box.text-box--full-width
+				label.label Số điện thoại
+				input(type = "text").text-box.text-box--full-width
+				label.label Địa chỉ
+				input(type = "text").text-box.text-box--full-width
+				.flex.flex--equal.cols
+					div.cols__item
+						label.label Quận huyện
+						select.select.select--full-width.last
+							option Phú Nhuận
+					div.cols__item
+						label.label Tỉnh thành
+						select.select.select--full-width.last
+							option Tp. Hồ Chí Minh
+				hr.hr.hr--big
+				.flex.flex--equal.cols
+					div.cols__item
+						button.button.button--gray.button--full-width huỷ
+					div.cols__item
+						button.button.button--full-width hoàn tất

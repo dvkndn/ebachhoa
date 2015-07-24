@@ -1,44 +1,7 @@
 $online: true;
-
-@import "base/colors";
-@import "base/mixins";
-@import "base/fonts";
-@import "base/reset";
-@import "base/icons";
-
-@import "modules/button";
-@import "modules/container";
-@import "modules/hr";
-@import "modules/icon";
-@import "modules/select";
-@import "modules/tab";
-@import "modules/text";
-@import "modules/text-box";
-@import "modules/label";
-@import "modules/range";
-@import "modules/radio";
-@import "modules/flex";
-
-@import "modules/form";
-@import "modules/accordion";
-@import "modules/breadcrumb";
-@import "modules/preview";
-@import "modules/top-search";
-@import "modules/user-bar";
-@import "modules/pagination";
-@import "modules/product";
-@import "modules/footer";
-@import "modules/fluid-header";
-
-@import "modules/setting";
-
-@import "pages/product";
-@import "pages/browse";
-@import "pages/category";
-@import "pages/search";
-@import "pages/contact";
-@import "pages/faq";
-@import "pages/profile";
+@import "base/all";
+@import "modules/all";
+@import "pages/all";
 
 body {
 	font-family: 'Lato', sans-serif;
