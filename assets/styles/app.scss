@@ -1,4 +1,4 @@
-$online: false;
+$online: true;
 
 @import "base/colors";
 @import "base/mixins";
@@ -28,6 +28,9 @@ $online: false;
 @import "modules/pagination";
 @import "modules/product";
 @import "modules/footer";
+@import "modules/fluid-header";
+
+@import "modules/setting";
 
 @import "pages/product";
 @import "pages/browse";
@@ -35,6 +38,7 @@ $online: false;
 @import "pages/search";
 @import "pages/contact";
 @import "pages/faq";
+@import "pages/profile";
 
 body {
 	font-family: 'Lato', sans-serif;

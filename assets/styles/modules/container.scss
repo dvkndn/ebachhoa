@@ -3,3 +3,9 @@
 	max-width: 1000px;
 	margin: auto;
 }
+
+.fluid {
+	width: 100vw;
+	position: relative;
+	left: calc(-50vw + 50%);
+}

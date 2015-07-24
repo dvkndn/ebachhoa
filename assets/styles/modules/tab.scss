@@ -11,7 +11,7 @@
 		order: 1;
 
 		display: block;
-		width: 220px; height: 40px;
+		width: 30%; height: 40px;
 		
 		font-size: 12px;
 		font-weight: 700;
@@ -42,5 +42,9 @@
 	// show the selected
 	&__title.selected + &__content {
 		display: block;
+	}
+
+	&--full-width {
+		width: 100%;
 	}
 }

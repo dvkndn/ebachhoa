@@ -4,8 +4,9 @@ html
 			| EBachHoa - 
 			block title
 		include head.jade
-	body
+	body(class = bodyClass)
 		#page-container
+			block setting
 			include ./header.jade
 			include ./breadcrumb.jade
 			#main-content

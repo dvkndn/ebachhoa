@@ -1,0 +1,39 @@
+.fluid-header {
+	@extend .fluid;
+	padding-top: 30px;
+
+	&__content {
+		@extend .container;
+
+		display: flex;
+		align-items: flex-end;
+	}
+
+	&__tabs {
+		flex: 1;
+		display: flex;
+		height: 40px;
+	}
+
+	&__tab {
+		flex: 1;
+
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 40px;
+		text-align: center;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+
+		&.selected {
+			background-color: $dark-text;
+			color: white;
+			border-radius: 10px 10px 0 0;
+		}
+	}
+
+	&__profile {
+		margin-right: 30px;
+		margin-bottom: 30px;
+	}
+}
