@@ -1,0 +1,32 @@
+.browse-page {
+	display: flex;
+
+	&__aside {
+		flex-shrink: 0;
+		width: 250px;
+
+		margin-right: 30px;
+	}
+}
+
+.browse-main {
+	&__aside {
+		margin-bottom: 30px;
+	}
+	&__body {
+		margin-bottom: 10px;
+	}
+}
+
+.browse-aside {
+	&__sort {
+		margin-bottom: 30px;
+	}
+}
+
+.browse-sort {
+	&__title {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}

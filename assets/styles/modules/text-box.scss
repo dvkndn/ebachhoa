@@ -27,4 +27,16 @@
 		display: block;
 		width: 100%;
 	}
+
+	&--line {
+		background-color: transparent;
+		box-shadow: $border-gray 0 0 0 1px inset;
+		color: $dark-text;
+	}
+	&--small {
+		height: 30px;
+		line-height: 30px;
+		font-weight: 400;
+		padding: 0 10px;
+	}
 }

@@ -1,0 +1,48 @@
+.radio {
+	&__button {
+		display: none;
+	}
+	&__label {
+		padding-left: 30px;
+		display: inline-block;
+
+		font-size: 12px;
+		color: $secondary-text;
+		font-weight: 700;
+		line-height: 20px;
+
+		position: relative;
+		cursor: pointer;
+
+		&:before {
+			@include pseudo-base;
+			width: 18px; height: 18px;
+			border: solid 1px $border-gray;
+			border-radius: 18px;
+
+			top: 1px; left: 0;
+		}
+
+		&:after {
+			@include pseudo-base;
+			width: 6px; height: 6px;
+			background-color: transparent;
+			border-radius: 6px;
+
+			top: 7px; left: 6px;
+		}
+	}
+
+	&__button:checked + &__label {
+		color: $dark-text;
+
+		&:before {
+			background-color: $dark-text;
+			border: none;
+		}
+
+		&:after {
+			background-color: #CBCBCB;
+		}
+	}
+}

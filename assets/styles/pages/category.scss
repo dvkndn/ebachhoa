@@ -1,14 +1,5 @@
-.category-page {
-	display: flex;
-
-	&__aside {
-		flex-shrink: 0;
-		margin-right: 30px;
-	}
-}
-
 .category-tree {
-	width: 250px;
+	width: 100%;
 
 	background-color: $button-gray;
 	border: solid 1px $border-gray;
@@ -77,31 +68,4 @@
 	}
 
 	margin-bottom: -10px;
-}
-
-.category-aside {
-	&__search {
-		margin-bottom: 30px;
-	}
-}
-
-.category-main {
-	&__aside {
-		margin-bottom: 30px;
-	}
-	&__body {
-		margin-bottom: 10px;
-	}
-}
-
-.category-search {
-	&__title {
-		color: $secondary-text;
-		font-size: 10px;
-		font-weight: 700;
-		line-height: 20px;
-		text-transform: uppercase;
-
-		margin-bottom: 10px;
-	}
 }

@@ -12,7 +12,12 @@
 @import "modules/tab";
 @import "modules/text";
 @import "modules/text-box";
+@import "modules/label";
+@import "modules/range";
+@import "modules/radio";
+@import "modules/flex";
 
+@import "modules/form";
 @import "modules/accordion";
 @import "modules/breadcrumb";
 @import "modules/preview";
@@ -23,7 +28,9 @@
 @import "modules/footer";
 
 @import "pages/product";
+@import "pages/browse";
 @import "pages/category";
+@import "pages/search";
 
 body {
 	font-family: 'Lato', sans-serif;
@@ -38,4 +45,8 @@ body {
 
 .selected {
 	pointer-events: none;
+}
+
+.last {
+	margin-bottom: 0 !important;
 }

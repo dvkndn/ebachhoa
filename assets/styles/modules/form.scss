@@ -1,0 +1,20 @@
+.form {
+	&--narrow {
+		.fieldset {
+			margin-bottom: 20px;
+		}
+		.form-group {
+			padding-bottom: 30px;
+			margin-bottom: 30px;
+			border-bottom: $border-gray solid 1px;
+
+			&.last {
+				padding-bottom: 0;
+				border-bottom: none;
+			}
+		}
+		.label, .select, .range {
+			margin-bottom: 10px;
+		}
+	}
+}

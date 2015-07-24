@@ -1,0 +1,87 @@
+extend ../layouts/layout.jade
+
+block title
+	| Search
+
+block breadcrumb
+	+breadcrumb-item("KẾT QUẢ TÌM KIẾM \"Máy chụp hình Vintage\"", "#")
+
+block content
+	.browse-page.category-page
+		aside.browse-page__aside.browse-aside
+			.search-tree
+				form.form.form--narrow
+					.form-group
+						label.label Sắp xếp theo:
+						select.select.select--full-width.last
+							option Giá (từ cao đến thấp)
+					.form-group
+						fieldset.fieldset.last
+							label.label chọn danh mục
+							select.select.select--full-width
+								option mỹ phẩm
+							select.select.select--full-width
+								option trang điểm &amp; làm đẹp
+							select.select.select--full-width
+								option vùng mắt
+							select.select.select--full-width.last
+								option mascara
+					.form-group
+						fieldset.fieldset
+							label.label thể loại đăng
+							select.select.select--full-width.last
+								option đấu giá
+						fieldset.fieldset
+							label.label tình trạng
+							select.select.select--full-width.last
+								option như mới
+						fieldset.fieldset.last
+							label.label mức giá
+							.range.last
+								div.range__bar
+									div.range__value(style = "width: 25%; margin-left: 80px")
+								.range__inputs
+									.range__lower
+										input(type = "text", value = "1.000.000 đ").text-box.text-box--line.text-box--small.text-box--full-width
+									.range__upper
+										input(type = "text", value = "3.000.000 đ").text-box.text-box--line.text-box--small.text-box--full-width
+					.form-group.last
+						fieldset.fieldset
+							label.label địa điểm đăng
+							select.select.select--full-width.last
+								option TP. Hồ Chí Minh
+						fieldset.fieldset.radio
+							label.label đổi trả hàng
+							div.flex.flex--equal
+								div
+									input.radio__button#radio-return-no(type = "radio", name = "return", value = "no", checked)
+									label.radio__label(for = "radio-return-no") Không
+								div
+									input.radio__button#radio-return-yes(type = "radio", name = "return", value = "yes")
+									label.radio__label(for = "radio-return-yes") Có
+						fieldset.fieldset.radio.last
+							label.label phí vận chuyển
+							div.flex.flex--equal
+								div
+									input.radio__button#radio-fee-no(type = "radio", name = "fee", value = "no")
+									label.radio__label(for = "radio-fee-no") Không
+								div
+									input.radio__button#radio-fee-yes(type = "radio", name = "fee", value = "yes", checked)
+									label.radio__label(for = "radio-fee-yes") Có
+		.browse-page__main.browse-main
+			main.browse-main__body
+				.product-list.product-list--4-cols
+					- for (var i = 0; i < 20; i++)
+						- var imgId = Math.floor(Math.random() * 10) + 1
+						.product.product-list__item
+							a.product__link-wrapper(href = "#")
+								img(src = "../assets/images/product/#{imgId}-small.jpg",
+									width = "165", height = "165").product__thumb
+								h1.product__title Lorem ipsum
+								h2.product__normal-price Niêm yết: 2.300.000 ₫
+								h3.product__highlight-price Giá đấu: 2.400.000 ₫
+			.browse-main__pagination
+				include ../layouts/pagination.jade
+
+block footer
+	footer.footer.footer--100
