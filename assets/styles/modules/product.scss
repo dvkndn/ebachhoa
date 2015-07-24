@@ -1,0 +1,38 @@
+.product {
+	display: inline-block;
+	font-size: 12px;
+
+	&__thumb {
+		display: block;
+
+		margin-bottom: 10px;
+	}
+	&__title {
+		text-transform: uppercase;
+		font-weight: 900;
+		letter-spacing: 0.5px;
+
+		margin-bottom: 8px;
+	}
+	&__normal-price {
+		margin-bottom: 8px;
+	}
+	&__highlight-price {
+		font-weight: 900;
+		color: $orange;
+	}
+}
+
+.product-list {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__item {
+		margin-bottom: 20px;
+		margin-right: 20px
+	}
+
+	&--4-cols &__item:nth-child(4n) {
+		margin-right: 0;
+	}
+}

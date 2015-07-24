@@ -15,12 +15,15 @@
 
 @import "modules/accordion";
 @import "modules/breadcrumb";
-@import "modules/category-tree";
 @import "modules/preview";
 @import "modules/top-search";
 @import "modules/user-bar";
+@import "modules/pagination";
+@import "modules/product";
+@import "modules/footer";
 
 @import "pages/product";
+@import "pages/category";
 
 body {
 	font-family: 'Lato', sans-serif;
@@ -31,4 +34,8 @@ body {
 	width: 100%;
 	max-width: 1000px;
 	margin: auto;
+}
+
+.selected {
+	pointer-events: none;
 }

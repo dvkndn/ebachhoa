@@ -8,36 +8,73 @@ block breadcrumb
 	+breadcrumb-item("category", "#")
 
 block content
-	aside.category-tree
-		ul
-			li.accordion.accordion--selected
-				h1.accordion__title.category-tree__item-1
-					a(href = "#") mỹ phẩm
-				ul.accordion__content.category-tree__list-1
+	.category-page
+		aside.category-page__aside.category-aside
+			.category-search.category-aside__search
+				h1.category-search__title Sắp xếp theo:
+				select.select.select--full-width
+					option Giá (từ cao đến thấp)
+			.category-tree
+				ul
 					li.accordion.accordion--selected
-						h1.accordion__title.category-tree__item-2
-							a(href = "#") trang điểm - làm đẹp
-						ul.accordion__content.category-tree__list-2
-							each title in ["Toàn thân", "Vùng mắt", "Vùng mặt", "Vùng môi", "Móng tay - chân", "Bộ trang điểm All-in-one", "Dụng cụ làm đẹp"]
-								li.category-tree__item-3: a(href = "#")= title
+						h1.accordion__title.category-tree__item-1
+							a(href = "#") mỹ phẩm
+						ul.accordion__content.category-tree__list-1
+							li.accordion.accordion--selected
+								h1.accordion__title.category-tree__item-2
+									a(href = "#") trang điểm - làm đẹp
+								ul.accordion__content.category-tree__list-2
+									li.category-tree__item-3: a(href = "#").text-orange Tất cả
+									each title in ["Toàn thân", "Vùng mắt", "Vùng mặt", "Vùng môi", "Móng tay - chân", "Bộ trang điểm All-in-one", "Dụng cụ làm đẹp"]
+										li.category-tree__item-3: a(href = "#")= title
+							li.accordion
+								h1.accordion__title.category-tree__item-2
+									a(href = "#") chăm sóc da
+								ul.accordion__content.category-tree__list-2
+									li.category-tree__item-3: a(href = "#") Toàn thân
+							li.accordion
+								h1.accordion__title.category-tree__item-2
+									a(href = "#") chăm sóc móng
+								ul.accordion__content.category-tree__list-2
+									li.category-tree__item-3: a(href = "#") Toàn thân
+							li.accordion
+								h1.accordion__title.category-tree__item-2
+									a(href = "#") phòng tắm - spa
+								ul.accordion__content.category-tree__list-2
+									li.category-tree__item-3: a(href = "#") Toàn thân
 					li.accordion
-						h1.accordion__title.category-tree__item-2
-							a(href = "#") chăm sóc da
-						ul.accordion__content.category-tree__list-2
-							li.category-tree__item-3: a(href = "#") Toàn thân
-					li.accordion
-						h1.accordion__title.category-tree__item-2
-							a(href = "#") chăm sóc móng
-						ul.accordion__content.category-tree__list-2
-							li.category-tree__item-3: a(href = "#") Toàn thân
-					li.accordion
-						h1.accordion__title.category-tree__item-2
-							a(href = "#") phòng tắm - spa
-						ul.accordion__content.category-tree__list-2
-							li.category-tree__item-3: a(href = "#") Toàn thân
-			li.accordion
-				h1.accordion__title.category-tree__item-1
-					a(href = "#") nước hoa
-				ul.accordion__content.category-tree__list-1
-					li.category-tree__item-2 abc
-	
+						h1.accordion__title.category-tree__item-1
+							a(href = "#") nước hoa
+						ul.accordion__content.category-tree__list-1
+							li.category-tree__item-2 abc
+		.category-page__main.category-main
+			aside.category-main__aside
+				ul.category-list
+					each title in ["tất cả", "toàn thân", "mắt", "mặt", "môi", "móng tay - móng chân", "bộ trang điểm all-in-one", "dụng cụ làm đẹp"]
+						li.category-list__item(class = (title === "tất cả" ? "selected" : ""))
+							a(href = "#", class = selectedClass).button.button--line.button--small= title
+			main.category-main__body
+				.product-list.product-list--4-cols
+					- for (var i = 0; i < 12; i++)
+						- var imgId = Math.floor(Math.random() * 10) + 1
+						.product.product-list__item
+							a.product__link-wrapper(href = "#")
+								img(src = "/assets/images/product/#{imgId}-small.jpg",
+									width = "165", height = "165").product__thumb
+								h1.product__title Lorem ipsum
+								h2.product__normal-price Niêm yết: 2.300.000 ₫
+								h3.product__highlight-price Giá đấu: 2.400.000 ₫
+			.pagination.category-main__pagination
+				a(href = "#").button.button--pagination.pagination__item
+					i.material-icons chevron_left
+				ul.pagination__list
+					- for (var i = 1; i < 4; i++)
+						li: a(href = "#" class = (i === 1 ? "selected" : "")).button.button--pagination.pagination__item= i
+				a(href = "#").button.button--pagination.pagination__item
+					i.material-icons more_horiz
+				a(href = "#").button.button--pagination.pagination__item 12
+				a(href = "#").button.button--pagination.pagination__item
+					i.material-icons chevron_right
+
+block footer
+	footer.footer.footer--100

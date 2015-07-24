@@ -1,0 +1,9 @@
+.footer {
+	width: 100%;
+
+	@each $size in 100, 200 {
+		&--#{$size} {
+			height: #{$size}px;
+		}
+	}
+}

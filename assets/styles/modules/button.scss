@@ -36,4 +36,15 @@
 		font-size: 14px;
 		letter-spacing: 2px;
 	}
+	&--small {
+		height: 30px;
+		line-height: 30px;
+	}
+	&--pagination {
+		@extend .button--small;
+		@extend .button--line;
+
+		border-radius: 3px;
+		width: 30px; padding: 0;
+	}
 }
