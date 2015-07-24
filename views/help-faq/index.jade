@@ -1,0 +1,16 @@
+extend ../../layouts/layout.jade
+
+block title
+	| FAQ
+
+block breadcrumb
+	+breadcrumb-item("hỏi đáp", "#")
+
+block content
+	.faq-page
+		h1.page-title Những câu hỏi thường gặp
+		ul.faq-list
+			- for (var i = 1; i < 10; i++)
+				li.faq-item.faq-list__item
+					h1.faq-item__question #{i}. do you think there is an afterlife for animals other than human beings?
+					p.faq-item__answer Basically, the kit consists of more than a hundred ready-to-use elements that you can combine to get the exact prototype you want. We tried to make it as versatile as possible, at the same time getting rid of all the redundant features to help you save time and focus on your project
