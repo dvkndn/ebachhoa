@@ -1,0 +1,23 @@
+.checkout-page {
+	&__shipping-form {
+		width: 800px;
+		margin: auto;
+	}
+	&__payment-form {
+		width: 500px;
+		margin: auto;
+	}
+}
+.checkout-thankyou {
+	text-align: center;
+	&__title {
+		margin-bottom: 30px;
+	}
+	&__text {
+		margin-bottom: 30px;
+		line-height: 24px;
+	}
+	&__button {
+		width: 300px;
+	}
+}

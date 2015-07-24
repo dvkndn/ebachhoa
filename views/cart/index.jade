@@ -1,0 +1,70 @@
+extend ../../layouts/layout.jade
+
+block setting
+	.hide-breadcrumb
+
+block title
+	| Cart
+
+block content
+	.cart-page.step-page.step-page--wo-breadcrumb
+		.steps.step-page__steps
+			ul.steps__list
+				li.steps__item.selected
+					a(href = "#") giỏ hàng
+				li.steps__item
+					a(href = "#") vận chuyển
+				li.steps__item
+					a(href = "#") thanh toán
+				li.steps__item
+					a(href = "#") hoàn tất
+		.cart-page__list
+			table.table
+				colgroup
+					col(style = "width: 500px")
+					col(style = "width: 160px")
+					col(style = "width: 160px")
+					col(style = "width: 160px")
+					col(style = "width: 20px")
+				thead
+					tr
+						th tên hàng
+						th số lượng
+						th đơn giá
+						th giá
+						th &nbsp;
+				tbody
+					- for (var i = 0; i < 4; i++)
+						tr(class = (i === 3 ? "last" : ""))
+							td
+								.table-product
+									.table-product__img
+									h1.table-product__title tên sản phẩm
+							td
+								input(type = "text", value = "2").text-box.text-box--line.text-box--cart-amount
+							td 1.000.000 đ
+							td 2.000.000 đ
+							td: a(href = "#"): i.material-icons clear
+		.cart-footer
+			.cart-footer__content
+				.cart-summary.cart-page__summary
+					.flex.flex--equal.cols
+						.cols__item
+							label.label.cart-summary__label mã giảm giá
+							input(type = "text", placeholder = "Mã có dạng ABC-XXXXXX").text-box.text-box--full-width
+						.cols__item
+							| &nbsp;
+						.cols__item
+							label.label.cart-summary__label tổng cộng
+							h1.cart-summary__total-price 5.000.000 đ
+				.cart-action.cart-page__action
+					.flex.flex--equal.cols
+						.cols__item
+							a(href = "#").button.button--full-width.button--gray tiếp tục mua hàng
+						.cols__item
+							a(href = "#").button.button--full-width.button--gray cập nhật giỏ hàng
+						.cols__item
+							a(href = "#").button.button--full-width thanh toán
+
+block footer
+	//- clear footer

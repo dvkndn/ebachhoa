@@ -1,0 +1,53 @@
+extend ../../layouts/layout.jade
+
+block setting
+	.hide-breadcrumb
+
+block title
+	| Checkout 2
+
+block content
+	.checkout-page.step-page.step-page--wo-breadcrumb
+		.steps.step-page__steps
+			ul.steps__list
+				li.steps__item
+					a(href = "#") giỏ hàng
+				li.steps__item
+					a(href = "#") vận chuyển
+				li.steps__item.selected
+					a(href = "#") thanh toán
+				li.steps__item
+					a(href = "#") hoàn tất
+		h1.page-title Thanh toán
+		.payment-form.checkout-page__payment-form
+			form.form.form--vertical
+				fieldset.fieldset.last
+					div.flex.flex--equal.cols.radio.last
+						div.cols__item
+							input.radio__button#radio-fee-no(type = "radio", name = "fee", value = "no")
+							label.radio__label(for = "radio-fee-no") Thanh toán qua Ngân lượng
+						div.cols__item
+							input.radio__button#radio-fee-yes(type = "radio", name = "fee", value = "yes", checked)
+							label.radio__label(for = "radio-fee-yes") Thanh toán qua thẻ quốc tế
+				hr.hr.hr--big
+				fieldset#card-fieldset.fieldset.last
+					label.label Họ và tên chủ thẻ
+					input(type = "text").text-box.text-box--full-width
+					label.label Số thẻ
+					input(type = "text", placeholder = "XXXX - XXXX - XXXX - XXXX - XXXX").text-box.text-box--full-width
+					div.flex.flex--equal.cols
+						div.cols__item
+							label.label Hết hạn
+							select.select.select--full-width.last
+								option - Tháng -
+						div.cols__item
+							label.label &nbsp;
+							select.select.select--full-width.last
+								option - Năm -
+						div.cols__item
+							label.label
+								| CCV 
+								a(href = "#").text-orange (?)
+							input(type = "text", placeholder = "XXX").text-box.text-box--full-width.last
+				hr.hr.hr--bigger
+				a(href = "#").button.button--full-width thanh toán 5.500.000đ

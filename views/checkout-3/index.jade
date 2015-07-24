@@ -1,0 +1,26 @@
+extend ../../layouts/layout.jade
+
+block setting
+	.hide-breadcrumb
+
+block title
+	| Checkout 3
+
+block content
+	.checkout-page.step-page.step-page--wo-breadcrumb
+		.steps.step-page__steps
+			ul.steps__list
+				li.steps__item
+					a(href = "#") giỏ hàng
+				li.steps__item
+					a(href = "#") vận chuyển
+				li.steps__item
+					a(href = "#") thanh toán
+				li.steps__item.selected
+					a(href = "#") hoàn tất
+		.checkout-thankyou
+			h1.page-title.checkout-thankyou__title Cám ơn bạn đã mua hàng!
+			p.checkout-thankyou__text.
+				Hoá đơn sẽ được gửi đến email của bạn.<br>
+				Bạn cũng có thể xem lại chi tiết đơn hàng từ trang cá nhân.
+			a(href = "#").checkout-thankyou__button.button tiếp tục mua sắm

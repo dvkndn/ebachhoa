@@ -1,0 +1,57 @@
+extend ../../layouts/layout.jade
+
+block setting
+	.hide-breadcrumb
+
+block title
+	| Checkout 1
+
+block content
+	.checkout-page.step-page.step-page--wo-breadcrumb
+		.steps.step-page__steps
+			ul.steps__list
+				li.steps__item
+					a(href = "#") giỏ hàng
+				li.steps__item.selected
+					a(href = "#") vận chuyển
+				li.steps__item
+					a(href = "#") thanh toán
+				li.steps__item
+					a(href = "#") hoàn tất
+		h1.page-title Thông tin vận chuyển
+		.shipping-form.checkout-page__shipping-form
+			form.form.form--vertical
+				.flex.flex--equal.cols
+					div.cols__item
+						label.label Họ
+						input(type = "text").text-box.text-box--full-width
+					div.cols__item
+						label.label Tên
+						input(type = "text").text-box.text-box--full-width
+				.flex.flex--equal.cols
+					div.cols__item
+						label.label Điện thoại
+						input(type = "text").text-box.text-box--full-width.last
+					div.cols__item
+						label.label Email
+						input(type = "text").text-box.text-box--full-width.last
+				hr.hr.hr--big
+				label.label Địa chỉ
+				input(type = "text").text-box.text-box--full-width
+				.flex.flex--equal.cols
+					div.cols__item
+						label.label Quận huyện
+						select.select.select--full-width.last
+							option Phú Nhuận
+					div.cols__item
+						label.label Tỉnh thành
+						select.select.select--full-width.last
+							option Tp. Hồ Chí Minh
+				hr.hr.hr--bigger
+				.flex.flex--equal.cols
+					div.cols__item
+						a(href = "#").button.button--gray.button--full-width quay lại giỏ hàng
+					div.cols__item
+						| &nbsp;
+					div.cols__item
+						a(href = "#").button.button--full-width tiếp tục

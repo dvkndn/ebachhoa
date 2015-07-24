@@ -1,0 +1,30 @@
+.cart-summary {
+	&__label {
+		margin-bottom: 10px;
+	}
+	&__total-price {
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 40px;
+		margin-top: -1px;
+	}
+}
+.cart-page {
+	&__list {
+		margin-bottom: 40px;
+	}
+	&__summary {
+		margin-bottom: 30px;
+	}
+}
+.cart-footer {
+	@extend .fluid;
+	background-color: #fafafa;
+	border-top: 1px solid $border-gray;
+
+	padding: 30px 0 80px;
+
+	&__content {
+		@extend .container;
+	}
+}
