@@ -1,0 +1,131 @@
+.sell-category-select {
+	display: flex;
+	align-items: flex-start;
+
+	&__list {
+		margin-right: 20px;
+		flex: 1 0 0;
+	}
+
+	&__done-icon {
+		font-size: 48px;
+		color: #8BC34A;
+		display: block;
+		width: 48px;
+		margin: 30px auto 0;
+	}
+}
+
+.sell-category-list {
+	background-color: white;
+	box-shadow: $border-gray 0 0 0 1px inset;
+
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	line-height: 16px;
+	text-transform: uppercase;
+
+	&__item {
+		height: 50px;
+
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+		cursor: pointer;
+		padding: 0 20px;
+
+		border-bottom: solid 1px $border-gray;
+
+		&:hover {
+			color: $orange;
+		}
+		
+		&.selected {
+			background-color: $orange;
+			background-image: url(img/breadcrumb-arrow-white.png);
+			background-position: right 20px center;
+			background-repeat: no-repeat;
+			background-size: 4px 6px;
+			color: white;
+		}
+	}
+}
+
+.sell-category-selected {
+	font-size: 10px;
+	font-weight: 700;
+	color: $dark-text;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+	display: flex;
+	justify-content: center;
+
+	&__title {
+		color: $orange;
+		margin-right: 20px;
+	}
+
+	&__items {
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 30px;
+
+			position: relative;
+			&:after {
+				@include pseudo-base;
+				
+				width: 4px; height: 6px;
+				background-image: url(img/breadcrumb-arrow.png);
+				background-size: cover;
+
+				top: 0; bottom: 0; right: -17px;
+				margin: auto;
+			}
+		}
+	}
+}
+
+.sell-page {
+	&__category-selected {
+		margin: 40px 0;
+	}
+}
+
+.sell-product-detail {
+	&__description {
+		display: inline-block;
+		color: $secondary-text;
+		font-size: 12px;
+		line-height: 16px;
+
+		// width: 350px;
+	}
+	&__sell-type {
+		display: flex;
+		align-items: flex-start;
+		width: 100%;
+
+		> *:nth-child(1) {
+			flex-shrink: 0;
+			margin-right: 20px;
+		}
+
+		> *:nth-child(2) {
+		}
+	}
+}
+
+.sell-preview {
+	margin-left: -50px;
+	width: 1100px;
+	border: solid 1px $border-gray;
+	box-shadow: rgba(black, 0.06) 0 2px 8px;
+	margin-bottom: 60px;
+}

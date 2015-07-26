@@ -1,4 +1,5 @@
-.radio {
+.checkbox {
+	display: inline-block;
 	&__button {
 		display: none;
 	}
@@ -17,8 +18,8 @@
 		&:before {
 			@include pseudo-base;
 			width: 18px; height: 18px;
+			border-radius: 3px;
 			border: solid 1px $border-gray;
-			border-radius: 18px;
 
 			top: 0px; left: 0; bottom: 0;
 			margin: auto;
@@ -26,11 +27,10 @@
 
 		&:after {
 			@include pseudo-base;
-			width: 6px; height: 6px;
-			background-color: transparent;
-			border-radius: 6px;
+			content: "✓";
+			color: transparent;
 
-			top: 0px; left: 6px; bottom: 0;
+			top: 0.5px; left: 3.5px; bottom: 0;
 			margin: auto;
 		}
 	}
@@ -44,7 +44,7 @@
 		}
 
 		&:after {
-			background-color: #CBCBCB;
+			color: #CBCBCB;
 		}
 	}
 

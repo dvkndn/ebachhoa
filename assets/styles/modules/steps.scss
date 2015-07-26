@@ -25,4 +25,8 @@
 			color: white;
 		}
 	}
+
+	&__item > a {
+		display: block;
+	}
 }

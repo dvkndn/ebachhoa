@@ -1,0 +1,50 @@
+extend ../../layouts/sell-layout.jade
+
+block prepend content
+	- var selectedStep = 2
+
+block sell-content
+	.sell-shipping
+		form.form.form--sell
+			.form-group
+				+form-row("địa điểm đăng bán")
+					select.select: option TP. Hồ Chí Minh
+				+form-row("quận / huyện")
+					select.select: option Phú Nhuận
+				+form-row("địa chỉ")
+					input(type = "text").text-box
+				+form-row("phương thức vận chuyển")
+					select.select: option - chọn -
+				+form-row("phí vận chuyển")
+					.radio
+						div.radio__row
+							input.radio__button(type = "radio", name = "fee-ship", value = "free", checked)#fee-ship-free
+							label.radio__label(for = "fee-ship-free") Miễn phí
+						div.radio__row
+							input.radio__button(type = "radio", name = "fee-ship", value = "custom")#fee-ship-custom
+							label.radio__label(for = "fee-ship-custom") Tính phí
+							| &nbsp;&nbsp;
+							input(type = "text", value = "1.000.000", disabled).text-box
+							| &nbsp;
+							label.label.label--inline &nbsp; VND
+				+form-row("đổi trả hàng")
+					.radio
+						div.radio__row
+							input.radio__button(type = "radio", name = "fee-ship", value = "free", checked)#fee-ship-free
+							label.radio__label(for = "fee-ship-free") Không
+						div.radio__row
+							input.radio__button(type = "radio", name = "fee-ship", value = "custom")#fee-ship-custom
+							label.radio__label(for = "fee-ship-custom") Có
+							| &nbsp;&nbsp;
+							input(type = "text", placeholder = "Điều kiện đổi trả", disabled).text-box
+							| &nbsp;
+							select.select(disabled): option Thời hạn đổi trả
+			.form-group.last
+				+form-row("Thanh toán đảm bảo")
+					.checkbox: .checkbox__row
+						input(type = "checkbox", checked).checkbox__button#pay-safe
+						label(for = "pay-safe").checkbox__label Qua Ngân Lượng
+				+form-row("Thanh toán khác")
+					.checkbox: .checkbox__row
+						input(type = "checkbox").checkbox__button#pay-int
+						label(for = "pay-int").checkbox__label Qua Thẻ thanh toán Quốc tế

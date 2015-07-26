@@ -14,6 +14,10 @@
 	background-repeat: no-repeat;
 	background-position: right 20px center;
 
+	&:disabled {
+		color: $secondary-text;
+	}
+
 	color: $dark-text;
 	font-size: 10px;
 	font-weight: 700;

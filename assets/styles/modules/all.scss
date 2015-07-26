@@ -10,7 +10,9 @@
 @import "label";
 @import "range";
 @import "radio";
+@import "checkbox";
 @import "flex";
+@import "image-holder";
 
 // complex modules (use simple modules)
 @import "steps";
@@ -25,6 +27,7 @@
 @import "product";
 @import "footer";
 @import "fluid-header";
+@import "fluid-footer";
 @import "cols";
 @import "table";
 

@@ -1,0 +1,40 @@
+extend layout.jade
+
+mixin form-row(label)
+	.form-row
+		.form-row__label: label.label!= label
+		.form-row__content
+			block
+
+mixin footer-button(title, link)
+	.cols__item
+		if title !== ""
+			a(href = link, class = "button button--full-width " + attributes.class)= title
+
+block setting
+	.hide-breadcrumb
+
+block title
+	| Sell
+
+block content
+	.sell-page.step-page.step-page--wo-breadcrumb
+		.steps.step-page__steps.sell-page__steps
+			ul.steps__list
+				- var steps = [["danh mục", "#"]];
+				- steps.push(["chi tiết sản phẩm", "#"]);
+				- steps.push(["vận chuyển/thanh toán", "#"]);
+				- steps.push(["xem trước", "#"]);
+				- steps.push(["hoàn tất", "#"]);
+				each step, index in steps
+					li.steps__item(class = (index === selectedStep ? "selected" : ""))
+						a(href = step[1])= step[0]
+		block sell-content
+		.fluid-footer
+			.fluid-footer__content: .flex.flex--equal.cols
+				block sell-footer
+					+footer-button("quay lại", "#")(class = "button--gray")
+					+footer-button("lưu bản thảo", "#")(class = "button--gray")
+					+footer-button("tiếp tục", "#")
+block footer
+	.footer.footer--100.footer--gray

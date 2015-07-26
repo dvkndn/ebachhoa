@@ -1,0 +1,11 @@
+.fluid-footer {
+	@extend .fluid;
+	background-color: #fafafa;
+	border-top: 1px solid $border-gray;
+
+	padding: 30px 0;
+
+	&__content {
+		@extend .container;
+	}
+}

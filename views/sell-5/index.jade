@@ -1,0 +1,15 @@
+extend ../../layouts/sell-layout.jade
+
+block prepend content
+	- var selectedStep = 4
+
+block sell-content
+	.sell-done.checkout-thankyou
+		h1.page-title.checkout-thankyou__title Phiên giao dịch #101004 <br>đã được kích hoạt
+		p.checkout-thankyou__text.
+			Bạn có thể theo dõi phiên giao dịch từ trang quản lý mua bán.
+
+block sell-footer
+	+footer-button("đăng phiên khác", "#")(class = "button--gray")
+	+footer-button("quản lý mua bán", "#")
+	+footer-button("", "#")

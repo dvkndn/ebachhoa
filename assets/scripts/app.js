@@ -20,4 +20,15 @@ $(function() {
 	$("a[href=\"#\"]").on("click", function(event){
 		event.preventDefault();
 	});
+
+	// category select handler
+	$(".sell-category-list__item").on("click", function(event) {
+		var activeClass = "selected";
+		// remove all sibling class
+		$(event.currentTarget).siblings().removeClass(activeClass);
+		// remove all next
+		$(event.currentTarget).parent().parent().nextAll().children().children().removeClass(activeClass);
+		// add class
+		$(event.currentTarget).addClass(activeClass);
+	});
 });

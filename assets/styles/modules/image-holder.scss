@@ -1,0 +1,32 @@
+.image-holder {
+	display: block;
+	width: 100px; height: 100px;
+
+	background-color: $button-gray;
+
+	&--add {
+		position: relative;
+		cursor: pointer;
+
+		&:before, &:after {
+			@include pseudo-base;
+			background-color: $secondary-text;
+		}
+		&:before {
+			top: 47px; left: 35px;
+			width: 30px; height: 6px;
+		}
+		&:after {
+			top: 35px; left: 47px;
+			width: 6px; height: 30px;
+		}
+	}
+}
+
+.image-holders {
+	display: flex;
+
+	&__item {
+		margin-right: 20px;
+	}
+}
