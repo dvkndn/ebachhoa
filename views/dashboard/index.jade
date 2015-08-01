@@ -1,0 +1,70 @@
+extend ../../layouts/layout.jade
+
+block title
+	| Dashboard
+
+block setting
+	.hide-breadcrumb
+
+mixin db-product-cover(statusType)
+	.db-product__cover.db-product-cover
+		img.db-product-cover__thumb(src = "../../assets/images/product/1-small.jpg",
+			width = "235", height = "235")
+		.db-product-cover__status
+			if (statusType === "text")
+				h1 hết hạn
+			else if (statusType === "complex")
+				h2 abc
+		.db-product-cover__info
+			h1.db-product-cover__title
+				a.db-product-cover__link(href = "#") product one with short description
+			ul.db-product-cover__list
+				li
+					span.db-product-cover__label Mã phiên
+					a(href = "#").db-product-cover__link 1005001
+				li
+					span.db-product-cover__label Người bán
+					a(href = "#").db-product-cover__link Nguyễn Văn A
+				li
+					span.db-product-cover__label Shop
+					a(href = "#").db-product-cover__link ABC
+			.db-product-cover__buttons
+				a.db-product-cover__button(href = "#")
+				a.db-product-cover__button(href = "#")
+				a.db-product-cover__button(href = "#")
+
+mixin db-product-description(title, subTitle, smallTitle)
+	.db-product__description.db-product-description
+		h2.db-product-description__sub-title!= subTitle
+		h1.db-product-description__title
+			| #{title} 
+			span.db-product-description__title-small!= smallTitle
+
+mixin db-product-action(title, subTitle, buttonTitle, buttonClass)
+	.db-product__action.db-product-action
+		.db-product-action__info
+			.db-product-time
+				h1.db-product-time__title!= title
+				h2.db-product-time__sub-title!= subTitle
+		.db-product-action__button
+			a(href = "#").button.button--dashboard(class = buttonClass)= buttonTitle
+
+block content
+	.dashboard-page
+		.dashboard-page__header.fluid-header
+			.fluid-header__content
+				.fluid-header__tabs
+					.fluid-header__tab.selected: a(href = "#") quản lý mua
+					.fluid-header__tab: a(href = "#") quản lý bán
+					.fluid-header__tab: a(href = "#") tin nhắn
+		.dashboard-page__content
+			.dashboard-page__filter
+				ul.buy-filter.cols
+					each title in ["tổng quan", "đấu giá", "thương lượng", "theo dõi", "chờ thanh toán", "chờ giao dịch"]
+						li.cols__item.buy-filter__item(class = (title === "tổng quan" ? "selected" : ""))
+							a.buy-filter__link(href = "#", class = selectedClass).button.button--line.button--small= title
+			.dashboard-page__section
+				.db-product
+					+db-product-cover("text")
+					+db-product-description("2.300.000 ₫", "bạn đặt 2.400.000 ₫", "SHIP: + 30.000 ₫")
+					+db-product-action("còn 02:30:21", "24/3 20:21:20", "thương lượng")

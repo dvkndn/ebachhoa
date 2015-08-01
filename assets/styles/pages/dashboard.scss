@@ -1,0 +1,31 @@
+.dashboard-page {
+	.dashboard-page__header {
+		background-color: $border-gray;
+		margin-bottom: 30px;
+	}
+
+	.dashboard-page__filter {
+		margin-bottom: 30px;
+	}
+}
+
+.buy-filter {
+	display: flex;
+
+	&__item {
+		flex: 1 0 auto;
+		// margin-right: 10px;
+
+		&.selected a {
+			color: $orange;
+		}
+
+		&:hover a {
+			color: $orange;
+		}
+	}
+
+	&__link {
+		width: 100%;
+	}
+}
