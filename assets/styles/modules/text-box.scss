@@ -50,3 +50,32 @@
 		text-align: center;
 	}
 }
+
+.search-box {
+	display: flex;
+	align-items: center;
+
+	border-radius: 40px;
+	box-shadow: #ddd 0 0 0 1px inset;
+
+	padding: 0 0 0 5px;
+	overflow: hidden;
+
+	&__icon {
+		opacity: 0.26;
+		font-size: 20px;
+		width: 40px;
+		text-align: center;
+	}
+	&__button {
+		@extend .button;
+		width: 150px;
+	}
+	&__text-box {
+		@extend .text-box;
+		@extend .text-box--transparent;
+		@extend .text-box--no-padding;
+
+		flex-grow: 1;
+	}
+}

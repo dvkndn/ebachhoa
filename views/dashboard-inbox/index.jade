@@ -1,0 +1,64 @@
+extend ../../layouts/layout.jade
+
+block title
+	| Dashboard - Inbox
+
+block setting
+	.hide-breadcrumb
+
+block content
+	.dashboard-page.inbox-page
+		.dashboard-page__header.fluid-header.inbox-page__header
+			.fluid-header__content
+				.fluid-header__tabs
+					.fluid-header__tab: a(href = "#") quản lý mua
+					.fluid-header__tab: a(href = "#") quản lý bán
+					.fluid-header__tab.selected: a(href = "#") tin nhắn
+		.dashboard-page__content.inbox.fluid
+			.inbox__folders
+				ul.folders
+					li.accordion.folder.folders__item.accordion--selected.expanded
+						h1.folder__title.accordion__title: a(href = "#") tất cả
+						ul.folder__content.accordion__content.selector
+							li.folder__child.selected: a(href = "#") từ thành viên khác
+							li.folder__child: a(href = "#") từ ebachhoa
+					li.folder.folders__item
+						h1.folder__title: a(href = "#") đã gửi
+					li.folder.folders__item
+						h1.folder__title: a(href = "#") tin nhắn rác
+					li.folder.folders__item.accordion
+						h1.folder__title.accordion__title: a(href = "#") thư mục
+						ul.folder__content.accordion__content.selector
+							li.folder__child.selected: a(href = "#") thư mục 1
+							li.folder__child: a(href = "#") thư mục 1
+							li.folder__child: a(href = "#") thêm thư mục
+			.inbox__messages
+				.messages
+					ul.messages__list.selector
+						li.messages__item.selected
+							a(href = "#").message
+								h1.message__title Email title
+								h2.message__user From: John Appleseed (john@apple.com)
+								p.message__content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at dapibus odio. Nullam viverra lorem ac semper ultrices.
+						li.messages__item
+							a(href = "#").message
+								h1.message__title Email title
+								h2.message__user From: John Appleseed (john@apple.com)
+								p.message__content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at dapibus odio. Nullam viverra lorem ac semper ultrices.
+						li.messages__item
+							a(href = "#").message
+								h1.message__title Email title
+								h2.message__user From: John Appleseed (john@apple.com)
+								p.message__content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at dapibus odio. Nullam viverra lorem ac semper ultrices.
+					.messages__pagination
+						include ../../layouts/pagination.jade
+			.inbox__message-full
+				.message-full
+					h1.message-full__title Email Title
+					h2.message-full__user
+						| From: 
+						a(href = "#").text-orange John Appleseed (john@apple.com)
+					.message-full__content
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ornare magna, eu sodales erat. Quisque id ultrices mauris, quis rhoncus urna. In commodo fringilla maximus.
+						p Fusce volutpat odio et dui lacinia, nec laoreet nulla blandit. Proin ac malesuada risus. Pellentesque malesuada fringilla imperdiet. Duis ut dolor ex. Praesent et bibendum felis. Aliquam tortor lorem, tincidunt nec sagittis id, vestibulum nec mauris.
+						p Fusce non erat id dui placerat luctus a vel orci. Curabitur non lectus egestas, hendrerit ipsum feugiat, pellentesque elit. Mauris dapibus iaculis varius. Praesent et bibendum felis. Aliquam tortor lorem, tincidunt nec sagittis id, vestibulum nec mauris.

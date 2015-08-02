@@ -48,7 +48,7 @@
 
 .db-product {
 	display: block;
-	width: 235px;
+	// width: 235px;
 
 	&__cover {
 		margin-bottom: 10px;
@@ -64,7 +64,7 @@
 }
 
 .db-product-cover {
-	width: 235px; height: 235px;
+	// width: 235px; height: 235px;
 	overflow: hidden;
 
 	position: relative;
@@ -126,12 +126,18 @@
 		display: block;
 		width: 36px; height: 36px;
 		border-radius: 36px;
-
 		border: solid 2px white;
+
+		text-align: center;
 
 		&:hover {
 			border-color: $orange;
 			color: $orange;
+		}
+
+		i {
+			font-size: 16px;
+			line-height: 32px;
 		}
 	}
 
@@ -157,6 +163,18 @@
 
 		position: absolute;
 		top: 0; left: 0;
+	}
+
+	&__icons {
+		i {
+			font-size: 20px;
+			line-height: 30px;
+			color: rgba(white, 0.5);
+
+			&.selected {
+				color: white;
+			}
+		}
 	}
 
 	// = Interaction ===========
@@ -222,5 +240,18 @@
 
 	&__button {
 		width: 130px;
+	}
+
+	a:not(.button) {
+		color: $orange;
+	}
+}
+
+.db-products {
+	display: flex;
+	justify-content: flex-start;
+
+	&__item {
+		flex: 0 0 25%;
 	}
 }

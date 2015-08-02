@@ -1,19 +1,23 @@
 .dashboard-page {
-	.dashboard-page__header {
+	&__header {
 		background-color: $border-gray;
 		margin-bottom: 30px;
 	}
 
-	.dashboard-page__filter {
+	&__filter {
+		margin-bottom: 30px;
+	}
+
+	.sell-filter-form {
 		margin-bottom: 30px;
 	}
 }
 
-.buy-filter {
+.db-filter {
 	display: flex;
 
 	&__item {
-		flex: 1 0 auto;
+		flex: 1 0 0;
 		// margin-right: 10px;
 
 		&.selected a {
@@ -27,5 +31,216 @@
 
 	&__link {
 		width: 100%;
+	}
+}
+
+.db-section {
+	border-bottom: 1px solid $border-gray;
+	padding-bottom: 30px;
+	margin-bottom: 50px;
+
+	&__header {
+		margin-bottom: 30px;
+
+		> * {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 10px;
+
+			&:first-child {
+				margin-right: 20px;
+			}
+		}
+
+	}
+	&__title {
+		font-size: 24px;
+		font-weight: 900;
+	}
+	&__list {
+		margin-bottom: 30px;
+	}
+}
+
+.sell-table {
+	tbody {
+		tr {
+
+		}
+
+		td {
+			&:nth-child(1) {
+				text-align: left;
+				img {
+					margin: 0 1px;
+				}
+			}
+			&:nth-child(2) {
+				text-transform: uppercase;
+				font-weight: 900;
+				text-align: left;
+			}
+		}
+	}
+}
+
+.sell-filter-form {
+	display: flex;
+	&__search-box {
+		flex-grow: 2;
+	}
+	&__select {
+		flex-grow: 1;
+	}
+}
+
+// inbox
+
+.folders {
+	display: block;
+
+	&__item {
+		border-bottom: solid 1px $border-gray;
+	}
+}
+
+.folder {
+	font-weight: 900;
+	text-transform: uppercase;
+
+	background-color: white;
+
+	&__title {
+		font-size: 12px;
+		line-height: 60px;
+
+		padding: 0 20px;
+		background-image: url(img/arr-folder-collapsing.png);
+		background-size: 4px 6px;
+		background-repeat: no-repeat;
+		background-position: center right 30px;
+
+		cursor: pointer;
+	}
+	&__content {
+		font-size: 10px;
+		line-height: 40px;
+
+		background-color: $border-gray;
+		padding: 10px 20px;
+	}
+	&__child {
+		&.selected {
+			color: $orange;
+		}
+	}
+
+	a {
+		&:hover {
+			color: $orange;
+		}
+	}
+
+	&.selected &__title,
+	&__title:hover {
+		color: $orange;
+		background-image: url(img/arr-folder-selected.png);
+	}
+
+	&.expanded &__title {
+		color: $orange;
+		background-image: url(img/arr-folder-expanding.png);
+		background-size: 6px 4px;
+	}
+}
+
+.message {
+	display: block;
+
+	font-size: 14px;
+	color: $secondary-text;
+	line-height: 20px;
+	padding: 20px;
+
+	&__title {
+		color: $dark-text;
+		font-weight: 700;
+		margin-bottom: 5px;
+	}
+
+	&__user {
+		margin-bottom: 5px;
+	}
+
+	&--selected {
+		
+	}
+}
+
+.messages {
+	padding-bottom: 30px;
+	
+	&__item {
+		border-bottom: solid 1px $border-gray;
+
+		&.selected {
+			.message {
+				color: $dark-text;
+			}
+			.message__title {
+				color: $orange;
+			}
+		}
+	}
+	&__list {
+		margin-bottom: 30px;
+	}
+}
+
+.message-full {
+	padding: 30px;
+	color: $dark-text;
+	line-height: 24px;
+	font-size: 16px;
+
+	&__title {
+		font-size: 24px;
+		font-weight: 900;
+		margin-bottom: 16px;
+	}
+
+	&__user {
+		margin-bottom: 16px;
+	}
+
+	p {
+		margin-bottom: 16px;
+	}
+}
+
+.inbox {
+	display: flex;
+
+	&__folders {
+		flex: 1;
+
+		background-color: $border-gray;
+		border-right: solid 1px $border-gray;
+	}
+
+	&__messages {
+		flex: 2;
+
+		border-right: solid 1px $border-gray;
+	}
+
+	&__message-full {
+		flex: 3;
+	}
+}
+
+.inbox-page {
+	&__header {
+		margin-bottom: 0;
 	}
 }

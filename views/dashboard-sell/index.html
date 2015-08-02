@@ -1,0 +1,174 @@
+
+<html>
+  <head>
+    <title>EBachHoa - Dashboard - Sell</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../assets/styles/app.css"/>
+    <script src="../../vendors/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="page-container">
+      <div class="hide-breadcrumb"></div>
+      <header class="main-header">
+        <div class="user-bar">
+          <div class="user-bar__content">
+            <div class="user-bar__left"><a href="#" class="user-bar__hello">Chào bạn, Tuấn Minh!</a><a href="#" class="button button--rect">bán</a><a href="#" class="user-bar__link">Liên hệ &amp; Giúp đỡ</a></div>
+            <div class="user-bar__right"><a href="#" class="user-bar__link">Quản lý &amp; Mua bán</a><a href="#" class="user-bar__icon">
+                <div class="icon"><i class="icon__icon material-icons">chat</i><span class="icon__badge">4</span></div></a><a href="#" class="user-bar__icon">
+                <div class="icon"><i class="icon__icon material-icons">shopping_cart</i><span class="icon__badge">2</span></div></a></div>
+          </div>
+        </div>
+        <div class="top-search">
+          <div class="top-search__content">
+            <div class="top-search__logo"></div>
+            <div class="top-search__search-box">
+              <form class="top-search-box">
+                <div class="top-search-box__icon icon"><i class="icon__icon material-icons">search</i></div>
+                <input type="text" class="top-search-box__input text-box text-box--transparent text-box--no-padding"/>
+                <select class="top-search-box__select select select--transparent">
+                  <option>Tất cả danh mục</option>
+                </select>
+                <div class="top-search-box__button top-search-box__submit-button"><a href="#" class="button button--full-width">tìm kiếm</a></div>
+                <div class="top-search-box__button top-search-box__more-button"><a href="#" class="button button--gray button--rect button--full-width">nâng cao</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="breadcrumb">
+        <div class="breadcrumb__content">
+          <ul class="breadcrumb__items">
+                  <li class="breadcrumb__item"><a href="#">trang chủ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="main-content">
+        <div class="dashboard-page">
+          <div class="dashboard-page__header fluid-header">
+            <div class="fluid-header__content">
+              <div class="fluid-header__tabs">
+                <div class="fluid-header__tab"><a href="#">quản lý mua</a></div>
+                <div class="fluid-header__tab selected"><a href="#">quản lý bán</a></div>
+                <div class="fluid-header__tab"><a href="#">tin nhắn</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-page__content">
+            <div class="dashboard-page__filter">
+              <ul class="db-filter cols">
+                <li class="cols__item db-filter__item"><a href="#" class="db-filter__link button button--line button--small">tổng quan</a></li>
+                <li class="cols__item db-filter__item selected"><a href="#" class="db-filter__link button button--line button--small">đang bán</a></li>
+                <li class="cols__item db-filter__item"><a href="#" class="db-filter__link button button--line button--small">đã bán</a></li>
+                <li class="cols__item db-filter__item"><a href="#" class="db-filter__link button button--line button--small">chưa bán</a></li>
+                <li class="cols__item db-filter__item"><a href="#" class="db-filter__link button button--line button--small">bản thảo</a></li>
+                <li class="cols__item db-filter__item"><a href="#" class="db-filter__link button button--line button--small">đã huỷ</a></li>
+              </ul>
+            </div>
+            <form class="form sell-filter-form cols">
+              <div class="cols__item sell-filter-form__search-box">
+                <div class="search-box">
+                  <div class="search-box__icon"><i class="material-icons">search</i></div>
+                  <input type="text" class="search-box__text-box"/>
+                  <button class="search-box__button">tìm</button>
+                </div>
+              </div>
+              <div class="cols__item sell-filter-form__select">
+                <select class="select select--full-width">
+                  <option>tất cả</option>
+                </select>
+              </div>
+              <div class="cols__item sell-filter-form__select">
+                <select class="select select--full-width">
+                  <option>tất cả</option>
+                </select>
+              </div>
+            </form>
+            <table class="table sell-table">
+              <colgroup>
+                <col style="width: 200px"/>
+                <col style="width: 200px"/>
+                <col style="width: 100px"/>
+                <col style="width: 100px"/>
+                <col style="width: 50px"/>
+                <col style="width: 100px"/>
+                <col style="width: 100px"/>
+                <col style="width: 50px"/>
+                <col style="width: 50px"/>
+                <col style="width: 50px"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>hình ảnh</th>
+                  <th>tên sản phẩm</th>
+                  <th>mã phiên</th>
+                  <th>kiểu đăng</th>
+                  <th>SL</th>
+                  <th>giá niêm yết</th>
+                  <th>giá hiện tại</th>
+                  <th><i class="material-icons">assignment_turned_in</i></th>
+                  <th><i class="material-icons">assignment_late</i></th>
+                  <th><i class="material-icons">remove_red_eye</i></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="/assets/images/product/1-small.jpg" width="40" height="40"/><img src="/assets/images/product/1-small.jpg" width="40" height="40"/><img src="/assets/images/product/1-small.jpg" width="40" height="40"/><img src="/assets/images/product/1-small.jpg" width="40" height="40"/></td>
+                  <td>nước hoa acqua di parma di sicilia hàng mới xuất </td>
+                  <td>10095015</td>
+                  <td>Đấu giá</td>
+                  <td>01</td>
+                  <td>3.000.000 ₫</td>
+                  <td>2.500.000 ₫</td>
+                  <td>19</td>
+                  <td>-</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td><img src="/assets/images/product/1-small.jpg" width="40" height="40"/><img src="/assets/images/product/1-small.jpg" width="40" height="40"/><img src="/assets/images/product/1-small.jpg" width="40" height="40"/><img src="/assets/images/product/1-small.jpg" width="40" height="40"/></td>
+                  <td>nước hoa acqua di parma di sicilia hàng mới xuất </td>
+                  <td>10095015</td>
+                  <td>Đấu giá</td>
+                  <td>01</td>
+                  <td>3.000.000 ₫</td>
+                  <td>2.500.000 ₫</td>
+                  <td>19</td>
+                  <td>-</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td><img src="/assets/images/product/1-small.jpg" width="40" height="40"/><img src="/assets/images/product/1-small.jpg" width="40" height="40"/><img src="/assets/images/product/1-small.jpg" width="40" height="40"/><img src="/assets/images/product/1-small.jpg" width="40" height="40"/></td>
+                  <td>nước hoa acqua di parma di sicilia hàng mới xuất </td>
+                  <td>10095015</td>
+                  <td>Đấu giá</td>
+                  <td>01</td>
+                  <td>3.000.000 ₫</td>
+                  <td>2.500.000 ₫</td>
+                  <td>19</td>
+                  <td>-</td>
+                  <td>20</td>
+                </tr>
+                <tr class="last">
+                  <td><img src="/assets/images/product/1-small.jpg" width="40" height="40"/><img src="/assets/images/product/1-small.jpg" width="40" height="40"/><img src="/assets/images/product/1-small.jpg" width="40" height="40"/><img src="/assets/images/product/1-small.jpg" width="40" height="40"/></td>
+                  <td>nước hoa acqua di parma di sicilia hàng mới xuất </td>
+                  <td>10095015</td>
+                  <td>Đấu giá</td>
+                  <td>01</td>
+                  <td>3.000.000 ₫</td>
+                  <td>2.500.000 ₫</td>
+                  <td>19</td>
+                  <td>-</td>
+                  <td>20</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <footer class="footer footer--100"></footer>
+      <script src="../../assets/scripts/app.js"></script>
+    </div>
+  </body>
+</html>

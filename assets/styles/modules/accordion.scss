@@ -1,4 +1,9 @@
 .accordion {
+	content: "a";
+	&__title {
+		cursor: pointer;
+	}
+	
 	&__content {
 		display: none;
 	}

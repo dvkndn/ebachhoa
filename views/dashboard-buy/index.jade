@@ -1,0 +1,195 @@
+extend ../../layouts/layout.jade
+
+block title
+	| Dashboard - Buy
+
+block setting
+	.hide-breadcrumb
+
+mixin db-product-cover(statusType)
+	.db-product__cover.db-product-cover
+		img.db-product-cover__thumb(src = "../../assets/images/product/1-small.jpg",
+			width = "235", height = "235")
+		if (statusType !== "none")
+			.db-product-cover__status
+				if (statusType === "complex")
+					h1.db-product-cover__icons.cols
+						i.material-icons.selected.cols__item attach_money
+						i.material-icons.selected.cols__item local_shipping
+						i.material-icons.cols__item reply
+						i.material-icons.selected.cols__item question_answer
+				else
+					h1= statusType
+		.db-product-cover__info
+			h1.db-product-cover__title
+				a.db-product-cover__link(href = "#") product one with short description
+			ul.db-product-cover__list
+				li
+					span.db-product-cover__label Mã phiên
+					a(href = "#").db-product-cover__link 1005001
+				li
+					span.db-product-cover__label Người bán
+					a(href = "#").db-product-cover__link Nguyễn Văn A
+				li
+					span.db-product-cover__label Shop
+					a(href = "#").db-product-cover__link ABC
+			.db-product-cover__buttons
+				a.db-product-cover__button(href = "#")
+					i.material-icons my_library_add
+				a.db-product-cover__button(href = "#")
+					i.material-icons person_add
+				a.db-product-cover__button(href = "#")
+					i.material-icons messenger
+
+mixin db-product-description(title, subTitle, smallTitle)
+	.db-product__description.db-product-description
+		h2.db-product-description__sub-title!= subTitle
+		h1.db-product-description__title
+			span!= title
+			span.db-product-description__title-small!= smallTitle
+
+mixin db-product-action(title, subTitle, buttonTitle, buttonLine)
+	.db-product__action.db-product-action
+		.db-product-action__info
+			.db-product-time
+				h1.db-product-time__title!= title
+				h2.db-product-time__sub-title!= subTitle
+		.db-product-action__button
+			- var buttonLineClass = (buttonLine ? "button--orange-line" : "")
+			a(href = "#").button.button--dashboard(class = buttonLineClass)= buttonTitle
+
+block content
+	.dashboard-page
+		.dashboard-page__header.fluid-header
+			.fluid-header__content
+				.fluid-header__tabs
+					.fluid-header__tab.selected: a(href = "#") quản lý mua
+					.fluid-header__tab: a(href = "#") quản lý bán
+					.fluid-header__tab: a(href = "#") tin nhắn
+		.dashboard-page__content
+			.dashboard-page__filter
+				ul.db-filter.cols
+					each title in ["tổng quan", "đấu giá", "thương lượng", "theo dõi", "chờ thanh toán", "chờ giao dịch"]
+						li.cols__item.db-filter__item(class = (title === "tổng quan" ? "selected" : ""))
+							a.db-filter__link(href = "#", class = selectedClass).button.button--line.button--small= title
+			//- SECTION DIVIDER ----------
+			section.db-section
+				header.db-section__header
+					h1.db-section__title Đấu giá
+					.radio
+						input.radio__button(type = "radio", name = "deal", value = "now", checked)#deal-now
+						label.radio__label(for = "deal-now") Đang đấu giá
+					.radio
+						input.radio__button(type = "radio", name = "deal", value = "over")#deal-over
+						label.radio__label(for = "deal-over") Đã thua
+				.db-section__list.db-products.cols
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("none")
+						+db-product-description("2.300.000 ₫ ", "bạn đặt 2.400.000 ₫", "SHIP: + 30.000 ₫")
+						+db-product-action("còn 02:30:21", "20 lượt", "đặt giá", true)
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("none")
+						+db-product-description(orangize("2.300.000 ₫ "), "bạn đặt 2.200.000 ₫", "SHIP: + 30.000 ₫")
+						+db-product-action("còn 02:30:21", "20 lượt", "đặt giá", true)
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("đang thua")
+						+db-product-description(orangize("2.300.000 ₫ "), "bạn đặt 2.200.000 ₫", "SHIP: + 30.000 ₫")
+						+db-product-action("còn 02:30:21", "20 lượt", "đặt giá", true)
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("đang thua")
+						+db-product-description(orangize("2.300.000 ₫ "), "bạn đặt 2.200.000 ₫", "SHIP: + 30.000 ₫")
+						+db-product-action(orangize("còn 02:30:21"), "20 lượt", "đặt giá", true)
+				footer.db-section__footer
+					include ../../layouts/pagination.jade
+			//- SECTION DIVIDER ----------
+			section.db-section
+				header.db-section__header
+					h1.db-section__title Thương lượng
+				.db-section__list.db-products.cols
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("none")
+						+db-product-description("2.300.000 ₫ ", "bạn ra giá 2.400.000 ₫", "SHIP: + 30.000 ₫")
+						+db-product-action("còn 02:30:21", "còn 5 lượt", "thương lượng", true)
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("none")
+						+db-product-description(orangize("2.300.000 ₫ "), "bạn ra giá 2.200.000 ₫", "SHIP: + 30.000 ₫")
+						+db-product-action("còn 02:30:21", "còn 5 lượt", "thương lượng", true)
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("không đạt")
+						+db-product-description(orangize("2.300.000 ₫ "), "bạn ra giá 2.200.000 ₫", "SHIP: + 30.000 ₫")
+						+db-product-action("còn 02:30:21", orangize("còn 1 lượt"), "thương lượng", true)
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("hết hạn")
+						+db-product-description(orangize("2.300.000 ₫ "), "bạn ra giá 2.200.000 ₫", "SHIP: + 30.000 ₫")
+						+db-product-action(orangize("còn 00:30:21"), orangize("còn 1 lượt"), "thương lượng", true)
+				footer.db-section__footer
+					include ../../layouts/pagination.jade
+			//- SECTION DIVIDER ----------
+			section.db-section
+				header.db-section__header
+					h1.db-section__title Theo dõi
+				.db-section__list.db-products.cols
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("hết hàng")
+						+db-product-description("2.300.000 ₫ ", "&nbsp;", "SHIP: + 30.000 ₫")
+						+db-product-action("còn 02:30:21", "24/3 20:21:20", "chi tiết", true)
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("none")
+						+db-product-description(orangize("2.300.000 ₫ "), "&nbsp;", "SHIP: + 30.000 ₫")
+						+db-product-action("còn 02:30:21", "<a href=\"#\">+ giỏ hàng</a>", "mua ngay")
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("none")
+						+db-product-description("2.300.000 ₫ ", "bạn đặt 2.400.000 ₫", "SHIP: + 30.000 ₫")
+						+db-product-action("còn 02:30:21", "20 lượt", "đặt giá", true)
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("none")
+						+db-product-description(orangize("2.300.000 ₫ "), "&nbsp;", "SHIP: + 30.000 ₫")
+						+db-product-action("còn 02:30:21", "<a href=\"#\">thương lượng</a>", "mua ngay")
+				footer.db-section__footer
+					include ../../layouts/pagination.jade
+			//- SECTION DIVIDER ----------
+			section.db-section
+				header.db-section__header
+					h1.db-section__title Chưa thanh toán
+				.db-section__list.db-products.cols
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("đã huỷ")
+						+db-product-description("2.300.000 ₫ ", "&nbsp;", "FREE SHIP")
+						+db-product-action("còn 02:30:21", "24/3 20:21:20", "chi tiết", true)
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("none")
+						+db-product-description("4.600.000 ₫ ", "Số lượng: 2 x 2.300.000 ₫", "SHIP: + 30.000 ₫")
+						+db-product-action("còn 00:59:59", "24/3 20:21:20", "thanh toán")
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("none")
+						+db-product-description("4.600.000 ₫ ", "Số lượng: 2", "SHIP: + 30.000 ₫")
+						+db-product-action("còn 00:59:59", "24/3 20:21:20", "thanh toán")
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("đã huỷ")
+						+db-product-description("2.300.000 ₫ ", "&nbsp;", "FREE SHIP")
+						+db-product-action("còn 02:30:21", "24/3 20:21:20", "chi tiết", true)
+				footer.db-section__footer
+					include ../../layouts/pagination.jade
+			//- SECTION DIVIDER ----------
+			section.db-section
+				header.db-section__header
+					h1.db-section__title Giao dịch thành công
+				.db-section__list.db-products.cols
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("complex")
+						+db-product-description("4.600.000 ₫ ", "Số lượng: 2 x 2.300.000 ₫", "SHIP: + 30.000 ₫")
+						+db-product-action("mua lúc 17:59", "ngày 24/3/2014", "nhận xét", true)
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("complex")
+						+db-product-description("4.600.000 ₫ ", "Số lượng: 2 x 2.300.000 ₫", "SHIP: + 30.000 ₫")
+						+db-product-action("mua lúc 17:59", "ngày 24/3/2014", "nhận xét", true)
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("complex")
+						+db-product-description("4.600.000 ₫ ", "Số lượng: 2 x 2.300.000 ₫", "SHIP: + 30.000 ₫")
+						+db-product-action("mua lúc 17:59", "ngày 24/3/2014", "chi tiết", true)
+					.db-products__item.cols__item: .db-product
+						+db-product-cover("complex")
+						+db-product-description("4.600.000 ₫ ", "Số lượng: 2 x 2.300.000 ₫", "SHIP: + 30.000 ₫")
+						+db-product-action("mua lúc 17:59", "ngày 24/3/2014", "chi tiết", true)
+				footer.db-section__footer
+					include ../../layouts/pagination.jade

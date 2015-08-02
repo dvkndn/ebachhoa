@@ -31,4 +31,23 @@ $(function() {
 		// add class
 		$(event.currentTarget).addClass(activeClass);
 	});
+
+	// inbox folder handler
+	$(".folder").on("click", "> .folder__title", function(event) {
+		console.log(event);
+		// remove all sibling class
+		$(event.currentTarget).parent().siblings().removeClass("expanded selected accordion--selected");
+		// add class
+		if ($(event.currentTarget).parent().hasClass("accordion")) {
+			$(event.currentTarget).parent().addClass("expanded");
+		} else {
+			$(event.currentTarget).parent().addClass("selected");
+		};
+	});
+
+	// general selector
+	$(".selector").on("click", "> *", function(event) {
+		$(event.currentTarget).siblings().removeClass("selected");
+		$(event.currentTarget).addClass("selected");
+	});
 });

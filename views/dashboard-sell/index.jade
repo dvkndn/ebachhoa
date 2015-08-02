@@ -1,0 +1,73 @@
+extend ../../layouts/layout.jade
+
+block title
+	| Dashboard - Sell
+
+block setting
+	.hide-breadcrumb
+
+block content
+	.dashboard-page
+		.dashboard-page__header.fluid-header
+			.fluid-header__content
+				.fluid-header__tabs
+					.fluid-header__tab: a(href = "#") quản lý mua
+					.fluid-header__tab.selected: a(href = "#") quản lý bán
+					.fluid-header__tab: a(href = "#") tin nhắn
+		.dashboard-page__content
+			.dashboard-page__filter
+				ul.db-filter.cols
+					each title in ["tổng quan", "đang bán", "đã bán", "chưa bán", "bản thảo", "đã huỷ"]
+						li.cols__item.db-filter__item(class = (title === "đang bán" ? "selected" : ""))
+							a.db-filter__link(href = "#", class = selectedClass).button.button--line.button--small= title
+			form.form.sell-filter-form.cols
+				.cols__item.sell-filter-form__search-box: .search-box
+					.search-box__icon
+						i.material-icons search
+					input(type = "text").search-box__text-box
+					button.search-box__button tìm
+				.cols__item.sell-filter-form__select: select.select.select--full-width
+					option tất cả
+				.cols__item.sell-filter-form__select: select.select.select--full-width
+					option tất cả
+			table.table.sell-table
+				colgroup
+					col(style = "width: 200px")
+					col(style = "width: 200px")
+					col(style = "width: 100px")
+					col(style = "width: 100px")
+					col(style = "width: 50px")
+					col(style = "width: 100px")
+					col(style = "width: 100px")
+					col(style = "width: 50px")
+					col(style = "width: 50px")
+					col(style = "width: 50px")
+				thead
+					tr
+						th hình ảnh
+						th tên sản phẩm
+						th mã phiên
+						th kiểu đăng
+						th SL
+						th giá niêm yết
+						th giá hiện tại
+						th: i.material-icons assignment_turned_in
+						th: i.material-icons assignment_late
+						th: i.material-icons remove_red_eye
+				tbody
+					- for (var i = 0; i < 4; i++)
+						tr(class = (i === 3 ? "last" : ""))
+							td
+								img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
+								img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
+								img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
+								img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
+							td nước hoa acqua di parma di sicilia hàng mới xuất 
+							td 10095015
+							td Đấu giá
+							td 01
+							td 3.000.000 ₫
+							td 2.500.000 ₫
+							td 19
+							td -
+							td 20
