@@ -86,3 +86,8 @@ block sell-content
 							label(for = "repost-sold").checkbox__label Khi đã bán
 				+form-row("số lần tự động đăng lại")
 					select.select: option 1 lần
+
+block sell-footer
+	+footer-button("huỷ phiên", "../home")(class = "button--gray")
+	+footer-button("lưu bản thảo", "#")(class = "button--gray")
+	+footer-button("tiếp tục", "../sell-3")

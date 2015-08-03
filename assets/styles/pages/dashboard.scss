@@ -81,6 +81,12 @@
 				text-align: left;
 			}
 		}
+
+		a {
+			&:hover {
+				color: $orange;
+			}
+		}
 	}
 }
 

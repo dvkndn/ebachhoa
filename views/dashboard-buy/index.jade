@@ -22,23 +22,23 @@ mixin db-product-cover(statusType)
 					h1= statusType
 		.db-product-cover__info
 			h1.db-product-cover__title
-				a.db-product-cover__link(href = "#") product one with short description
+				a.db-product-cover__link(href = "../product") product one with short description
 			ul.db-product-cover__list
 				li
 					span.db-product-cover__label Mã phiên
-					a(href = "#").db-product-cover__link 1005001
+					a(href = "../product").db-product-cover__link 1005001
 				li
 					span.db-product-cover__label Người bán
-					a(href = "#").db-product-cover__link Nguyễn Văn A
+					a(href = "../profile").db-product-cover__link Nguyễn Văn A
 				li
 					span.db-product-cover__label Shop
-					a(href = "#").db-product-cover__link ABC
+					a.db-product-cover__link ABC
 			.db-product-cover__buttons
 				a.db-product-cover__button(href = "#")
 					i.material-icons my_library_add
 				a.db-product-cover__button(href = "#")
 					i.material-icons person_add
-				a.db-product-cover__button(href = "#")
+				a.db-product-cover__button(href = "../dashboard-inbox")
 					i.material-icons messenger
 
 mixin db-product-description(title, subTitle, smallTitle)
@@ -63,12 +63,12 @@ block content
 		.dashboard-page__header.fluid-header
 			.fluid-header__content
 				.fluid-header__tabs
-					.fluid-header__tab.selected: a(href = "#") quản lý mua
-					.fluid-header__tab: a(href = "#") quản lý bán
-					.fluid-header__tab: a(href = "#") tin nhắn
+					.fluid-header__tab.selected: a(href = "../dashboard-buy") quản lý mua
+					.fluid-header__tab: a(href = "../dashboard-sell") quản lý bán
+					.fluid-header__tab: a(href = "../dashboard-inbox") tin nhắn
 		.dashboard-page__content
 			.dashboard-page__filter
-				ul.db-filter.cols
+				ul.db-filter.cols.selector
 					each title in ["tổng quan", "đấu giá", "thương lượng", "theo dõi", "chờ thanh toán", "chờ giao dịch"]
 						li.cols__item.db-filter__item(class = (title === "tổng quan" ? "selected" : ""))
 							a.db-filter__link(href = "#", class = selectedClass).button.button--line.button--small= title

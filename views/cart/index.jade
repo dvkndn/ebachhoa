@@ -11,13 +11,13 @@ block content
 		.steps.step-page__steps
 			ul.steps__list
 				li.steps__item.selected
-					a(href = "#") giỏ hàng
+					a giỏ hàng
 				li.steps__item
-					a(href = "#") vận chuyển
+					a vận chuyển
 				li.steps__item
-					a(href = "#") thanh toán
+					a thanh toán
 				li.steps__item
-					a(href = "#") hoàn tất
+					a hoàn tất
 		.cart-page__list
 			table.table
 				colgroup
@@ -44,7 +44,7 @@ block content
 								input(type = "text", value = "2").text-box.text-box--line.text-box--cart-amount
 							td 1.000.000 đ
 							td 2.000.000 đ
-							td: a(href = "#"): i.material-icons clear
+							td: a.table__remove-row-btn(href = "#"): i.material-icons clear
 		.fluid-footer
 			.fluid-footer__content
 				.cart-summary.cart-page__summary
@@ -60,11 +60,11 @@ block content
 				.cart-action.cart-page__action
 					.flex.flex--equal.cols
 						.cols__item
-							a(href = "#").button.button--full-width.button--gray tiếp tục mua hàng
+							a(href = "../home").button.button--full-width.button--gray tiếp tục mua hàng
 						.cols__item
 							a(href = "#").button.button--full-width.button--gray cập nhật giỏ hàng
 						.cols__item
-							a(href = "#").button.button--full-width thanh toán
+							a(href = "../checkout").button.button--full-width thanh toán
 
 block footer
 	.footer.footer--100.footer--gray

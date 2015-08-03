@@ -4,7 +4,7 @@ block title
 	| Profile Upgrade 2
 
 block breadcrumb
-	+breadcrumb-item("cá nhân", "#")
+	+breadcrumb-item("cá nhân", "../profile")
 	+breadcrumb-item("Nâng cấp tài khoản", "#")
 
 block content
@@ -12,9 +12,9 @@ block content
 		.steps.step-page__steps
 			ul.steps__list
 				li.steps__item
-					a(href = "#") bước 1
+					a bước 1
 				li.steps__item.selected
-					a(href = "#") bước 2
+					a bước 2
 		h1.page-title.page-title--small.
 			Kiếm tiền từ Ebachhoa không thể đơn giản hơn
 		.upgrade-page__form
@@ -37,6 +37,6 @@ block content
 				hr.hr.hr--big
 				.flex.flex--equal.cols
 					div.cols__item
-						button.button.button--gray.button--full-width huỷ
+						a.button.button--gray.button--full-width(href = "../profile") huỷ
 					div.cols__item
-						button.button.button--full-width hoàn tất
+						a.button.button--full-width(href = "../profile") hoàn tất

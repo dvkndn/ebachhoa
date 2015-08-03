@@ -15,15 +15,14 @@
       <header class="main-header">
         <div class="user-bar">
           <div class="user-bar__content">
-            <div class="user-bar__left"><a href="#" class="user-bar__hello">Chào bạn, Tuấn Minh!</a><a href="#" class="button button--rect">bán</a><a href="#" class="user-bar__link">Liên hệ &amp; Giúp đỡ</a></div>
-            <div class="user-bar__right"><a href="#" class="user-bar__link">Quản lý &amp; Mua bán</a><a href="#" class="user-bar__icon">
-                <div class="icon"><i class="icon__icon material-icons">chat</i><span class="icon__badge">4</span></div></a><a href="#" class="user-bar__icon">
+            <div class="user-bar__left"><a href="../profile" class="user-bar__hello">Chào bạn, Tuấn Minh!</a><a href="../sell" class="button button--rect">bán</a><a href="../help-contact" class="user-bar__link">Liên hệ &amp; Giúp đỡ</a></div>
+            <div class="user-bar__right"><a href="../dashboard-buy" class="user-bar__link">Quản lý &amp; Mua bán</a><a href="../dashboard-inbox" class="user-bar__icon">
+                <div class="icon"><i class="icon__icon material-icons">chat</i><span class="icon__badge">4</span></div></a><a href="../cart" class="user-bar__icon">
                 <div class="icon"><i class="icon__icon material-icons">shopping_cart</i><span class="icon__badge">2</span></div></a></div>
           </div>
         </div>
         <div class="top-search">
-          <div class="top-search__content">
-            <div class="top-search__logo"></div>
+          <div class="top-search__content"><a href="../home" class="top-search__logo"></a>
             <div class="top-search__search-box">
               <form class="top-search-box">
                 <div class="top-search-box__icon icon"><i class="icon__icon material-icons">search</i></div>
@@ -31,8 +30,8 @@
                 <select class="top-search-box__select select select--transparent">
                   <option>Tất cả danh mục</option>
                 </select>
-                <div class="top-search-box__button top-search-box__submit-button"><a href="#" class="button button--full-width">tìm kiếm</a></div>
-                <div class="top-search-box__button top-search-box__more-button"><a href="#" class="button button--gray button--rect button--full-width">nâng cao</a></div>
+                <div class="top-search-box__button top-search-box__submit-button"><a href="../search" class="button button--full-width">tìm kiếm</a></div>
+                <div class="top-search-box__button top-search-box__more-button"><a href="../search" class="button button--gray button--rect button--full-width">nâng cao</a></div>
               </form>
             </div>
           </div>
@@ -41,13 +40,13 @@
       <div class="breadcrumb">
         <div class="breadcrumb__content">
           <ul class="breadcrumb__items">
-                  <li class="breadcrumb__item"><a href="#">trang chủ</a></li>
+                  <li class="breadcrumb__item"><a href="../home">trang chủ</a></li>
           </ul>
         </div>
       </div>
       <div id="main-content">
         <div class="sell-page step-page step-page--wo-breadcrumb">
-          <div class="steps step-page__steps">
+          <div class="steps step-page__steps sell-page__steps">
             <ul class="steps__list">
               <li class="steps__item"><a href="#">danh mục</a></li>
               <li class="steps__item selected"><a href="#">chi tiết sản phẩm</a></li>
@@ -260,9 +259,12 @@
           <div class="fluid-footer">
             <div class="fluid-footer__content">
               <div class="flex flex--equal cols">
-                <div class="cols__item"><a href="#" class="button button--full-width button--gray">quay lại</a></div>
-                <div class="cols__item"><a href="#" class="button button--full-width button--gray">lưu bản thảo</a></div>
-                <div class="cols__item"><a href="#" class="button button--full-width">tiếp tục</a></div>
+                <div class="cols__item"><a href="../home" class="button button--full-width button--gray">huỷ phiên</a>
+                </div>
+                <div class="cols__item"><a href="#" class="button button--full-width button--gray">lưu bản thảo</a>
+                </div>
+                <div class="cols__item"><a href="../sell-3" class="button button--full-width undefined">tiếp tục</a>
+                </div>
               </div>
             </div>
           </div>

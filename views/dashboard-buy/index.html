@@ -15,15 +15,14 @@
       <header class="main-header">
         <div class="user-bar">
           <div class="user-bar__content">
-            <div class="user-bar__left"><a href="#" class="user-bar__hello">Chào bạn, Tuấn Minh!</a><a href="#" class="button button--rect">bán</a><a href="#" class="user-bar__link">Liên hệ &amp; Giúp đỡ</a></div>
-            <div class="user-bar__right"><a href="#" class="user-bar__link">Quản lý &amp; Mua bán</a><a href="#" class="user-bar__icon">
-                <div class="icon"><i class="icon__icon material-icons">chat</i><span class="icon__badge">4</span></div></a><a href="#" class="user-bar__icon">
+            <div class="user-bar__left"><a href="../profile" class="user-bar__hello">Chào bạn, Tuấn Minh!</a><a href="../sell" class="button button--rect">bán</a><a href="../help-contact" class="user-bar__link">Liên hệ &amp; Giúp đỡ</a></div>
+            <div class="user-bar__right"><a href="../dashboard-buy" class="user-bar__link">Quản lý &amp; Mua bán</a><a href="../dashboard-inbox" class="user-bar__icon">
+                <div class="icon"><i class="icon__icon material-icons">chat</i><span class="icon__badge">4</span></div></a><a href="../cart" class="user-bar__icon">
                 <div class="icon"><i class="icon__icon material-icons">shopping_cart</i><span class="icon__badge">2</span></div></a></div>
           </div>
         </div>
         <div class="top-search">
-          <div class="top-search__content">
-            <div class="top-search__logo"></div>
+          <div class="top-search__content"><a href="../home" class="top-search__logo"></a>
             <div class="top-search__search-box">
               <form class="top-search-box">
                 <div class="top-search-box__icon icon"><i class="icon__icon material-icons">search</i></div>
@@ -31,8 +30,8 @@
                 <select class="top-search-box__select select select--transparent">
                   <option>Tất cả danh mục</option>
                 </select>
-                <div class="top-search-box__button top-search-box__submit-button"><a href="#" class="button button--full-width">tìm kiếm</a></div>
-                <div class="top-search-box__button top-search-box__more-button"><a href="#" class="button button--gray button--rect button--full-width">nâng cao</a></div>
+                <div class="top-search-box__button top-search-box__submit-button"><a href="../search" class="button button--full-width">tìm kiếm</a></div>
+                <div class="top-search-box__button top-search-box__more-button"><a href="../search" class="button button--gray button--rect button--full-width">nâng cao</a></div>
               </form>
             </div>
           </div>
@@ -41,7 +40,7 @@
       <div class="breadcrumb">
         <div class="breadcrumb__content">
           <ul class="breadcrumb__items">
-                  <li class="breadcrumb__item"><a href="#">trang chủ</a></li>
+                  <li class="breadcrumb__item"><a href="../home">trang chủ</a></li>
           </ul>
         </div>
       </div>
@@ -50,15 +49,15 @@
           <div class="dashboard-page__header fluid-header">
             <div class="fluid-header__content">
               <div class="fluid-header__tabs">
-                <div class="fluid-header__tab selected"><a href="#">quản lý mua</a></div>
-                <div class="fluid-header__tab"><a href="#">quản lý bán</a></div>
-                <div class="fluid-header__tab"><a href="#">tin nhắn</a></div>
+                <div class="fluid-header__tab selected"><a href="../dashboard-buy">quản lý mua</a></div>
+                <div class="fluid-header__tab"><a href="../dashboard-sell">quản lý bán</a></div>
+                <div class="fluid-header__tab"><a href="../dashboard-inbox">tin nhắn</a></div>
               </div>
             </div>
           </div>
           <div class="dashboard-page__content">
             <div class="dashboard-page__filter">
-              <ul class="db-filter cols">
+              <ul class="db-filter cols selector">
                 <li class="cols__item db-filter__item selected"><a href="#" class="db-filter__link button button--line button--small">tổng quan</a></li>
                 <li class="cols__item db-filter__item"><a href="#" class="db-filter__link button button--line button--small">đấu giá</a></li>
                 <li class="cols__item db-filter__item"><a href="#" class="db-filter__link button button--line button--small">thương lượng</a></li>
@@ -84,13 +83,13 @@
                   <div class="db-product">
                     <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">
@@ -113,13 +112,13 @@
                   <div class="db-product">
                     <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">
@@ -145,13 +144,13 @@
                         <h1>đang thua</h1>
                       </div>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">
@@ -177,13 +176,13 @@
                         <h1>đang thua</h1>
                       </div>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">
@@ -222,13 +221,13 @@
                   <div class="db-product">
                     <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">
@@ -251,13 +250,13 @@
                   <div class="db-product">
                     <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">
@@ -283,13 +282,13 @@
                         <h1>không đạt</h1>
                       </div>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">
@@ -315,13 +314,13 @@
                         <h1>hết hạn</h1>
                       </div>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">
@@ -363,13 +362,13 @@
                         <h1>hết hàng</h1>
                       </div>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">
@@ -392,13 +391,13 @@
                   <div class="db-product">
                     <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">
@@ -421,13 +420,13 @@
                   <div class="db-product">
                     <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">
@@ -450,13 +449,13 @@
                   <div class="db-product">
                     <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">
@@ -498,13 +497,13 @@
                         <h1>đã huỷ</h1>
                       </div>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">
@@ -527,13 +526,13 @@
                   <div class="db-product">
                     <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">
@@ -556,13 +555,13 @@
                   <div class="db-product">
                     <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">
@@ -588,13 +587,13 @@
                         <h1>đã huỷ</h1>
                       </div>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">
@@ -636,13 +635,13 @@
                         <h1 class="db-product-cover__icons cols"><i class="material-icons selected cols__item">attach_money</i><i class="material-icons selected cols__item">local_shipping</i><i class="material-icons cols__item">reply</i><i class="material-icons selected cols__item">question_answer</i></h1>
                       </div>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">
@@ -668,13 +667,13 @@
                         <h1 class="db-product-cover__icons cols"><i class="material-icons selected cols__item">attach_money</i><i class="material-icons selected cols__item">local_shipping</i><i class="material-icons cols__item">reply</i><i class="material-icons selected cols__item">question_answer</i></h1>
                       </div>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">
@@ -700,13 +699,13 @@
                         <h1 class="db-product-cover__icons cols"><i class="material-icons selected cols__item">attach_money</i><i class="material-icons selected cols__item">local_shipping</i><i class="material-icons cols__item">reply</i><i class="material-icons selected cols__item">question_answer</i></h1>
                       </div>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">
@@ -732,13 +731,13 @@
                         <h1 class="db-product-cover__icons cols"><i class="material-icons selected cols__item">attach_money</i><i class="material-icons selected cols__item">local_shipping</i><i class="material-icons cols__item">reply</i><i class="material-icons selected cols__item">question_answer</i></h1>
                       </div>
                       <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="#" class="db-product-cover__link">product one with short description</a></h1>
+                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
                         <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="#" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="#" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a href="#" class="db-product-cover__link">ABC</a></li>
+                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
                         </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
                       </div>
                     </div>
                     <div class="db-product__description db-product-description">

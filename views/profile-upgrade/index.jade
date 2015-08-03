@@ -4,7 +4,7 @@ block title
 	| Profile Upgrade
 
 block breadcrumb
-	+breadcrumb-item("cá nhân", "#")
+	+breadcrumb-item("cá nhân", "../profile")
 	+breadcrumb-item("Nâng cấp tài khoản", "#")
 
 block content
@@ -12,9 +12,9 @@ block content
 		.steps.step-page__steps
 			ul.steps__list
 				li.steps__item.selected
-					a(href = "#") bước 1
+					a bước 1
 				li.steps__item
-					a(href = "#") bước 2
+					a bước 2
 		h1.page-title.page-title--small.
 			Chúc mừng bạn đã chọn làm giàu từ Ebachhoa<br>
 			 - Sàn giao dịch ảo với những giá trị thực.
@@ -29,4 +29,4 @@ block content
 								li Đăng bán với công cụ hỗ trợ
 								li Hạn mức 30 sản phẩm/tháng
 						.price-col__footer
-							a(href = "#").button.button--full-width đăng ký
+							a(href = "../profile-upgrade-2").button.button--full-width đăng ký

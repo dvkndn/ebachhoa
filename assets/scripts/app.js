@@ -50,4 +50,10 @@ $(function() {
 		$(event.currentTarget).siblings().removeClass("selected");
 		$(event.currentTarget).addClass("selected");
 	});
+
+	// remove row button
+	$(".table__remove-row-btn").on("click", function(event) {
+		$row = $(event.currentTarget).parent().parent();
+		$row.hide("slow", function(){ $row.remove(); });
+	});
 });

@@ -48,3 +48,8 @@ block sell-content
 					.checkbox: .checkbox__row
 						input(type = "checkbox").checkbox__button#pay-int
 						label(for = "pay-int").checkbox__label Qua Thẻ thanh toán Quốc tế
+
+block sell-footer
+	+footer-button("huỷ phiên", "../home")(class = "button--gray")
+	+footer-button("lưu bản thảo", "#")(class = "button--gray")
+	+footer-button("tiếp tục", "../sell-4")

@@ -7,3 +7,8 @@ block sell-content
 	.sell-preview
 		iframe(src = "../product/" width = "1100" height = "1000")
 			p Your browser does not support iframes.
+
+block sell-footer
+	+footer-button("huỷ phiên", "../home")(class = "button--gray")
+	+footer-button("lưu bản thảo", "#")(class = "button--gray")
+	+footer-button("tiếp tục", "../sell-5")

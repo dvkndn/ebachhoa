@@ -11,13 +11,13 @@ block content
 		.steps.step-page__steps
 			ul.steps__list
 				li.steps__item
-					a(href = "#") giỏ hàng
+					a giỏ hàng
 				li.steps__item
-					a(href = "#") vận chuyển
+					a vận chuyển
 				li.steps__item.selected
-					a(href = "#") thanh toán
+					a thanh toán
 				li.steps__item
-					a(href = "#") hoàn tất
+					a hoàn tất
 		h1.page-title Thanh toán
 		.payment-form.checkout-page__payment-form
 			form.form.form--vertical
@@ -50,4 +50,8 @@ block content
 								a(href = "#").text-orange (?)
 							input(type = "text", placeholder = "XXX").text-box.text-box--full-width.last
 				hr.hr.hr--bigger
-				a(href = "#").button.button--full-width thanh toán 5.500.000đ
+				.flex.flex--equal.cols
+					div.cols__item
+						a(href = "../checkout").button--gray.button.button--full-width quay lại
+					div.cols__item
+						a(href = "../checkout-3").button.button--full-width thanh toán 5.500.000đ

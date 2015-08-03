@@ -13,7 +13,7 @@ block content
 				.fluid-header__profile.profile
 					.profile__img
 					h1.profile__name Tuấn Minh
-				.fluid-header__tabs
+				.fluid-header__tabs.selector
 					.fluid-header__tab.selected: a(href = "#") tất cả
 					.fluid-header__tab: a(href = "#") niêm yết
 					.fluid-header__tab: a(href = "#") đấu giá
@@ -24,7 +24,7 @@ block content
 						- var imgId = Math.floor(Math.random() * 10) + 1
 						.product-list__item
 							.product
-								a.product__link-wrapper(href = "#")
+								a.product__link-wrapper(href = "../product")
 									img(src = "../../assets/images/product/#{imgId}-small.jpg",
 										width = "auto", height = "auto").product__thumb
 									h1.product__title Lorem ipsum

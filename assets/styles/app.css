@@ -2333,6 +2333,10 @@ body {
   text-align: left;
 }
 
+.sell-table tbody a:hover {
+  color: #FF5E1B;
+}
+
 .sell-filter-form {
   display: -webkit-box;
   display: -webkit-flex;

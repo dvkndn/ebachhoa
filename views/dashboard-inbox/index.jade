@@ -11,9 +11,9 @@ block content
 		.dashboard-page__header.fluid-header.inbox-page__header
 			.fluid-header__content
 				.fluid-header__tabs
-					.fluid-header__tab: a(href = "#") quản lý mua
-					.fluid-header__tab: a(href = "#") quản lý bán
-					.fluid-header__tab.selected: a(href = "#") tin nhắn
+					.fluid-header__tab: a(href = "../dashboard-buy") quản lý mua
+					.fluid-header__tab: a(href = "../dashboard-sell") quản lý bán
+					.fluid-header__tab.selected: a(href = "../dashboard-inbox") tin nhắn
 		.dashboard-page__content.inbox.fluid
 			.inbox__folders
 				ul.folders
@@ -57,7 +57,7 @@ block content
 					h1.message-full__title Email Title
 					h2.message-full__user
 						| From: 
-						a(href = "#").text-orange John Appleseed (john@apple.com)
+						a(href = "../profile").text-orange John Appleseed (john@apple.com)
 					.message-full__content
 						p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ornare magna, eu sodales erat. Quisque id ultrices mauris, quis rhoncus urna. In commodo fringilla maximus.
 						p Fusce volutpat odio et dui lacinia, nec laoreet nulla blandit. Proin ac malesuada risus. Pellentesque malesuada fringilla imperdiet. Duis ut dolor ex. Praesent et bibendum felis. Aliquam tortor lorem, tincidunt nec sagittis id, vestibulum nec mauris.

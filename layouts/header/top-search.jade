@@ -1,6 +1,6 @@
 .top-search
 	.top-search__content
-		.top-search__logo
+		a.top-search__logo(href = "../home")
 		.top-search__search-box: form.top-search-box
 			.top-search-box__icon.icon
 				i.icon__icon.material-icons search
@@ -8,6 +8,6 @@
 			select.top-search-box__select.select.select--transparent
 				option Tất cả danh mục
 			.top-search-box__button.top-search-box__submit-button
-				a.button.button--full-width(href = "#") tìm kiếm
+				a.button.button--full-width(href = "../search") tìm kiếm
 			.top-search-box__button.top-search-box__more-button
-				a.button.button--gray.button--rect.button--full-width(href = "#") nâng cao
+				a.button.button--gray.button--rect.button--full-width(href = "../search") nâng cao
