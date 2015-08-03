@@ -1,0 +1,20 @@
+extend ../../layouts/layout.jade
+
+block title
+	| Home
+
+block setting
+	.hide-breadcrumb
+
+block content
+	.home
+		.home__products
+			- for (var i = 0; i < 12; i++)
+				- var imgId = Math.floor(Math.random() * 10) + 1
+				.product
+					a.product__link-wrapper(href = "#")
+						img(src = "../../assets/images/product/#{imgId}-small.jpg",
+							width = "165", height = "165").product__thumb
+						h1.product__title Lorem ipsum
+						h2.product__normal-price Niêm yết: 2.300.000 ₫
+						h3.product__highlight-price Giá đấu: 2.400.000 ₫

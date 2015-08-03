@@ -1,0 +1,19 @@
+.home-page {
+
+}
+
+.home {
+	&__products {
+		display: flex;
+		flex-wrap: wrap;
+
+		@extend .cols;
+		margin-bottom: -30px;
+		
+		> * {
+			@extend .cols__item;
+			margin-bottom: 30px;
+			flex-basis: 25%;
+		}
+	}
+}

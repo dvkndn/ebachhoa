@@ -1537,12 +1537,12 @@ body {
   padding: 30px 0;
 }
 
-.cols {
+.cols, .home__products {
   margin-left: -10px;
   margin-right: -10px;
 }
 
-.cols__item {
+.cols__item, .home__products > * {
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -2498,6 +2498,24 @@ body {
 
 .inbox-page__header {
   margin-bottom: 0;
+}
+
+.home__products {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: -30px;
+}
+
+.home__products > * {
+  margin-bottom: 30px;
+  -webkit-flex-basis: 25%;
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
 }
 
 body {
