@@ -5,11 +5,14 @@ block prepend content
 
 block sell-content
 	.sell-done.checkout-thankyou
+		i.material-icons.sell-category-select__done-icon check
 		h1.page-title.checkout-thankyou__title Phiên giao dịch #101004 <br>đã được kích hoạt
 		p.checkout-thankyou__text.
 			Bạn có thể theo dõi phiên giao dịch từ trang quản lý mua bán.
 
-block sell-footer
-	+footer-button("đăng phiên khác", "../sell")(class = "button--gray")
-	+footer-button("quản lý mua bán", "../dashboard-sell")
-	+footer-button("", "#")
+block sell5-footer
+	.fluid-footer
+		.fluid-footer__content: .flex.flex--equal.cols(style = "margin-left: 260px;")
+			+footer-button("đăng phiên khác", "../sell")(class = "button--gray")
+			+footer-button("quản lý mua bán", "../dashboard-sell")
+			+footer-button("", "#")

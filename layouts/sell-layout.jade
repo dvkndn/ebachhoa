@@ -30,11 +30,12 @@ block content
 					li.steps__item(class = (index === selectedStep ? "selected" : ""))
 						a(href = step[1])= step[0]
 		block sell-content
-		.fluid-footer
-			.fluid-footer__content: .flex.flex--equal.cols
-				block sell-footer
-					+footer-button("quay lại", "#")(class = "button--gray")
-					+footer-button("lưu bản thảo", "#")(class = "button--gray")
-					+footer-button("tiếp tục", "#")
+		block sell5-footer
+			.fluid-footer
+				.fluid-footer__content: .flex.flex--equal.cols
+					block sell-footer
+						+footer-button("quay lại", "#")(class = "button--gray")
+						+footer-button("lưu bản thảo", "#")(class = "button--gray")
+						+footer-button("tiếp tục", "#")
 block footer
 	.footer.footer--100.footer--gray
