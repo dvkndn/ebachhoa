@@ -14,6 +14,9 @@ block content
 				h1.browse-sort__title.label Sắp xếp theo:
 				select.select.select--full-width
 					option Giá (từ cao đến thấp)
+					option Giá (từ thấp đến cao)
+					option Phổ biến (từ cao đến thấp)
+					option Phổ biến (từ thấp đến cao)
 			.category-tree
 				ul
 					li.accordion.accordion--selected
@@ -24,29 +27,37 @@ block content
 								h1.accordion__title.category-tree__item-2
 									a(href = "#") trang điểm - làm đẹp
 								ul.accordion__content.category-tree__list-2
-									li.category-tree__item-3: a(href = "#").text-orange Tất cả
+									li.category-tree__item-3: a(href = "../category").text-orange Tất cả
 									each title in ["Toàn thân", "Vùng mắt", "Vùng mặt", "Vùng môi", "Móng tay - chân", "Bộ trang điểm All-in-one", "Dụng cụ làm đẹp"]
-										li.category-tree__item-3: a(href = "#")= title
+										li.category-tree__item-3: a(href = "../category")= title
 							li.accordion
 								h1.accordion__title.category-tree__item-2
 									a(href = "#") chăm sóc da
 								ul.accordion__content.category-tree__list-2
-									li.category-tree__item-3: a(href = "#") Toàn thân
+									li.category-tree__item-3: a(href = "../category").text-orange Tất cả
+									each title in ["Toàn thân", "Vùng mắt", "Vùng mặt", "Vùng môi", "Móng tay - chân", "Bộ trang điểm All-in-one", "Dụng cụ làm đẹp"]
+										li.category-tree__item-3: a(href = "../category")= title
 							li.accordion
 								h1.accordion__title.category-tree__item-2
 									a(href = "#") chăm sóc móng
 								ul.accordion__content.category-tree__list-2
-									li.category-tree__item-3: a(href = "#") Toàn thân
+									li.category-tree__item-3: a(href = "../category").text-orange Tất cả
+									each title in ["Toàn thân", "Vùng mắt", "Vùng mặt", "Vùng môi", "Móng tay - chân", "Bộ trang điểm All-in-one", "Dụng cụ làm đẹp"]
+										li.category-tree__item-3: a(href = "../category")= title
 							li.accordion
 								h1.accordion__title.category-tree__item-2
 									a(href = "#") phòng tắm - spa
 								ul.accordion__content.category-tree__list-2
-									li.category-tree__item-3: a(href = "#") Toàn thân
+									li.category-tree__item-3: a(href = "../category").text-orange Tất cả
+									each title in ["Toàn thân", "Vùng mắt", "Vùng mặt", "Vùng môi", "Móng tay - chân", "Bộ trang điểm All-in-one", "Dụng cụ làm đẹp"]
+										li.category-tree__item-3: a(href = "../category")= title
 					li.accordion
 						h1.accordion__title.category-tree__item-1
 							a(href = "#") nước hoa
 						ul.accordion__content.category-tree__list-1
-							li.category-tree__item-2 abc
+							li.category-tree__item-2: a(href = "../category") Nam
+							li.category-tree__item-2: a(href = "../category") Nữ
+							li.category-tree__item-2: a(href = "../category") Unisex
 		.browse-page__main.browse-main
 			aside.browse-main__aside
 				ul.category-list.selector

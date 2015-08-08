@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="../../assets/styles/app.css"/>
     <script src="../../vendors/jquery.min.js"></script>
+    <script src="../../vendors/accounting.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
   </head>
   <body>
     <div id="page-container">
@@ -93,10 +96,10 @@
                       </div>
                       <div class="multi-range__inputs">
                         <div class="multi-range__lower">
-                          <input type="text" value="1.000.000 đ" class="text-box text-box--line text-box--small text-box--full-width"/>
+                          <input type="text" value="1,000,000 đ" class="text-box text-box--line text-box--small text-box--full-width"/>
                         </div>
-                        <div class="multi-range__upper">
-                          <input type="text" value="3.000.000 đ" class="text-box text-box--line text-box--small text-box--full-width"/>
+                        <div id="multi-range__upper" class="multi-range__upper">
+                          <input type="text" value="3,000,000 đ" class="text-box text-box--line text-box--small text-box--full-width"/>
                         </div>
                       </div>
                     </div>
@@ -142,11 +145,75 @@
           <div class="browse-page__main browse-main">
             <main class="browse-main__body">
               <div class="product-list product-list--4-cols">
-                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/6-small.jpg" width="165" height="165" class="product__thumb"/>
+                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/9-small.jpg" width="165" height="165" class="product__thumb"/>
+                    <h1 class="product__title">Lorem ipsum</h1>
+                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
+                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
+                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/2-small.jpg" width="165" height="165" class="product__thumb"/>
+                    <h1 class="product__title">Lorem ipsum</h1>
+                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
+                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
+                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/7-small.jpg" width="165" height="165" class="product__thumb"/>
+                    <h1 class="product__title">Lorem ipsum</h1>
+                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
+                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
+                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/4-small.jpg" width="165" height="165" class="product__thumb"/>
                     <h1 class="product__title">Lorem ipsum</h1>
                     <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
                     <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
                 <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/6-small.jpg" width="165" height="165" class="product__thumb"/>
+                    <h1 class="product__title">Lorem ipsum</h1>
+                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
+                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
+                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/3-small.jpg" width="165" height="165" class="product__thumb"/>
+                    <h1 class="product__title">Lorem ipsum</h1>
+                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
+                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
+                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/1-small.jpg" width="165" height="165" class="product__thumb"/>
+                    <h1 class="product__title">Lorem ipsum</h1>
+                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
+                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
+                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/1-small.jpg" width="165" height="165" class="product__thumb"/>
+                    <h1 class="product__title">Lorem ipsum</h1>
+                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
+                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
+                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/6-small.jpg" width="165" height="165" class="product__thumb"/>
+                    <h1 class="product__title">Lorem ipsum</h1>
+                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
+                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
+                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/9-small.jpg" width="165" height="165" class="product__thumb"/>
+                    <h1 class="product__title">Lorem ipsum</h1>
+                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
+                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
+                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/9-small.jpg" width="165" height="165" class="product__thumb"/>
+                    <h1 class="product__title">Lorem ipsum</h1>
+                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
+                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
+                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/9-small.jpg" width="165" height="165" class="product__thumb"/>
+                    <h1 class="product__title">Lorem ipsum</h1>
+                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
+                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
+                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/6-small.jpg" width="165" height="165" class="product__thumb"/>
+                    <h1 class="product__title">Lorem ipsum</h1>
+                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
+                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
+                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/5-small.jpg" width="165" height="165" class="product__thumb"/>
+                    <h1 class="product__title">Lorem ipsum</h1>
+                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
+                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
+                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/1-small.jpg" width="165" height="165" class="product__thumb"/>
+                    <h1 class="product__title">Lorem ipsum</h1>
+                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
+                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
+                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/3-small.jpg" width="165" height="165" class="product__thumb"/>
+                    <h1 class="product__title">Lorem ipsum</h1>
+                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
+                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
+                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/1-small.jpg" width="165" height="165" class="product__thumb"/>
+                    <h1 class="product__title">Lorem ipsum</h1>
+                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
+                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
+                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/4-small.jpg" width="165" height="165" class="product__thumb"/>
                     <h1 class="product__title">Lorem ipsum</h1>
                     <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
                     <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
@@ -155,70 +222,6 @@
                     <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
                     <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
                 <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/8-small.jpg" width="165" height="165" class="product__thumb"/>
-                    <h1 class="product__title">Lorem ipsum</h1>
-                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
-                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
-                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/7-small.jpg" width="165" height="165" class="product__thumb"/>
-                    <h1 class="product__title">Lorem ipsum</h1>
-                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
-                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
-                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/1-small.jpg" width="165" height="165" class="product__thumb"/>
-                    <h1 class="product__title">Lorem ipsum</h1>
-                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
-                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
-                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/10-small.jpg" width="165" height="165" class="product__thumb"/>
-                    <h1 class="product__title">Lorem ipsum</h1>
-                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
-                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
-                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/7-small.jpg" width="165" height="165" class="product__thumb"/>
-                    <h1 class="product__title">Lorem ipsum</h1>
-                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
-                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
-                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/10-small.jpg" width="165" height="165" class="product__thumb"/>
-                    <h1 class="product__title">Lorem ipsum</h1>
-                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
-                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
-                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/10-small.jpg" width="165" height="165" class="product__thumb"/>
-                    <h1 class="product__title">Lorem ipsum</h1>
-                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
-                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
-                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/2-small.jpg" width="165" height="165" class="product__thumb"/>
-                    <h1 class="product__title">Lorem ipsum</h1>
-                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
-                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
-                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/1-small.jpg" width="165" height="165" class="product__thumb"/>
-                    <h1 class="product__title">Lorem ipsum</h1>
-                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
-                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
-                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/9-small.jpg" width="165" height="165" class="product__thumb"/>
-                    <h1 class="product__title">Lorem ipsum</h1>
-                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
-                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
-                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/10-small.jpg" width="165" height="165" class="product__thumb"/>
-                    <h1 class="product__title">Lorem ipsum</h1>
-                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
-                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
-                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/7-small.jpg" width="165" height="165" class="product__thumb"/>
-                    <h1 class="product__title">Lorem ipsum</h1>
-                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
-                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
-                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/7-small.jpg" width="165" height="165" class="product__thumb"/>
-                    <h1 class="product__title">Lorem ipsum</h1>
-                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
-                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
-                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/6-small.jpg" width="165" height="165" class="product__thumb"/>
-                    <h1 class="product__title">Lorem ipsum</h1>
-                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
-                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
-                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/4-small.jpg" width="165" height="165" class="product__thumb"/>
-                    <h1 class="product__title">Lorem ipsum</h1>
-                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
-                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
-                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/10-small.jpg" width="165" height="165" class="product__thumb"/>
-                    <h1 class="product__title">Lorem ipsum</h1>
-                    <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
-                    <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>
-                <div class="product product-list__item"><a href="../product" class="product__link-wrapper"><img src="../../assets/images/product/4-small.jpg" width="165" height="165" class="product__thumb"/>
                     <h1 class="product__title">Lorem ipsum</h1>
                     <h2 class="product__normal-price">Niêm yết: 2.300.000 ₫</h2>
                     <h3 class="product__highlight-price">Giá đấu: 2.400.000 ₫</h3></a></div>

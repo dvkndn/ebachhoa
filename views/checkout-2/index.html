@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="../../assets/styles/app.css"/>
     <script src="../../vendors/jquery.min.js"></script>
+    <script src="../../vendors/accounting.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
   </head>
   <body>
     <div id="page-container">
@@ -22,8 +25,7 @@
           </div>
         </div>
         <div class="top-search">
-          <div class="top-search__content">
-            <div class="top-search__logo"></div>
+          <div class="top-search__content"><a href="../home" class="top-search__logo"></a>
             <div class="top-search__search-box">
               <form class="top-search-box">
                 <div class="top-search-box__icon icon"><i class="icon__icon material-icons">search</i></div>
@@ -32,7 +34,7 @@
                   <option>Tất cả danh mục</option>
                 </select>
                 <div class="top-search-box__button top-search-box__submit-button"><a href="../search" class="button button--full-width">tìm kiếm</a></div>
-                <div class="top-search-box__button top-search-box__more-button"><a href="#" class="button button--gray button--rect button--full-width">nâng cao</a></div>
+                <div class="top-search-box__button top-search-box__more-button"><a href="../search" class="button button--gray button--rect button--full-width">nâng cao</a></div>
               </form>
             </div>
           </div>
@@ -61,12 +63,12 @@
               <fieldset class="fieldset last">
                 <div class="flex flex--equal cols radio last">
                   <div class="cols__item">
-                    <input id="radio-fee-no" type="radio" name="fee" value="no" class="radio__button"/>
-                    <label for="radio-fee-no" class="radio__label">Thanh toán qua Ngân lượng</label>
+                    <input id="radio-payment-nganluong" type="radio" name="payment" value="nganluong" class="radio__button"/>
+                    <label for="radio-payment-nganluong" class="radio__label">Thanh toán qua Ngân lượng</label>
                   </div>
                   <div class="cols__item">
-                    <input id="radio-fee-yes" type="radio" name="fee" value="yes" checked="checked" class="radio__button"/>
-                    <label for="radio-fee-yes" class="radio__label">Thanh toán qua thẻ quốc tế</label>
+                    <input id="radio-payment-card" type="radio" name="payment" value="card" checked="checked" class="radio__button"/>
+                    <label for="radio-payment-card" class="radio__label">Thanh toán qua thẻ quốc tế</label>
                   </div>
                 </div>
               </fieldset>
@@ -81,12 +83,74 @@
                     <label class="label">Hết hạn</label>
                     <select class="select select--full-width last">
                       <option>- Tháng -</option>
+                      <option>Tháng 1</option>
+                      <option>Tháng 2</option>
+                      <option>Tháng 3</option>
+                      <option>Tháng 4</option>
+                      <option>Tháng 5</option>
+                      <option>Tháng 6</option>
+                      <option>Tháng 7</option>
+                      <option>Tháng 8</option>
+                      <option>Tháng 9</option>
+                      <option>Tháng 10</option>
+                      <option>Tháng 11</option>
+                      <option>Tháng 12</option>
                     </select>
                   </div>
                   <div class="cols__item">
                     <label class="label">&nbsp;</label>
                     <select class="select select--full-width last">
                       <option>- Năm -</option>
+                      <option>Năm 2000</option>
+                      <option>Năm 2001</option>
+                      <option>Năm 2002</option>
+                      <option>Năm 2003</option>
+                      <option>Năm 2004</option>
+                      <option>Năm 2005</option>
+                      <option>Năm 2006</option>
+                      <option>Năm 2007</option>
+                      <option>Năm 2008</option>
+                      <option>Năm 2009</option>
+                      <option>Năm 2010</option>
+                      <option>Năm 2011</option>
+                      <option>Năm 2012</option>
+                      <option>Năm 2013</option>
+                      <option>Năm 2014</option>
+                      <option>Năm 2015</option>
+                      <option>Năm 2016</option>
+                      <option>Năm 2017</option>
+                      <option>Năm 2018</option>
+                      <option>Năm 2019</option>
+                      <option>Năm 2020</option>
+                      <option>Năm 2021</option>
+                      <option>Năm 2022</option>
+                      <option>Năm 2023</option>
+                      <option>Năm 2024</option>
+                      <option>Năm 2025</option>
+                      <option>Năm 2026</option>
+                      <option>Năm 2027</option>
+                      <option>Năm 2028</option>
+                      <option>Năm 2029</option>
+                      <option>Năm 2030</option>
+                      <option>Năm 2031</option>
+                      <option>Năm 2032</option>
+                      <option>Năm 2033</option>
+                      <option>Năm 2034</option>
+                      <option>Năm 2035</option>
+                      <option>Năm 2036</option>
+                      <option>Năm 2037</option>
+                      <option>Năm 2038</option>
+                      <option>Năm 2039</option>
+                      <option>Năm 2040</option>
+                      <option>Năm 2041</option>
+                      <option>Năm 2042</option>
+                      <option>Năm 2043</option>
+                      <option>Năm 2044</option>
+                      <option>Năm 2045</option>
+                      <option>Năm 2046</option>
+                      <option>Năm 2047</option>
+                      <option>Năm 2048</option>
+                      <option>Năm 2049</option>
                     </select>
                   </div>
                   <div class="cols__item">
@@ -94,6 +158,9 @@
                     <input type="text" placeholder="XXX" class="text-box text-box--full-width last"/>
                   </div>
                 </div>
+              </fieldset>
+              <fieldset id="nganluong-fieldset" class="fieldset last">
+                <p class="checkout-thankyou__text">Nhấn nút bên dưới để thanh toán qua ngân lượng.</p><a href="#" class="button">thanh toán qua ngân lượng</a>
               </fieldset>
               <hr class="hr hr--bigger"/>
               <div class="flex flex--equal cols">

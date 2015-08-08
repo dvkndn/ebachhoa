@@ -1,4 +1,22 @@
 $(function() {
+	// set money format
+	if (accounting) {
+		accounting.settings = {
+			currency: {
+				symbol: "₫",   // default currency symbol is '$'
+				format: "%v %s", // controls output: %s = symbol, %v = value/number (can be object: see below)
+				decimal : ",",  // decimal point separator
+				thousand: ".",  // thousands separator
+				precision: 0   // decimal places
+			},
+			number: {
+				precision : 0,  // default precision on numbers is 0
+				thousand: ".",
+				decimal : ","
+			}
+		}
+	};
+
 	// tab handler
 	$(".tabs").on("click", "> .tabs__title", function(event) {
 		// remove all sibling class
@@ -54,6 +72,103 @@ $(function() {
 	// remove row button
 	$(".table__remove-row-btn").on("click", function(event) {
 		$row = $(event.currentTarget).parent().parent();
-		$row.hide("slow", function(){ $row.remove(); });
+		$row.remove();
 	});
+
+	// update cart
+	$("#update-cart-btn").on("click", function(event) {
+		var total = 0;
+
+		$.each($(".cart-page__list tbody tr"), function(index, tr) {
+			var amount = $(tr).children("*:nth-child(2)").children("input").val();
+			amount = Number(amount)
+
+			var price  = $(tr).children("*:nth-child(3)").text();
+			price = Number(price.replace(/[^0-9]+/g,""));
+
+			var totalPrice = amount*price;
+			total += totalPrice;
+			totalPrice = accounting.formatMoney(totalPrice);
+
+			$(tr).children("*:nth-child(4)").text(totalPrice);
+		});
+
+		$(".cart-summary__total-price").text(accounting.formatMoney(total));
+	});
+
+	// home slider
+	$(".slider__slides").slick({
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 2000
+	});
+	$(".slider__thumb").on("click", function(e) {
+		var index = $(e.target).index();
+		$(".slider__slides").slick("slickGoTo", index)
+	});
+
+	// checkout 2 option handler
+	$("#nganluong-fieldset").hide();
+	$("#radio-payment-nganluong").on("change", function(e) {
+		$("#card-fieldset").hide();
+		$("#nganluong-fieldset").show();
+	});
+	$("#radio-payment-card").on("change", function(e) {
+		$("#card-fieldset").show();
+		$("#nganluong-fieldset").hide();
+	});
+
+	// dashboard buy option handler
+	$("#deal-over-section").hide();
+	$("#deal-over").on("change", function(e) {
+		$("#deal-now-section").hide();
+		$("#deal-over-section").show();
+	});
+	$("#deal-now").on("change", function(e) {
+		$("#deal-now-section").show();
+		$("#deal-over-section").hide();
+	});	
+
+	// product circle processbar
+	var states = [
+		{
+			value: 0,
+			fill: { color: "#E2F0D9" },
+			emptyFill: "#70AD47"
+		}, {
+			value: 0.25,
+			fill: { color: "#E2F0D9" },
+			emptyFill: "#70AD47"
+		}, {
+			value: 0,
+			fill: { color: "#F8CBAD" },
+			emptyFill: "#FF6601"
+		}, {
+			value: 0.25,
+			fill: { color: "#F8CBAD" },
+			emptyFill: "#FF6601"
+		}, {
+			value: 0,
+			fill: { color: "#FFAFAF" },
+			emptyFill: "#FF0000"
+		}, {
+			value: 0.25,
+			fill: { color: "#FFAFAF" },
+			emptyFill: "#FF0000"
+		}
+	];
+	var currentState = 0;
+	$(".product-deadline__circle").circleProgress({
+		value: 0.25,
+		size: 92,
+		startAngle: -Math.PI / 4 * 2,
+		fill: { color: "#E2F0D9" },
+		emptyFill: "#70AD47",
+		thickness: 8
+	});
+	$(".product-deadline__circle").on("click", function(e) {
+		currentState = (currentState === 5 ? 0 : currentState + 1);
+		$(e.currentTarget).circleProgress(states[currentState]);
+
+	})
 });

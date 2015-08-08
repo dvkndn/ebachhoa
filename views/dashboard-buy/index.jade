@@ -82,7 +82,7 @@ block content
 					.radio
 						input.radio__button(type = "radio", name = "deal", value = "over")#deal-over
 						label.radio__label(for = "deal-over") Đã thua
-				.db-section__list.db-products.cols
+				.db-section__list.db-products.cols#deal-now-section
 					.db-products__item.cols__item: .db-product
 						+db-product-cover("none")
 						+db-product-description("2.300.000 ₫ ", "bạn đặt 2.400.000 ₫", "SHIP: + 30.000 ₫")
@@ -99,6 +99,12 @@ block content
 						+db-product-cover("đang thua")
 						+db-product-description(orangize("2.300.000 ₫ "), "bạn đặt 2.200.000 ₫", "SHIP: + 30.000 ₫")
 						+db-product-action(orangize("còn 02:30:21"), "20 lượt", "đặt giá", true)
+				.db-section__list.db-products.cols#deal-over-section
+					- for (var i = 0; i < 4; i++)
+						.db-products__item.cols__item: .db-product
+							+db-product-cover("đang thua")
+							+db-product-description("2.300.000 ₫ ", "bạn đặt 2.400.000 ₫", "SHIP: + 30.000 ₫")
+							+db-product-action("còn 02:30:21", "20 lượt", "chi tiết", true)
 				footer.db-section__footer
 					include ../../layouts/pagination.jade
 			//- SECTION DIVIDER ----------

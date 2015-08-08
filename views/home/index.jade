@@ -8,6 +8,49 @@ block setting
 
 block content
 	.home
+		.home__slider.slider
+			.slider__thumbs
+				.slider__thumbs-content
+					- for (var i = 1; i < 4; i++)
+						a.slider__thumb(href = "#", style = "background-image: url(../../assets/images/product/#{i}-small.jpg")
+			.slider__slides
+				- for (var i = 1; i < 4; i++)
+					a.slider__slide(href = "../product", style = "background-image: url(../../assets/images/product/#{i}-full.jpg")
+		.home__cat-anchor
+			.cat-anchor(style = "background-image: url(../../assets/images/nuochoa.png")
+				.cat-anchor__content
+					ul.cat-anchor__list
+						li.cat-anchor__item-cat: a(href = "#") cat 1
+						li.cat-anchor__item: a(href = "#") item 1
+						li.cat-anchor__item: a(href = "#") item 2
+						li.cat-anchor__item: a(href = "#") item 3
+						li.cat-anchor__item-cat: a(href = "#") cat 2
+						li.cat-anchor__item-cat: a(href = "#") cat 3
+					ul.cat-anchor__list
+						li.cat-anchor__item-cat: a(href = "#") cat 1
+						li.cat-anchor__item: a(href = "#") item 1
+						li.cat-anchor__item: a(href = "#") item 2
+						li.cat-anchor__item: a(href = "#") item 3
+						li.cat-anchor__item-cat: a(href = "#") cat 2
+						li.cat-anchor__item-cat: a(href = "#")!= orangize("tất cả")
+				h1.cat-anchor__title Nước hoa
+			.cat-anchor(style = "background-image: url(../../assets/images/mypham.png")
+				.cat-anchor__content
+					ul.cat-anchor__list
+						li.cat-anchor__item-cat: a(href = "#") cat 1
+						li.cat-anchor__item: a(href = "#") item 1
+						li.cat-anchor__item: a(href = "#") item 2
+						li.cat-anchor__item: a(href = "#") item 3
+						li.cat-anchor__item-cat: a(href = "#") cat 2
+						li.cat-anchor__item-cat: a(href = "#") cat 3
+					ul.cat-anchor__list
+						li.cat-anchor__item-cat: a(href = "#") cat 1
+						li.cat-anchor__item: a(href = "#") item 1
+						li.cat-anchor__item: a(href = "#") item 2
+						li.cat-anchor__item: a(href = "#") item 3
+						li.cat-anchor__item-cat: a(href = "#") cat 2
+						li.cat-anchor__item-cat: a(href = "#")!= orangize("tất cả")
+				h1.cat-anchor__title Mỹ phẩm
 		.home__products
 			- for (var i = 0; i < 12; i++)
 				- var imgId = Math.floor(Math.random() * 10) + 1
@@ -18,3 +61,25 @@ block content
 						h1.product__title Lorem ipsum
 						h2.product__normal-price Niêm yết: 2.300.000 ₫
 						h3.product__highlight-price Giá đấu: 2.400.000 ₫
+		.home__ads
+			img(src = "../../assets/images/ads.png", width = "1000", height = "200")
+		.home__badges.flex.cols.flex--equal
+			.cols__item: .badge
+				i.badge__icon.material-icons verified_user
+				p.badge__text Nơi tập trung những Seller - Buyer trung thực. Môi trường kinh doanh online Lành mạnh, An toàn & Hiệu quả bậc nhất.
+			.cols__item: .badge
+				i.badge__icon.material-icons payment
+				p.badge__text Hỗ trợ các phương thức thanh toán online An Toàn và Nhanh chóng.
+			.cols__item: .badge
+				i.badge__icon.material-icons local_shipping
+				p.badge__text Hỗ trợ dịch vụ Vận chuyển lấy hàng và chuyển hàng tận nơi.
+			.cols__item: .badge
+				i.badge__icon.material-icons question_answer
+				p.badge__text Hệ thống Feedback & Công cụ hỗ trợ vượt trội. Là môi trường nơi Seller & Buyer có thể hoàn toàn tin tưởng nhau.
+			.cols__item: .badge
+				i.badge__icon.material-icons attach_money
+				p.badge__text Gầy dựng Cơ Ngơi của bạn Ngay tại đây và làm giàu từ đó.
+block footer
+	.home-footer
+		h1.home-footer__title Chúng tôi đồng hành cùng các bạn<br>trong mọi phiên giao dịch
+		p.home-footer__text Hãy đặt bất kỳ câu hỏi nào với một trong các Chuyên viên<br>tư vấn của Ebachhoa ngay khi có nghi vấn.

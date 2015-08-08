@@ -24,11 +24,11 @@ block content
 				fieldset.fieldset.last
 					div.flex.flex--equal.cols.radio.last
 						div.cols__item
-							input.radio__button#radio-fee-no(type = "radio", name = "fee", value = "no")
-							label.radio__label(for = "radio-fee-no") Thanh toán qua Ngân lượng
+							input.radio__button#radio-payment-nganluong(type = "radio", name = "payment", value = "nganluong")
+							label.radio__label(for = "radio-payment-nganluong") Thanh toán qua Ngân lượng
 						div.cols__item
-							input.radio__button#radio-fee-yes(type = "radio", name = "fee", value = "yes", checked)
-							label.radio__label(for = "radio-fee-yes") Thanh toán qua thẻ quốc tế
+							input.radio__button#radio-payment-card(type = "radio", name = "payment", value = "card", checked)
+							label.radio__label(for = "radio-payment-card") Thanh toán qua thẻ quốc tế
 				hr.hr.hr--big
 				fieldset#card-fieldset.fieldset.last
 					label.label Họ và tên chủ thẻ
@@ -40,15 +40,22 @@ block content
 							label.label Hết hạn
 							select.select.select--full-width.last
 								option - Tháng -
+								- for (var i = 1; i < 13; i++)
+									option Tháng #{i}
 						div.cols__item
 							label.label &nbsp;
 							select.select.select--full-width.last
 								option - Năm -
+								- for (var i = 2000; i < 2050; i++)
+									option Năm #{i}
 						div.cols__item
 							label.label
 								| CCV 
 								a(href = "#").text-orange (?)
 							input(type = "text", placeholder = "XXX").text-box.text-box--full-width.last
+				fieldset#nganluong-fieldset.fieldset.last
+					p.checkout-thankyou__text Nhấn nút bên dưới để thanh toán qua ngân lượng.
+					a(href = "#").button thanh toán qua ngân lượng
 				hr.hr.hr--bigger
 				.flex.flex--equal.cols
 					div.cols__item
