@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"trans",
+				"transform: "
+			],
+			[
+				"product-d",
+				"product-deadline"
+			],
+			[
+				"box-s",
+				"box-sizing: "
+			],
+			[
 				"back",
 				"background-color: "
 			],
@@ -46,10 +58,6 @@
 			[
 				"db-",
 				"db-product-time"
-			],
-			[
-				"trans",
-				"transition: "
 			],
 			[
 				"ilni",
@@ -496,10 +504,6 @@
 				"saturate	Sass-function"
 			],
 			[
-				"box-s",
-				"box-shadow: "
-			],
-			[
 				"im",
 				"images"
 			],
@@ -510,53 +514,81 @@
 			[
 				"font",
 				"font-size: "
-			],
-			[
-				"align",
-				"align-items: "
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "views/search/index.jade",
-			"settings":
-			{
-				"buffer_size": 3120,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "layouts/layout.jade",
-			"settings":
-			{
-				"buffer_size": 533,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "layouts/head.jade",
 			"settings":
 			{
-				"buffer_size": 1529,
+				"buffer_size": 1803,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "assets/scripts/app-react.js",
+			"file": "views/product/index.jade",
 			"settings":
 			{
-				"buffer_size": 507,
+				"buffer_size": 3118,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/thiendo/Documents/Development/dwork/lottenew/lotte-site/lotte-web/pom.xml",
+			"file": "assets/styles/pages/product.scss",
 			"settings":
 			{
-				"buffer_size": 3022,
-				"line_ending": "CR"
+				"buffer_size": 1929,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/scripts/app.js",
+			"settings":
+			{
+				"buffer_size": 4706,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/styles/pages/sell.scss",
+			"settings":
+			{
+				"buffer_size": 2026,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/styles/app.scss",
+			"settings":
+			{
+				"buffer_size": 290,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/sell/index.jade",
+			"settings":
+			{
+				"buffer_size": 1170,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/sell-5/index.jade",
+			"settings":
+			{
+				"buffer_size": 644,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "layouts/sell-layout.jade",
+			"settings":
+			{
+				"buffer_size": 1137,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -634,22 +666,36 @@
 	"expanded_folders":
 	[
 		"/Users/thiendo/Documents/Development/ebachhoa/code",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/scripts",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/vendors",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/vendors/react-0.13.3",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/vendors/react-0.13.3/build",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/views",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/views/sell",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/views/sell-2",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/views/sell-3",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/views/sell-4",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/views/sell-5"
 	],
 	"file_history":
 	[
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/scripts/app.js",
+		"/Users/thiendo/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/product.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/scripts/app-react.jsx",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/views/dashboard-buy/index.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/views/category/index.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/views/checkout-2/index.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/category.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/views/cart/index.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/views/product/index.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/views/home/index.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/container.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/product.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/flex.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/home.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/cols.scss",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/layouts/layout.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/base/colors.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/layouts/head.jade",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/views/search/index.jade",
+		"/Users/thiendo/Documents/Development/dwork/lottenew/lotte-site/lotte-web/pom.xml",
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/scripts/app.js",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/vendors/accounting.min.js",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/search.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/views/sell-2/index.jade",
@@ -663,39 +709,25 @@
 		"/Users/thiendo/Documents/Development/ebachhoa/code/views/dashboard-sell/index.jade",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/views/profile-upgrade-2/index.jade",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/views/profile-upgrade/index.jade",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/views/search/index.jade",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/views/sell/index.jade",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/layouts/header/top-search.jade",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/views/checkout/index.jade",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/views/checkout-2/index.jade",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/views/checkout-3/index.jade",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/views/dashboard-buy/index.jade",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/views/cart/index.jade",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/views/category/index.jade",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/layouts/header/user-bar.jade",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/layouts/layout.jade",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/layouts/sell-layout.jade",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/layouts/pagination.jade",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/layouts/header.jade",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/layouts/breadcrumb.jade",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/product.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/home.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/app.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/views/home/index.jade",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/flex.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/all.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/all.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/fluid-header.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/category.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/accordion.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/base/colors.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/text-box.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/top-search.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/button.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/table.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/form.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/container.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/cols.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/radio.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/profile.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/checkout.scss",
@@ -719,8 +751,6 @@
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/price-col.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/tab.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/setting.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/views/product/index.jade",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/product.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/views/help-faq/index.jade",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/base/icons.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/base/fonts.scss",
@@ -772,10 +802,7 @@
 		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/styles/modules/text-box.scss",
 		"/Users/thiendo/Dropbox/Work/xa-lach/code/views/index.jade",
 		"/Users/thiendo/Dropbox/Work/xa-lach/code/assets/app.scss",
-		"/Users/thiendo/Dropbox/Work/xa-lach/code/vendors/jquery.min.js",
-		"/Users/thiendo/Dropbox/Work/xa-lach/code/ebachhoa.sublime-project",
-		"/Users/thiendo/Dropbox/Work/xa-lach/code/hi.html",
-		"/Users/thiendo/Documents/Development/dwork/lotte/assets/stylesheets/pages/speak.scss"
+		"/Users/thiendo/Dropbox/Work/xa-lach/code/vendors/jquery.min.js"
 	],
 	"find":
 	{
@@ -796,6 +823,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"#",
 			"ib-folder",
 			"ib-folder-list",
 			"ib-folders",
@@ -922,8 +950,7 @@
 			"            ",
 			"\"#\"\\)\\n\\t{5}",
 			"h1.primary-step__title (.*)\\n\\t*.*\\n.*each item in (.*)",
-			"gray-bor",
-			"gray-border"
+			"gray-bor"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -931,6 +958,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"../category",
 			"folder",
 			"folders",
 			"ib-folder-list",
@@ -1057,8 +1085,7 @@
 			"/assets/",
 			"/assets",
 			"```",
-			"td.ethical-table__cell",
-			" \"modules/"
+			"td.ethical-table__cell"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1069,88 +1096,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 0,
-					"file": "views/search/index.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3120,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								983,
-								983
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 113.0,
-						"translation.y": 309.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
-			]
-		},
-		{
 			"selected": 2,
 			"sheets":
 			[
 				{
-					"buffer": 1,
-					"file": "layouts/layout.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 533,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								187,
-								187
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
+					"buffer": 0,
 					"file": "layouts/head.jade",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1529,
+						"buffer_size": 1803,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1524,
-								1524
+								1404,
+								1404
 							]
 						],
 						"settings":
@@ -1161,30 +1124,58 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "assets/scripts/app-react.js",
+					"buffer": 1,
+					"file": "views/product/index.jade",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 507,
+						"buffer_size": 3118,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								442,
-								442
+								1364,
+								1364
 							]
 						],
 						"settings":
 						{
-							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 86.0,
+						"translation.y": 479.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/styles/pages/product.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1929,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1155,
+								1155
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -1193,32 +1184,193 @@
 					},
 					"stack_index": 0,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 4,
+			"sheets":
+			[
 				{
-					"buffer": 4,
-					"file": "/Users/thiendo/Documents/Development/dwork/lottenew/lotte-site/lotte-web/pom.xml",
+					"buffer": 3,
+					"file": "assets/scripts/app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3022,
+						"buffer_size": 4706,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2250,
-								2250
+								4185,
+								4185
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/XML/XML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 35.0,
+						"translation.y": 916.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "assets/styles/pages/sell.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2026,
+						"regions":
+						{
+							"gutter_color_154":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#8BC34A.png",
+								"regions":
+								[
+									[
+										154,
+										171
+									]
+								],
+								"scope": "gutter_color"
+							}
+						},
+						"selection":
+						[
+							[
+								150,
+								150
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 631.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "assets/styles/app.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 290,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "views/sell/index.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1170,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								674,
+								728
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "views/sell-5/index.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 644,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								219,
+								219
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "layouts/sell-layout.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1137,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								837,
+								1090
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -1283,8 +1435,76 @@
 		"selected_items":
 		[
 			[
+				"sell",
+				"layouts/sell-layout.jade"
+			],
+			[
+				"a",
+				"assets/styles/app.scss"
+			],
+			[
+				"prod",
+				"assets/styles/pages/product.scss"
+			],
+			[
+				"pro",
+				"views/product/index.jade"
+			],
+			[
 				"head",
 				"layouts/head.jade"
+			],
+			[
+				"cate",
+				"views/category/index.jade"
+			],
+			[
+				"app-",
+				"assets/scripts/app-react.jsx"
+			],
+			[
+				"cart",
+				"views/cart/index.jade"
+			],
+			[
+				"fle",
+				"assets/styles/modules/flex.scss"
+			],
+			[
+				"col",
+				"assets/styles/modules/cols.scss"
+			],
+			[
+				"lay",
+				"layouts/layout.jade"
+			],
+			[
+				"co",
+				"assets/styles/base/colors.scss"
+			],
+			[
+				"conta",
+				"assets/styles/modules/container.scss"
+			],
+			[
+				"hea",
+				"layouts/head.jade"
+			],
+			[
+				"home",
+				"assets/styles/pages/home.scss"
+			],
+			[
+				"script",
+				"assets/scripts/app.js"
+			],
+			[
+				"layou",
+				"layouts/layout.jade"
+			],
+			[
+				"sear",
+				"views/search/index.jade"
 			],
 			[
 				"layo",
@@ -1295,10 +1515,6 @@
 				"assets/scripts/app.js"
 			],
 			[
-				"sear",
-				"views/search/index.jade"
-			],
-			[
 				"dash",
 				"assets/styles/pages/dashboard.scss"
 			],
@@ -1307,36 +1523,12 @@
 				"layouts/header/top-search.jade"
 			],
 			[
-				"script",
-				"assets/scripts/app.js"
-			],
-			[
 				"app",
 				"assets/styles/app.scss"
 			],
 			[
-				"fle",
-				"assets/styles/modules/flex.scss"
-			],
-			[
 				"page",
 				"assets/styles/pages/all.scss"
-			],
-			[
-				"home",
-				"views/home/index.jade"
-			],
-			[
-				"cate",
-				"views/category/index.jade"
-			],
-			[
-				"pro",
-				"assets/styles/modules/product.scss"
-			],
-			[
-				"prod",
-				"assets/styles/modules/product.scss"
 			],
 			[
 				"all",
@@ -1349,10 +1541,6 @@
 			[
 				"acc",
 				"assets/styles/modules/accordion.scss"
-			],
-			[
-				"col",
-				"assets/styles/base/colors.scss"
 			],
 			[
 				"ap",
@@ -1391,16 +1579,8 @@
 				"assets/styles/modules/button.scss"
 			],
 			[
-				"lay",
-				"layouts/layout.jade"
-			],
-			[
 				"con",
 				"assets/styles/modules/container.scss"
-			],
-			[
-				"sell",
-				"views/sell-2/index.jade"
 			],
 			[
 				"radio",
@@ -1491,10 +1671,6 @@
 				"views/cart/index.jade"
 			],
 			[
-				"cart",
-				"assets/styles/pages/cart.scss"
-			],
-			[
 				"bread",
 				"layouts/breadcrumb.jade"
 			],
@@ -1507,10 +1683,6 @@
 				"assets/styles/modules/breadcrumb.scss"
 			],
 			[
-				"a",
-				"assets/styles/app.scss"
-			],
-			[
 				"app.",
 				"assets/styles/app.scss"
 			],
@@ -1521,10 +1693,6 @@
 			[
 				"searcind",
 				"views/search/index.jade"
-			],
-			[
-				"hea",
-				"assets/styles/modules/fluid-header.scss"
 			],
 			[
 				"pagesall",
@@ -1605,10 +1773,6 @@
 			[
 				"ico",
 				"assets/styles/base/icons.scss"
-			],
-			[
-				"conta",
-				"assets/styles/modules/container.scss"
 			],
 			[
 				"mix",
@@ -1767,10 +1931,6 @@
 				"assets/stylesheets/modules/gnb-menu.scss"
 			],
 			[
-				"layou",
-				"layouts/layout.jade"
-			],
-			[
 				"sitema",
 				"views/etc/sitemap/index.jade"
 			],
@@ -1785,14 +1945,6 @@
 			[
 				"sitem",
 				"views/etc/sitemap/index.jade"
-			],
-			[
-				"foot",
-				"layouts/footer.jade"
-			],
-			[
-				"understand",
-				"assets/stylesheets/pages/understand.scss"
 			]
 		],
 		"width": 0.0

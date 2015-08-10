@@ -7,9 +7,7 @@
 
 	// layout child
 	&__content {
-		width: 100%;
-		max-width: 1000px;
-		margin: auto;
+		@extend .container;
 
 		display: flex;
 		justify-content: space-between;

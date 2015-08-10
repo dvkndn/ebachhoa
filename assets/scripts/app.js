@@ -98,9 +98,9 @@ $(function() {
 
 	// home slider
 	$(".slider__slides").slick({
-		arrows: false,
-		autoplay: true,
-		autoplaySpeed: 2000
+		arrows: false
+		// autoplay: true,
+		// autoplaySpeed: 2000
 	});
 	$(".slider__thumb").on("click", function(e) {
 		var index = $(e.target).index();
