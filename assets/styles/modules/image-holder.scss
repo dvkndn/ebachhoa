@@ -26,7 +26,11 @@
 .image-holders {
 	display: flex;
 
-	&__item {
+	&__input {
+		display: none;
+	}
+
+	&__label {
 		margin-right: 20px;
 	}
 }

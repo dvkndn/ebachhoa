@@ -29,10 +29,14 @@
 
 	&__cat-anchor {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 
 		> * {
 			flex-grow: 0;
+		}
+
+		.cat-anchor + .cat-anchor {
+			margin-left: 60px;
 		}
 
 		margin-bottom: 80px;
@@ -40,6 +44,11 @@
 
 	&__ads {
 		margin-bottom: 80px;
+
+		img {
+			margin: auto;
+			display: block;
+		}
 	}
 
 	&__badges {

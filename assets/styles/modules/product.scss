@@ -52,6 +52,7 @@
 
 .db-product {
 	display: block;
+	position: relative;
 	// width: 235px;
 
 	&__cover {
@@ -158,7 +159,7 @@
 	&__status {
 		width: 100%; height: 30px;
 		line-height: 30px;
-		background-color: $orange;
+		background-color: $dark-text;
 
 		text-transform: uppercase;
 		font-weight: 900;
@@ -167,6 +168,19 @@
 
 		position: absolute;
 		top: 0; left: 0;
+
+		&.highlight {
+			background-color: $orange;
+		}
+
+		&.done {
+			background-color: #8BC34A;
+			height: 55px;
+		}
+
+		&.complex {
+
+		}
 	}
 
 	&__icons {
@@ -175,10 +189,40 @@
 			line-height: 30px;
 			color: rgba(white, 0.5);
 
+			width: 25%;
+
+			& + & {
+				margin-left: 20px;
+			}
+
 			&.selected {
 				color: white;
 			}
 		}
+	}
+
+	&__icon-texts {
+		font-size: 0;
+
+		span {
+			font-size: 9px;
+			display: inline-block;
+			width: 25%;
+			line-height: 1;
+			color: rgba(white, 0.5);
+
+			& + & {
+				margin-left: 20px;
+			}
+
+			&.selected {
+				color: white;
+			}
+		}
+	}
+
+	&__text {
+		width: 40px;
 	}
 
 	// = Interaction ===========
@@ -193,57 +237,69 @@
 	}
 }
 
-.db-product-time {
-	font-size: 10px;
-	text-transform: uppercase;
-
-	&__title {
-		font-weight: 900;
-		letter-spacing: 0.5px;
-
-		margin-bottom: 4px;
-		padding-top: 4px;
-
-		border-top: 1px solid $border-gray;
-	}
-	&__sub-title {
-		color: $secondary-text;
-	}
-	&__link {
-		color: $orange;
-	}
-}
-
 .db-product-description {
+	position: relative;
 	text-transform: uppercase;
-	font-size: 12px;
-	font-weight: 900;
 
-	&__title {
+	%h1 {
 		font-size: 18px;
+		line-height: 24px;
+		font-weight: 900;
+		letter-spacing: 1px;
 	}
-
-	&__title-small {
+	%h2 {
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 700;
+		letter-spacing: 0.5px;
+	}
+	%h3 {
 		font-size: 12px;
+		line-height: 18px;
+	}
+
+	&__price {
+		@extend %h1;
+		margin-top: 2px;
+	}
+
+	&__price-ship {
+		@extend %h3;
 		color: $secondary-text;
-		font-weight: 400;
 	}
 
-	&__sub-title {
-		margin-bottom: 5px;
-	}
-}
-
-.db-product-action {
-	display: flex;
-
-	&__info {
-		flex-grow: 1;
-		margin-right: 10px;
+	&__price-own {
+		@extend %h3;
 	}
 
-	&__button {
+	&__timer {
+		@extend %h2;
+	}
+
+	&__timer-end {
+		@extend %h2;
+	}
+
+	&__sub-info {
+		@extend %h3;
+		color: $secondary-text;
+	}
+
+	&__sub-info-area {
+		position: absolute;
+		top: 0; right: 0;
+
+		text-align: right;
+	}
+
+	&__btn {
+		position: absolute;
+		bottom: 2px; right: 0;
+
 		width: 130px;
+
+		border-top: solid 1px $border-gray;
+		padding-top: 7px;
 	}
 
 	a:not(.button) {
