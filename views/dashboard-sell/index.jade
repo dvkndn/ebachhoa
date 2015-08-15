@@ -14,60 +14,271 @@ block content
 					.fluid-header__tab: a(href = "../dashboard-buy") quản lý mua
 					.fluid-header__tab.selected: a(href = "../dashboard-sell") quản lý bán
 					.fluid-header__tab: a(href = "../dashboard-inbox") tin nhắn
+					.fluid-header__tab: a(href = "../dashboard-customize") tuỳ chọn
 		.dashboard-page__content
 			.dashboard-page__filter
 				ul.db-filter.cols.selector
 					each title in ["tổng quan", "đang bán", "đã bán", "chưa bán", "bản thảo", "đã huỷ"]
-						li.cols__item.db-filter__item(class = (title === "đang bán" ? "selected" : ""))
+						li.cols__item.db-filter__item(class = (title === "tổng quan" ? "selected" : ""))
 							a.db-filter__link(href = "#", class = selectedClass).button.button--line.button--small= title
-			form.form.sell-filter-form.cols
-				.cols__item.sell-filter-form__search-box: .search-box
-					.search-box__icon
-						i.material-icons search
-					input(type = "text").search-box__text-box
-					button.search-box__button tìm
-				.cols__item.sell-filter-form__select: select.select.select--full-width
-					option tất cả
-				.cols__item.sell-filter-form__select: select.select.select--full-width
-					option tất cả
-			table.table.sell-table
-				colgroup
-					col(style = "width: 200px")
-					col(style = "width: 200px")
-					col(style = "width: 100px")
-					col(style = "width: 100px")
-					col(style = "width: 50px")
-					col(style = "width: 100px")
-					col(style = "width: 100px")
-					col(style = "width: 50px")
-					col(style = "width: 50px")
-					col(style = "width: 50px")
-				thead
-					tr
-						th hình ảnh
-						th tên sản phẩm
-						th mã phiên
-						th kiểu đăng
-						th SL
-						th giá niêm yết
-						th giá hiện tại
-						th: i.material-icons assignment_turned_in
-						th: i.material-icons assignment_late
-						th: i.material-icons remove_red_eye
-				tbody
-					- for (var i = 0; i < 4; i++)
-						tr(class = (i === 3 ? "last" : ""))
-							td
-								img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
-								img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
-								img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
-								img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
-							td: a(href = "#") nước hoa acqua di parma di sicilia hàng mới xuất 
-							td 10095015
-							td Đấu giá
-							td 01
-							td 3.000.000 ₫
-							td 2.500.000 ₫
-							td 19
-							td -
-							td 20
+			//- SECTION DIVIDER ----------
+			section.db-section
+				header.db-section__header
+					h1.db-section__title Đang bán
+				form.form.sell-filter-form.cols
+					.cols__item.sell-filter-form__search-box: .search-box
+						.search-box__icon
+							i.material-icons search
+						input(type = "text").search-box__text-box
+						button.search-box__button tìm
+					.cols__item.sell-filter-form__select: select.select.select--full-width
+						option tất cả
+					.cols__item.sell-filter-form__select: select.select.select--full-width
+						option tất cả
+				table.table.sell-table
+					colgroup
+						col(style = "width: 180px")
+						col
+						col(style = "width: 100px")
+						col(style = "width: 100px")
+						col(style = "width: 40px")
+						col(style = "width: 100px")
+						col(style = "width: 100px")
+						col(style = "width: 40px")
+						col(style = "width: 40px")
+						col(style = "width: 40px")
+						col(style = "width: 40px")
+						col(style = "width: 100px")
+						col(style = "width: 100px")
+					thead
+						tr
+							th hình ảnh
+							th tên sản phẩm
+							th mã phiên
+							th kiểu đăng
+							th SL
+							th giá niêm yết
+							th giá hiện tại
+							th: i.material-icons assignment_return
+							th: i.material-icons attach_money
+							th: i.material-icons remove_red_eye
+							th: i.material-icons help
+							th thời gian
+							th chọn lựa
+					tbody
+						- for (var i = 0; i < 4; i++)
+							tr(class = (i === 3 ? "last" : ""))
+								td
+									img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
+									img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
+									img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
+									img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
+								td: a(href = "#") nước hoa acqua di parma di sicilia hàng mới xuất 
+								td 10095015
+								td Đấu giá
+								td 01
+								td 3.000.000 ₫
+								td 2.500.000 ₫
+								td 19
+								td -
+								td 20
+								td 20
+								td 12:43<br>15/06/15
+								td
+									select.select.select--full-width
+										option -- chọn --
+										option huỷ
+										option kết thúc
+										option đăng bán cùng chuyên mục
+				footer.db-section__footer
+					include ../../layouts/pagination.jade
+			//- SECTION DIVIDER ----------
+			section.db-section
+				header.db-section__header
+					h1.db-section__title Đã bán
+				form.form.sell-filter-form.cols
+					.cols__item.sell-filter-form__search-box: .search-box
+						.search-box__icon
+							i.material-icons search
+						input(type = "text").search-box__text-box
+						button.search-box__button tìm
+					.cols__item.sell-filter-form__select: select.select.select--full-width
+						option tất cả
+					.cols__item.sell-filter-form__select: select.select.select--full-width
+						option tất cả
+				table.table.sell-table
+					colgroup
+						col(style = "width: 180px")
+						col
+						col(style = "width: 100px")
+						col(style = "width: 100px")
+						col(style = "width: 40px")
+						col(style = "width: 100px")
+						col(style = "width: 100px")
+						col(style = "width: 100px")
+						col(style = "width: 40px")
+						col(style = "width: 40px")
+						col(style = "width: 40px")
+						col(style = "width: 40px")
+						col(style = "width: 40px")
+						col(style = "width: 100px")
+					thead
+						tr
+							th hình ảnh
+							th tên sản phẩm
+							th mã phiên
+							th kiểu đăng
+							th SL
+							th giá bán
+							th tổng tiền
+							th ngày bán
+							th: i.material-icons attach_money
+							th: i.material-icons local_shipping
+							th: i.material-icons redo
+							th: i.material-icons undo
+							th: i.material-icons chat
+							th chọn lựa
+					tbody
+						- for (var i = 0; i < 4; i++)
+							tr(class = (i === 3 ? "last" : ""))
+								td
+									img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
+									img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
+									img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
+									img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
+								td: a(href = "#") nước hoa acqua di parma di sicilia hàng mới xuất 
+								td 10095015
+								td Đấu giá
+								td 02
+								td 1.000.000 ₫
+								td 2.000.000 ₫
+								td 12:43<br>15/06/15
+								td: i.material-icons check
+								td &nbsp;
+								td &nbsp;
+								td: i.material-icons check
+								td: i.material-icons check
+								td
+									select.select.select--full-width
+										option -- chọn --
+										option xoá
+										option đăng lại
+										option điều chỉnh và đăng lại
+										option đăng bán cùng danh mục
+				footer.db-section__footer
+					include ../../layouts/pagination.jade
+			//- SECTION DIVIDER ----------
+			section.db-section
+				header.db-section__header
+					h1.db-section__title Chưa bán
+				form.form.sell-filter-form.cols
+					.cols__item.sell-filter-form__search-box: .search-box
+						.search-box__icon
+							i.material-icons search
+						input(type = "text").search-box__text-box
+						button.search-box__button tìm
+					.cols__item.sell-filter-form__select: select.select.select--full-width
+						option tất cả
+					.cols__item.sell-filter-form__select: select.select.select--full-width
+						option tất cả
+				table.table.sell-table
+					colgroup
+						col(style = "width: 180px")
+						col
+						col(style = "width: 100px")
+						col(style = "width: 100px")
+						col(style = "width: 40px")
+						col(style = "width: 100px")
+						col(style = "width: 100px")
+						col(style = "width: 40px")
+						col(style = "width: 40px")
+						col(style = "width: 40px")
+						col(style = "width: 40px")
+						col(style = "width: 100px")
+						col(style = "width: 100px")
+					thead
+						tr
+							th hình ảnh
+							th tên sản phẩm
+							th mã phiên
+							th kiểu đăng
+							th SL
+							th giá kết thúc
+							th giá niêm yết
+							th: i.material-icons assignment_return
+							th: i.material-icons attach_money
+							th: i.material-icons remove_red_eye
+							th: i.material-icons help
+							th kết thúc
+							th chọn lựa
+					tbody
+						- for (var i = 0; i < 4; i++)
+							tr(class = (i === 3 ? "last" : ""))
+								td
+									img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
+									img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
+									img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
+									img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
+								td: a(href = "#") nước hoa acqua di parma di sicilia hàng mới xuất 
+								td 10095015
+								td Đấu giá
+								td 01
+								td 3.000.000 ₫
+								td 2.500.000 ₫
+								td 19
+								td -
+								td 20
+								td 20
+								td 12:43<br>15/06/15
+								td
+									select.select.select--full-width
+										option -- chọn --
+										option xoá
+										option đăng lại
+										option điều chỉnh và đăng lại
+										option đăng bán cùng danh mục
+				footer.db-section__footer
+					include ../../layouts/pagination.jade
+			//- SECTION DIVIDER ----------
+			section.db-section
+				header.db-section__header
+					h1.db-section__title Bản thảo
+				form.form.sell-filter-form.cols
+					.cols__item.sell-filter-form__search-box: .search-box
+						.search-box__icon
+							i.material-icons search
+						input(type = "text").search-box__text-box
+						button.search-box__button tìm
+					.cols__item.sell-filter-form__select: select.select.select--full-width
+						option tất cả
+					.cols__item.sell-filter-form__select: select.select.select--full-width
+						option tất cả
+				table.table.sell-table
+					colgroup
+						col(style = "width: 180px")
+						col
+						col(style = "width: 70px")
+						col(style = "width: 140px")
+						col(style = "width: 300px")
+					thead
+						tr
+							th hình ảnh
+							th tên sản phẩm
+							th mã phiên
+							th kiểu đăng
+							th chọn lựa
+					tbody
+						- for (var i = 0; i < 4; i++)
+							tr(class = (i === 3 ? "last" : ""))
+								td
+									img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
+									img(src = "/assets/images/product/1-small.jpg", width = "40", height = "40")
+								td: a(href = "#") nước hoa acqua di parma di sicilia hàng mới xuất 
+								td 10095015
+								td Đấu giá
+								td: .cols.flex.flex--equal
+									.cols__item: a(href = "#").button.button--full-width tiếp tục
+									.cols__item: a(href = "#").button.button--full-width.button--gray xoá
+				footer.db-section__footer
+					include ../../layouts/pagination.jade
+			

@@ -59,7 +59,7 @@ table {
 }
 
 body {
-  font-family: "Nanum Barun Gothic", sans-serif;
+  font-family: sans-serif;
 }
 
 a {
@@ -143,6 +143,10 @@ body {
 .button--orange-line {
   color: #FF5E1B;
   box-shadow: #FF5E1B 0 0 0 1px inset;
+}
+
+.button--wide {
+  padding: 0 30px;
 }
 
 .container, .breadcrumb__content, .top-search__content, .user-bar__content, .fluid-header__content, .fluid-footer__content, .cart-footer__content, .slider__thumbs-content {
@@ -250,6 +254,13 @@ body {
 .select--full-width {
   display: block;
   width: 100%;
+}
+
+.select--large {
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  letter-spacing: 2px;
 }
 
 .tabs {
@@ -1571,6 +1582,7 @@ body {
 
 .table {
   width: 100%;
+  table-layout: fixed;
 }
 
 .table thead {
@@ -1691,7 +1703,8 @@ body {
 }
 
 .product-page__tags {
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 70px;
 }
 
 .product-page__main {
@@ -1767,17 +1780,72 @@ body {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding: 0 30px;
 }
 
 .product-tags__tag:not(:last-child) {
   margin-right: 30px;
 }
 
+.product-tag {
+  font-size: 14px !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  background: #FF5E1B;
+  color: white;
+  text-align: center;
+  padding: 1em 2em;
+  margin: 0;
+}
+
+.product-tag:before,
+.product-tag:after {
+  content: "";
+  display: block;
+  border: 1.5em solid #ff824e;
+  position: absolute;
+  bottom: -1em;
+  z-index: -1;
+}
+
+.product-tag:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+
+.product-tag:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+
+.product-tag__content:before,
+.product-tag__content:after {
+  content: "";
+  display: block;
+  border-style: solid;
+  border-color: #ce3c00 transparent transparent transparent;
+  position: absolute;
+  bottom: -1em;
+}
+
+.product-tag__content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+
+.product-tag__content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+
 .product-summary__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
-  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 30px;
 }
 
 .product-summary__info {
@@ -1786,19 +1854,39 @@ body {
   line-height: 24px;
 }
 
-.product-summary__info a {
+.product-summary__info a:not(.button) {
   color: #FF5E1B;
+}
+
+.product-summary__deadline-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-summary__deadline {
+  margin-right: 30px;
 }
 
 .product-deadline {
   position: relative;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  padding-top: 28px;
 }
 
 .product-deadline__primary {
   color: #FF5E1B;
   font-size: 14px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  margin-top: 5px;
+}
+
+.product-deadline__color {
+  color: #FF5E1B;
 }
 
 .product-deadline__big-text {
@@ -1813,11 +1901,16 @@ body {
 
 .product-deadline__circle {
   position: absolute;
-  right: 0;
-  top: -23px;
+  left: -60px;
+  top: -60px;
   -webkit-transform: scale(0.5);
       -ms-transform: scale(0.5);
           transform: scale(0.5);
+}
+
+.product-deadline--green .product-deadline__color,
+.product-deadline--green .product-deadline__primary {
+  color: #70AD47;
 }
 
 .product-deal, .product-buy {
@@ -1841,10 +1934,16 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 170px;
+  width: 250px;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
+}
+
+.product-deal__icon, .product-buy__icon {
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
 }
 
 .product-deal__price, .product-buy__price {
@@ -1867,12 +1966,12 @@ body {
 
 .product-deal__counter {
   color: #B1B1B1;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .product-buy__old-price {
   color: #B1B1B1;
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: line-through;
   margin-bottom: 8px;
 }
@@ -2279,8 +2378,7 @@ body {
 }
 
 .sell-preview {
-  margin-left: -50px;
-  width: 1100px;
+  width: 1200px;
   border: solid 1px #EEEEEE;
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 8px;
   margin-bottom: 60px;
@@ -2384,7 +2482,7 @@ body {
   text-align: left;
 }
 
-.sell-table tbody a:hover {
+.sell-table tbody a:not(.button):hover {
   color: #FF5E1B;
 }
 
@@ -2504,6 +2602,7 @@ body {
   color: #515356;
   line-height: 24px;
   font-size: 16px;
+  position: relative;
 }
 
 .message-full__title {
@@ -2520,6 +2619,13 @@ body {
   margin-bottom: 16px;
 }
 
+.message-full__button {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 120px;
+}
+
 .inbox {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2534,6 +2640,7 @@ body {
           flex: 1;
   background-color: #EEEEEE;
   border-right: solid 1px #EEEEEE;
+  border-left: solid 1px #EEEEEE;
 }
 
 .inbox__messages {
@@ -2551,8 +2658,60 @@ body {
           flex: 3;
 }
 
+.inbox__button {
+  background-color: white;
+  padding: 20px 15px;
+  border-bottom: solid 1px #EEEEEE;
+}
+
+.inbox--new .inbox__message-full {
+  -webkit-box-flex: 5;
+  -webkit-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
 .inbox-page__header {
   margin-bottom: 0;
+}
+
+.db-customize {
+  text-align: center;
+}
+
+.db-customize__content {
+  display: inline-block;
+  text-align: left;
+}
+
+.db-customize__section {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.db-customize__checkbox + .db-customize__checkbox {
+  margin-left: 20px;
+}
+
+.db-customize__heading {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.db-customize__title {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.message-new__form {
+  width: 90%;
+  padding-top: 20px;
+}
+
+.message-new__form .form-row {
+  margin-bottom: 20px;
 }
 
 .home__products {
@@ -2788,6 +2947,28 @@ body {
 
 .last {
   margin-bottom: 0 !important;
+}
+
+.footer-2-buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-2-buttons > * {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 33%;
+      -ms-flex: 0 1 33%;
+          flex: 0 1 33%;
+}
+
+.footer-2-buttons > * + * {
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=app.css.map */

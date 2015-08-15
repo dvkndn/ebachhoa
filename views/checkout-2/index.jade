@@ -25,10 +25,13 @@ block content
 					div.flex.flex--equal.cols.radio.last
 						div.cols__item
 							input.radio__button#radio-payment-nganluong(type = "radio", name = "payment", value = "nganluong")
-							label.radio__label(for = "radio-payment-nganluong") Thanh toán qua Ngân lượng
+							label.radio__label(for = "radio-payment-nganluong") Qua Ngân lượng
 						div.cols__item
 							input.radio__button#radio-payment-card(type = "radio", name = "payment", value = "card", checked)
-							label.radio__label(for = "radio-payment-card") Thanh toán qua thẻ quốc tế
+							label.radio__label(for = "radio-payment-card") Qua thẻ quốc tế
+						div.cols__item
+							input.radio__button#radio-payment-cod(type = "radio", name = "payment", value = "cod")
+							label.radio__label(for = "radio-payment-cod") Khi nhận hàng (COD)
 				hr.hr.hr--big
 				fieldset#card-fieldset.fieldset.last
 					label.label Họ và tên chủ thẻ
@@ -56,9 +59,11 @@ block content
 				fieldset#nganluong-fieldset.fieldset.last
 					p.checkout-thankyou__text Nhấn nút bên dưới để thanh toán qua ngân lượng.
 					a(href = "#").button thanh toán qua ngân lượng
+				fieldset#cod-fieldset.fieldset.last
+					p.checkout-thankyou__text Bạn sẽ thanh toán bằng tiền mặt với nhân viên giao hàng.
 				hr.hr.hr--bigger
 				.flex.flex--equal.cols
 					div.cols__item
 						a(href = "../checkout").button--gray.button.button--full-width quay lại
 					div.cols__item
-						a(href = "../checkout-3").button.button--full-width thanh toán 5.500.000đ
+						a(href = "../checkout-3").button.button--full-width hoàn tất

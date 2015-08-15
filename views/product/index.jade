@@ -14,7 +14,7 @@ block content
 			.product-tags
 				each title in ["mới – chưa qua sử dụng", "free vận chuyển", "người bán uy tín"]
 					.product-tags__tag
-						h1.tag.button.button--line.button--large.button--full-width= title
+						h1.product-tag: strong.product-tag__content= title
 		.product-page__main
 			.product-page__img
 				.preview
@@ -29,53 +29,60 @@ block content
 							width = "500", height = "500")
 				.product-page-report
 					a(href = "#").button.button--line theo dõi
-					a(href = "#").button đăng bán cùng chuyên mục
+					a(href = "#").button.button--orange-line đăng bán cùng chuyên mục
 					a(href = "#").button.button--line báo vi phạm
 			.product-page__description
 				.product-summary
-					h1.product-summary__title Kính mát Cazal Model 901 Authentic Mới chưa sử dụng.
-					.product-summary__info
-						p
-							| Người bán 
-							a(href = "#") Lorem ipsum
-						p
-							| Đăng ký từ 
-							span.text-dark 05/2015
-						p
-							| Shop 
-							a(href = "#") hihihaha
-				hr.hr
-				.product-deadline
-					h1.product-deadline__primary
-						span.product-deadline__big-text 1 
-						| Ngày 
-						span.product-deadline__big-text 12 
-						| Giờ 
-						span.product-deadline__big-text 28 
-						| Phút
-					h2.product-deadline__secondary Kết thúc ngày 15/03/2015 – 19:05
-					div.product-deadline__circle
+					h1.product-summary__title Kính mát Cazal Model 901 Authentic Mới chưa sử dụng Lorem ipsum.
+					.product-summary__deadline-info
+						.product-summary__deadline
+							.product-deadline.product-deadline--green
+								h2.product-deadline__secondary.product-deadline__color 12 giờ 28 phút
+								h1.product-deadline__primary
+									span.product-deadline__big-text 1 
+									| Ngày 
+								h2.product-deadline__secondary Kết thúc 15/03<br>– 19:05
+								div.product-deadline__circle
+						.product-summary__info
+							p
+								| Người bán 
+								a(href = "#") Lorem ipsum
+							p
+								| Đăng ký từ 
+								span.text-dark 05/2015
+							p
+								| Shop 
+								a(href = "#") hihihaha
+							br
+							a(href = "#").button.button--line sản phẩm khác
+							&nbsp;&nbsp;
+							a(href = "#").button.button--line thêm vào yêu thích
 				hr.hr
 				.product-deal
 					.product-deal__info
-						.product-deal__price 2.000.000 ₫
-						.product-deal__counter 20 lượt đặt
+						h1.product-deal__price
+							i.material-icons.product-deal__icon local_atm
+							| 2.000.000 ₫
+						h2.product-deal__counter 20 lượt đặt
 					.product-deal__action
-						a(href = "#").product-buy__button.button.button--full-width đặt 2.100.000 ₫
-						a(href = "#").product-buy__button.button.button--full-width.button--gray đặt giá của bạn
+						a(href = "#").product-deal__button.button.button--full-width.button--large đặt 2.100.000 ₫
+						a(href = "#").product-deal__button.button.button--full-width.button--large.button--gray đặt giá của bạn
 				hr.hr
 				.product-buy
 					.product-buy__info
-						.product-buy__old-price 3.000.000 ₫
-						.product-buy__price 2.500.000 ₫
+						h2.product-buy__old-price
+							| 3.000.000 ₫
+						h1.product-buy__price
+							img.product-buy__icon(src = "../../assets/styles/img/ic_auction.svg", width = "24", height = "24")
+							| 2.500.000 ₫
 						select.product-buy__select.select.select--line.select--full-width
 							option size
 						select.product-buy__select.select.select--line.select--full-width
 							option qty
 					.product-buy__action
-						a(href = "#").product-buy__button.button.button--full-width mua ngay
-						a(href = "#").product-buy__button.button.button--full-width.button--gray cho vào giỏ hàng
-						a(href = "#").product-buy__button.button.button--full-width.button--gray thương lượng
+						a(href = "#").product-buy__button.button.button--full-width.button--large mua ngay
+						a(href = "#").product-buy__button.button.button--full-width.button--large.button--gray cho vào giỏ hàng
+						a(href = "#").product-buy__button.button.button--full-width.button--large.button--gray thương lượng
 		.product-page__tabs
 			dl.tabs
 				dt.tabs__title.selected Mô tả sản phẩm

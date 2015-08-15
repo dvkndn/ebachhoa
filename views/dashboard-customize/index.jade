@@ -1,0 +1,39 @@
+extend ../../layouts/layout.jade
+
+block title
+	| Dashboard - Buy
+
+block setting
+	.hide-breadcrumb
+
+mixin form-row(label)
+	.form-row
+		.form-row__label: label.label!= label
+		.form-row__content
+			block
+
+block content
+	.dashboard-page
+		.dashboard-page__header.fluid-header
+			.fluid-header__content
+				.fluid-header__tabs
+					.fluid-header__tab: a(href = "../dashboard-buy") quản lý mua
+					.fluid-header__tab: a(href = "../dashboard-sell") quản lý bán
+					.fluid-header__tab: a(href = "../dashboard-inbox") tin nhắn
+					.fluid-header__tab.selected: a(href = "../dashboard-customize") tuỳ chọn
+		.dashboard-page__content
+			.db-customize: .db-customize__content
+				h1.db-customize__title Chọn những mục bạn muốn hiển thị:
+				section.db-customize__section
+					h1.db-customize__heading Quản lý mua
+					each title, index in ["Đấu giá", "Thương lượng", "Theo dõi", "Chờ thanh toán", "Chờ giao dịch"]
+						.checkbox.db-customize__checkbox
+							input(id = "customize-buy-" + index, type = "checkbox", checked).checkbox__button
+							label(for = "customize-buy-#{index}").checkbox__label= title
+				br
+				section.db-customize__section
+					h1.db-customize__heading Quản lý bán
+					each title, index in ["Đang bán", "Đã bán", "Chưa bán", "Bản thảo", "Đã huỷ"]
+						.checkbox.db-customize__checkbox
+							input(id = "customize-sell-" + index, type = "checkbox", checked).checkbox__button
+							label(for = "customize-sell-#{index}").checkbox__label= title

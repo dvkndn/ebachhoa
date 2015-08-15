@@ -73,10 +73,11 @@ $(function() {
 	$(".table__remove-row-btn").on("click", function(event) {
 		$row = $(event.currentTarget).parent().parent();
 		$row.remove();
+		updateCart(event);
 	});
 
 	// update cart
-	$("#update-cart-btn").on("click", function(event) {
+	var updateCart = function(event) {
 		var total = 0;
 
 		$.each($(".cart-page__list tbody tr"), function(index, tr) {
@@ -94,7 +95,9 @@ $(function() {
 		});
 
 		$(".cart-summary__total-price").text(accounting.formatMoney(total));
-	});
+	};
+	// $("#update-cart-btn").on("click", updateCart);
+	$(".text-box--cart-amount").on("blur", updateCart);
 
 	// home slider
 	$(".slider__slides").slick({
@@ -108,15 +111,27 @@ $(function() {
 	});
 
 	// checkout 2 option handler
-	$("#nganluong-fieldset").hide();
-	$("#radio-payment-nganluong").on("change", function(e) {
-		$("#card-fieldset").hide();
-		$("#nganluong-fieldset").show();
-	});
-	$("#radio-payment-card").on("change", function(e) {
-		$("#card-fieldset").show();
+	if ($(".checkout-page__payment-form").length) {
+
 		$("#nganluong-fieldset").hide();
-	});
+		$("#cod-fieldset").hide();
+
+		$("#radio-payment-cod").on("change", function(e) {
+			$("#card-fieldset").hide();
+			$("#nganluong-fieldset").hide();
+			$("#cod-fieldset").show();
+		});
+		$("#radio-payment-nganluong").on("change", function(e) {
+			$("#card-fieldset").hide();
+			$("#nganluong-fieldset").show();
+			$("#cod-fieldset").hide();
+		});
+		$("#radio-payment-card").on("change", function(e) {
+			$("#card-fieldset").show();
+			$("#nganluong-fieldset").hide();
+			$("#cod-fieldset").hide();
+		});
+	};
 
 	// dashboard buy option handler
 	$("#deal-over-section").hide();
@@ -130,45 +145,46 @@ $(function() {
 	});	
 
 	// product circle processbar
-	var states = [
-		{
-			value: 0,
+	if ($(".product-deadline__circle").length) {
+		var states = [
+			{
+				value: 0,
+				fill: { color: "#E2F0D9" },
+				emptyFill: "#70AD47"
+			}, {
+				value: 0.25,
+				fill: { color: "#E2F0D9" },
+				emptyFill: "#70AD47"
+			}, {
+				value: 0,
+				fill: { color: "#F8CBAD" },
+				emptyFill: "#FF6601"
+			}, {
+				value: 0.25,
+				fill: { color: "#F8CBAD" },
+				emptyFill: "#FF6601"
+			}, {
+				value: 0,
+				fill: { color: "#FFAFAF" },
+				emptyFill: "#FF0000"
+			}, {
+				value: 0.25,
+				fill: { color: "#FFAFAF" },
+				emptyFill: "#FF0000"
+			}
+		];
+		var currentState = 0;
+		$(".product-deadline__circle").circleProgress({
+			value: 0.25,
+			size: 240,
+			startAngle: -Math.PI / 4 * 2,
 			fill: { color: "#E2F0D9" },
-			emptyFill: "#70AD47"
-		}, {
-			value: 0.25,
-			fill: { color: "#E2F0D9" },
-			emptyFill: "#70AD47"
-		}, {
-			value: 0,
-			fill: { color: "#F8CBAD" },
-			emptyFill: "#FF6601"
-		}, {
-			value: 0.25,
-			fill: { color: "#F8CBAD" },
-			emptyFill: "#FF6601"
-		}, {
-			value: 0,
-			fill: { color: "#FFAFAF" },
-			emptyFill: "#FF0000"
-		}, {
-			value: 0.25,
-			fill: { color: "#FFAFAF" },
-			emptyFill: "#FF0000"
-		}
-	];
-	var currentState = 0;
-	$(".product-deadline__circle").circleProgress({
-		value: 0.25,
-		size: 92,
-		startAngle: -Math.PI / 4 * 2,
-		fill: { color: "#E2F0D9" },
-		emptyFill: "#70AD47",
-		thickness: 8
-	});
-	$(".product-deadline__circle").on("click", function(e) {
-		currentState = (currentState === 5 ? 0 : currentState + 1);
-		$(e.currentTarget).circleProgress(states[currentState]);
-
-	})
+			emptyFill: "#70AD47",
+			thickness: 8
+		});
+		$(".product-deadline__circle").on("click", function(e) {
+			currentState = (currentState === 5 ? 0 : currentState + 1);
+			$(e.currentTarget).circleProgress(states[currentState]);
+		})
+	};
 });

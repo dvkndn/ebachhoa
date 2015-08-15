@@ -22,3 +22,16 @@ body {
 .last {
 	margin-bottom: 0 !important;
 }
+
+.footer-2-buttons {
+	display: flex;
+	justify-content: center;
+
+	> * {
+		flex: 0 1 33%;
+	}
+
+	> * + * {
+		margin-left: 20px;
+	}
+}

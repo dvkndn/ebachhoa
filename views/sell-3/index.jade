@@ -45,11 +45,15 @@ block sell-content
 						input(type = "checkbox", checked).checkbox__button#pay-safe
 						label(for = "pay-safe").checkbox__label Qua Ngân Lượng
 				+form-row("Thanh toán khác")
-					.checkbox: .checkbox__row
-						input(type = "checkbox").checkbox__button#pay-int
-						label(for = "pay-int").checkbox__label Qua Thẻ thanh toán Quốc tế
+					.checkbox
+						.checkbox__row
+							input(type = "checkbox").checkbox__button#pay-int
+							label(for = "pay-int").checkbox__label Qua Thẻ thanh toán Quốc tế
+						.checkbox__row
+							input(type = "checkbox").checkbox__button#pay-cod
+							label(for = "pay-cod").checkbox__label Thanh toán khi nhận hàng (Cash on Delivery)
 
 block sell-footer
-	+footer-button("huỷ phiên", "../home")(class = "button--gray")
+	+footer-button("quay lại", "../sell-2")(class = "button--gray")
 	+footer-button("lưu bản thảo", "#")(class = "button--gray")
 	+footer-button("tiếp tục", "../sell-4")

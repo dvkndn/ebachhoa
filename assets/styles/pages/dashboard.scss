@@ -82,7 +82,7 @@
 			}
 		}
 
-		a {
+		a:not(.button) {
 			&:hover {
 				color: $orange;
 			}
@@ -209,6 +209,8 @@
 	line-height: 24px;
 	font-size: 16px;
 
+	position: relative;
+
 	&__title {
 		font-size: 24px;
 		font-weight: 900;
@@ -222,6 +224,14 @@
 	p {
 		margin-bottom: 16px;
 	}
+
+	&__button {
+		position: absolute;
+		top: 20px; right: 0;
+		// padding: 10px;
+
+		width: 120px;
+	}
 }
 
 .inbox {
@@ -232,6 +242,7 @@
 
 		background-color: $border-gray;
 		border-right: solid 1px $border-gray;
+		border-left: solid 1px $border-gray;
 	}
 
 	&__messages {
@@ -243,10 +254,62 @@
 	&__message-full {
 		flex: 3;
 	}
+
+	&__button {
+		background-color: white;
+		padding: 20px 15px;
+		border-bottom: solid 1px $border-gray;
+	}
+
+	&--new &__message-full {
+		flex: 5;
+	}
 }
 
 .inbox-page {
 	&__header {
 		margin-bottom: 0;
+	}
+}
+
+.db-customize {
+	text-align: center;
+
+	&__content {
+		display: inline-block;
+		text-align: left;
+	}
+
+	&__section {
+		display: inline-block;
+		margin-bottom: 30px;
+	}
+
+	&__checkbox {
+		& + & {
+			margin-left: 20px;
+		}
+	}
+
+	&__heading {
+		font-size: 18px;
+		font-weight: 900;
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		font-size: 24px;
+		font-weight: 900;
+		margin-bottom: 30px;
+	}
+}
+
+.message-new {
+	&__form {
+		width: 90%;
+		padding-top: 20px;
+		.form-row {
+			margin-bottom: 20px;
+		}
 	}
 }

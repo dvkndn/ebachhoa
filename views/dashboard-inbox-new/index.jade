@@ -1,0 +1,56 @@
+extend ../../layouts/layout.jade
+
+block title
+	| Dashboard - Inbox - New
+
+block setting
+	.hide-breadcrumb
+
+mixin form-row(label)
+	.form-row
+		.form-row__label: label.label!= label
+		.form-row__content
+			block
+
+block content
+	.dashboard-page.inbox-page
+		.dashboard-page__header.fluid-header.inbox-page__header
+			.fluid-header__content
+				.fluid-header__tabs
+					.fluid-header__tab: a(href = "../dashboard-buy") quản lý mua
+					.fluid-header__tab: a(href = "../dashboard-sell") quản lý bán
+					.fluid-header__tab.selected: a(href = "../dashboard-inbox") tin nhắn
+					.fluid-header__tab: a(href = "../dashboard-customize") tuỳ chọn
+		.dashboard-page__content.inbox.inbox--new
+			.inbox__folders
+				.inbox__button
+					a(href = "../dashboard-inbox-new").button.button--full-width soạn tin nhắn	
+				ul.folders
+					li.accordion.folder.folders__item.accordion--selected.expanded
+						h1.folder__title.accordion__title: a(href = "#") tất cả
+						ul.folder__content.accordion__content.selector
+							li.folder__child.selected: a(href = "#") từ thành viên khác
+							li.folder__child: a(href = "#") từ ebachhoa
+					li.folder.folders__item
+						h1.folder__title: a(href = "#") đã gửi
+					li.folder.folders__item
+						h1.folder__title: a(href = "#") tin nhắn rác
+					li.folder.folders__item.accordion
+						h1.folder__title.accordion__title: a(href = "#") thư mục
+						ul.folder__content.accordion__content.selector
+							li.folder__child.selected: a(href = "#") thư mục 1
+							li.folder__child: a(href = "#") thư mục 1
+							li.folder__child: a(href = "#") thêm thư mục
+			.inbox__message-full
+				.message-new
+					form.form.message-new__form
+						+form-row("tên người nhận")
+							input(type = "text").text-box.text-box--full-width(placeholder = "Tên tài khoản hoặc email")
+						+form-row("tiêu đề")
+							input(type = "text").text-box.text-box--full-width
+						+form-row("nội dung")
+							textarea(rows = "6").text-box.text-box--full-width.text-box--multi-lines
+						+form-row("")
+							a(href = "../dashboard-inbox").button.button--wide gửi tin nhắn
+block footer
+	//- clear

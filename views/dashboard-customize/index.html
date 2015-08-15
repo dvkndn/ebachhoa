@@ -1,0 +1,123 @@
+
+<html>
+  <head>
+    <title>EBachHoa - Dashboard - Buy</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../../assets/styles/app.css"/>
+    <script src="../../vendors/jquery.min.js"></script>
+    <script src="../../vendors/accounting.min.js"></script>
+    <script src="../../vendors/jquery-circle-progress-1.1.3/dist/circle-progress.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../vendors/slick-1.5.7/slick/slick.css"/>
+    <script type="text/javascript" src="../../vendors/slick-1.5.7/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../vendors/lato/latofonts.css"/>
+  </head>
+  <body>
+    <div id="page-container">
+      <div class="hide-breadcrumb"></div>
+      <header class="main-header">
+        <div class="user-bar">
+          <div class="user-bar__content">
+            <div class="user-bar__left"><a href="../profile" class="user-bar__hello">Chào bạn, Tuấn Minh!</a><a href="../sell" class="button button--rect">bán</a><a href="../help-contact" class="user-bar__link">Liên hệ</a><a href="../help-faq" class="user-bar__link">Giúp đỡ</a></div>
+            <div class="user-bar__right"><a href="../dashboard-buy" class="user-bar__link">Quản lý &amp; Mua bán</a><a href="../dashboard-inbox" class="user-bar__icon">
+                <div class="icon"><i class="icon__icon material-icons">chat</i><span class="icon__badge">4</span></div></a><a href="../cart" class="user-bar__icon">
+                <div class="icon"><i class="icon__icon material-icons">shopping_cart</i><span class="icon__badge">2</span></div></a></div>
+          </div>
+        </div>
+        <div class="top-search">
+          <div class="top-search__content"><a href="../home" class="top-search__logo"></a>
+            <div class="top-search__search-box">
+              <form class="top-search-box">
+                <div class="top-search-box__icon icon"><i class="icon__icon material-icons">search</i></div>
+                <input type="text" class="top-search-box__input text-box text-box--transparent text-box--no-padding"/>
+                <select class="top-search-box__select select select--transparent">
+                  <option>Tất cả danh mục</option>
+                </select>
+                <div class="top-search-box__button top-search-box__submit-button"><a href="../search" class="button button--full-width">tìm kiếm</a></div>
+                <div class="top-search-box__button top-search-box__more-button"><a href="../search" class="button button--gray button--rect button--full-width">nâng cao</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="breadcrumb">
+        <div class="breadcrumb__content">
+          <ul class="breadcrumb__items">
+                  <li class="breadcrumb__item"><a href="../home">trang chủ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="main-content">
+        <div class="dashboard-page">
+          <div class="dashboard-page__header fluid-header">
+            <div class="fluid-header__content">
+              <div class="fluid-header__tabs">
+                <div class="fluid-header__tab"><a href="../dashboard-buy">quản lý mua</a></div>
+                <div class="fluid-header__tab"><a href="../dashboard-sell">quản lý bán</a></div>
+                <div class="fluid-header__tab"><a href="../dashboard-inbox">tin nhắn</a></div>
+                <div class="fluid-header__tab selected"><a href="../dashboard-customize">tuỳ chọn</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-page__content">
+            <div class="db-customize">
+              <div class="db-customize__content">
+                <h1 class="db-customize__title">Chọn những mục bạn muốn hiển thị:</h1>
+                <section class="db-customize__section">
+                  <h1 class="db-customize__heading">Quản lý mua</h1>
+                  <div class="checkbox db-customize__checkbox">
+                    <input id="customize-buy-0" type="checkbox" checked="checked" class="checkbox__button"/>
+                    <label for="customize-buy-0" class="checkbox__label">Đấu giá</label>
+                  </div>
+                  <div class="checkbox db-customize__checkbox">
+                    <input id="customize-buy-1" type="checkbox" checked="checked" class="checkbox__button"/>
+                    <label for="customize-buy-1" class="checkbox__label">Thương lượng</label>
+                  </div>
+                  <div class="checkbox db-customize__checkbox">
+                    <input id="customize-buy-2" type="checkbox" checked="checked" class="checkbox__button"/>
+                    <label for="customize-buy-2" class="checkbox__label">Theo dõi</label>
+                  </div>
+                  <div class="checkbox db-customize__checkbox">
+                    <input id="customize-buy-3" type="checkbox" checked="checked" class="checkbox__button"/>
+                    <label for="customize-buy-3" class="checkbox__label">Chờ thanh toán</label>
+                  </div>
+                  <div class="checkbox db-customize__checkbox">
+                    <input id="customize-buy-4" type="checkbox" checked="checked" class="checkbox__button"/>
+                    <label for="customize-buy-4" class="checkbox__label">Chờ giao dịch</label>
+                  </div>
+                </section><br/>
+                <section class="db-customize__section">
+                  <h1 class="db-customize__heading">Quản lý bán</h1>
+                  <div class="checkbox db-customize__checkbox">
+                    <input id="customize-sell-0" type="checkbox" checked="checked" class="checkbox__button"/>
+                    <label for="customize-sell-0" class="checkbox__label">Đang bán</label>
+                  </div>
+                  <div class="checkbox db-customize__checkbox">
+                    <input id="customize-sell-1" type="checkbox" checked="checked" class="checkbox__button"/>
+                    <label for="customize-sell-1" class="checkbox__label">Đã bán</label>
+                  </div>
+                  <div class="checkbox db-customize__checkbox">
+                    <input id="customize-sell-2" type="checkbox" checked="checked" class="checkbox__button"/>
+                    <label for="customize-sell-2" class="checkbox__label">Chưa bán</label>
+                  </div>
+                  <div class="checkbox db-customize__checkbox">
+                    <input id="customize-sell-3" type="checkbox" checked="checked" class="checkbox__button"/>
+                    <label for="customize-sell-3" class="checkbox__label">Bản thảo</label>
+                  </div>
+                  <div class="checkbox db-customize__checkbox">
+                    <input id="customize-sell-4" type="checkbox" checked="checked" class="checkbox__button"/>
+                    <label for="customize-sell-4" class="checkbox__label">Đã huỷ</label>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer footer--100"></footer>
+      <script src="../../assets/scripts/app.js"></script>
+    </div>
+  </body>
+</html>

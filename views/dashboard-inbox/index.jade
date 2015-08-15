@@ -14,8 +14,11 @@ block content
 					.fluid-header__tab: a(href = "../dashboard-buy") quản lý mua
 					.fluid-header__tab: a(href = "../dashboard-sell") quản lý bán
 					.fluid-header__tab.selected: a(href = "../dashboard-inbox") tin nhắn
-		.dashboard-page__content.inbox.fluid
+					.fluid-header__tab: a(href = "../dashboard-customize") tuỳ chọn
+		.dashboard-page__content.inbox
 			.inbox__folders
+				.inbox__button
+					a(href = "../dashboard-inbox-new").button.button--full-width soạn tin nhắn	
 				ul.folders
 					li.accordion.folder.folders__item.accordion--selected.expanded
 						h1.folder__title.accordion__title: a(href = "#") tất cả
@@ -35,25 +38,18 @@ block content
 			.inbox__messages
 				.messages
 					ul.messages__list.selector
-						li.messages__item.selected
-							a(href = "#").message
-								h1.message__title Email title
-								h2.message__user From: John Appleseed (john@apple.com)
-								p.message__content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at dapibus odio. Nullam viverra lorem ac semper ultrices.
-						li.messages__item
-							a(href = "#").message
-								h1.message__title Email title
-								h2.message__user From: John Appleseed (john@apple.com)
-								p.message__content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at dapibus odio. Nullam viverra lorem ac semper ultrices.
-						li.messages__item
-							a(href = "#").message
-								h1.message__title Email title
-								h2.message__user From: John Appleseed (john@apple.com)
-								p.message__content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at dapibus odio. Nullam viverra lorem ac semper ultrices.
+						- for (var i = 0; i < 4; i++)
+							li.messages__item(class = (i === 0 ? "selected" : ""))
+								a(href = "#").message
+									h1.message__title Email title
+									h2.message__user From: John Appleseed (john@apple.com)
+									p.message__content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at dapibus odio. Nullam viverra lorem ac semper ultrices.
 					.messages__pagination
 						include ../../layouts/pagination.jade
 			.inbox__message-full
 				.message-full
+					.message-full__button
+						a(href = "../dashboard-inbox-new").button.button--full-width trả lời
 					h1.message-full__title Email Title
 					h2.message-full__user
 						| From: 
@@ -62,3 +58,6 @@ block content
 						p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ornare magna, eu sodales erat. Quisque id ultrices mauris, quis rhoncus urna. In commodo fringilla maximus.
 						p Fusce volutpat odio et dui lacinia, nec laoreet nulla blandit. Proin ac malesuada risus. Pellentesque malesuada fringilla imperdiet. Duis ut dolor ex. Praesent et bibendum felis. Aliquam tortor lorem, tincidunt nec sagittis id, vestibulum nec mauris.
 						p Fusce non erat id dui placerat luctus a vel orci. Curabitur non lectus egestas, hendrerit ipsum feugiat, pellentesque elit. Mauris dapibus iaculis varius. Praesent et bibendum felis. Aliquam tortor lorem, tincidunt nec sagittis id, vestibulum nec mauris.
+
+block footer
+	//- clear
