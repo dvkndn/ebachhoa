@@ -69,3 +69,25 @@
 
 	margin-bottom: -10px;
 }
+
+.category-page {
+	@include respond-to(900px) {
+		flex-direction: column;
+
+		.browse-sort__title {
+			display: none;
+		}
+		.browse-aside {
+			width: 100%;
+		}
+		.browse-aside__sort {
+			padding-bottom: 10px;
+			border-bottom: solid 1px $border-gray;
+			margin-bottom: 10px;
+		}
+
+		.category-tree {
+			display: none;
+		}
+	}
+}

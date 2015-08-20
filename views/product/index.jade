@@ -27,10 +27,13 @@ block content
 					.preview__main
 						img(src = "../../assets/images/product/1.jpg", 
 							width = "500", height = "500")
-				.product-page-report
-					a(href = "#").button.button--line theo dõi
-					a(href = "#").button.button--orange-line đăng bán cùng chuyên mục
-					a(href = "#").button.button--line báo vi phạm
+				.product-page-report.cols
+					.product-page-report__item.cols__item
+						a(href = "#").button.button--line theo dõi
+					.product-page-report__item.product-page-report__big-item.cols__item
+						a(href = "#").button.button--orange-line đăng bán cùng chuyên mục
+					.product-page-report__item.cols__item
+						a(href = "#").button.button--line báo vi phạm
 			.product-page__description
 				.product-summary
 					h1.product-summary__title Kính mát Cazal Model 901 Authentic Mới chưa sử dụng Lorem ipsum.
@@ -53,10 +56,9 @@ block content
 							p
 								| Shop 
 								a(href = "#") hihihaha
-							br
-							a(href = "#").button.button--line sản phẩm khác
-							&nbsp;&nbsp;
-							a(href = "#").button.button--line thêm vào yêu thích
+					.product-summary__buttons
+						a(href = "#").button.button--line sản phẩm khác
+						a(href = "#").button.button--line thêm vào yêu thích
 				hr.hr
 				.product-deal
 					.product-deal__info

@@ -16,6 +16,11 @@
 	font-weight: 700;
 	line-height: 18px;
 
+	@include respond-to(600px) {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
 	&--transparent {
 		background-color: transparent;
 	}

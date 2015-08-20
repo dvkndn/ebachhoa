@@ -19,13 +19,13 @@ block content
 				li.steps__item
 					a hoàn tất
 		.cart-page__list
-			table.table
+			table.table.cart-table
 				colgroup
-					col(style = "width: 500px")
-					col(style = "width: 160px")
-					col(style = "width: 160px")
-					col(style = "width: 160px")
-					col(style = "width: 20px")
+					col
+					col
+					col
+					col
+					col
 				thead
 					tr
 						th tên hàng
@@ -39,7 +39,10 @@ block content
 							td
 								.table-product
 									.table-product__img
-									h1.table-product__title tên sản phẩm
+									.table-product__content
+										h1.table-product__title tên sản phẩm
+										h2.table-product__info 2 x 1.000.000 đ
+										h3.table-product__price 2.000.000 đ
 							td
 								input(type = "text", value = "2").text-box.text-box--line.text-box--cart-amount
 							td 1.000.000 đ

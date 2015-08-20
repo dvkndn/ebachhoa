@@ -1,4 +1,5 @@
 $online: true;
+// $online: false;
 
 @import "base/all";
 @import "modules/all";
@@ -13,6 +14,11 @@ body {
 	width: 100%;
 	max-width: 1200px;
 	margin: auto;
+
+	@include respond-to(1240px) {
+		padding: 0 20px;
+		overflow: hidden;
+	}
 }
 
 .selected {

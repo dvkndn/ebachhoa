@@ -1,3 +1,10 @@
+.faq-page {
+	@include respond-to(600px) {
+		.page-title {
+			display: none;
+		}
+	}
+}
 .faq-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -12,6 +19,29 @@
 		&:nth-child(even) {
 			padding-left: 50px;
 		}
+
+		@include respond-to(1000px) {
+			&:nth-child(odd) {
+				padding-right: 20px;
+			}
+			&:nth-child(even) {
+				padding-left: 20px;
+			}
+		}
+
+		@include respond-to(600px) {
+			width: 100%;
+			&:nth-child(odd) {
+				padding-right: 0;
+			}
+			&:nth-child(even) {
+				padding-left: 0;
+			}
+		}
+	}
+
+	@include respond-to(600px) {
+		flex-wrap: wrap;
 	}
 }
 .faq-item {

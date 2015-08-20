@@ -2,10 +2,19 @@
 	width: 100%;
 	max-width: 1200px;
 	margin: auto;
+
+	@include respond-to(1240px) {
+		padding: 0 20px;
+		overflow: hidden;
+	}
 }
 
 .fluid {
 	width: 100vw;
 	position: relative;
 	left: calc(-50vw + 50%);
+
+	@include respond-to(1240px) {
+		overflow: hidden;
+	}
 }

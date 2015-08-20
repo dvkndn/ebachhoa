@@ -187,4 +187,16 @@ $(function() {
 			$(e.currentTarget).circleProgress(states[currentState]);
 		})
 	};
+
+	// center step
+	if ($(".step-page").length) {
+		var positionLeft = $(".steps__item.selected").position().left;
+		var scrollLeft = positionLeft - $(".steps__list").width()/2 + 75;
+		$(".steps__list").scrollLeft(scrollLeft);
+	};
+
+	// breadcrumb always right
+	if ($(".breadcrumb__items").length) {
+		$(".breadcrumb__items").scrollLeft(1000);
+	};
 });

@@ -1,11 +1,30 @@
 .checkout-page {
 	&__shipping-form {
-		width: 800px;
+		width: 100%;
+		max-width: 800px;
 		margin: auto;
+
+		@include respond-to(600px) {
+			.hide-this {
+				display: none;
+			}
+		}
 	}
 	&__payment-form {
-		width: 500px;
+		width: 100%;
+		max-width: 500px;
 		margin: auto;
+
+		.radio {
+			@include respond-to(600px) {
+				flex-wrap: wrap;
+				.cols__item {
+					&:not(:first-child) {
+						margin-top: 20px;
+					}
+				}
+			}
+		}
 	}
 }
 .checkout-thankyou {
@@ -18,6 +37,7 @@
 		line-height: 24px;
 	}
 	&__button {
-		width: 300px;
+		width: 100%;
+		max-width: 300px;
 	}
 }

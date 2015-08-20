@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"pad",
+				"padding-top: "
+			],
+			[
+				"flex",
+				"flex-direction: "
+			],
+			[
+				"le",
+				"letter-spacing: "
+			],
+			[
+				"padd",
+				"padding: "
+			],
+			[
+				"margin-",
+				"margin-bottom: "
+			],
+			[
+				"scr",
+				"scrollLeft"
+			],
+			[
+				"position",
+				"positionLeft"
+			],
+			[
+				"pos",
+				"positionLeft"
+			],
+			[
+				"sele",
+				"selected"
+			],
+			[
+				"table",
+				"table-product"
+			],
+			[
 				"produc",
 				"product-deal"
 			],
@@ -14,10 +54,6 @@
 			[
 				"dashboa",
 				"dashboard-inbox"
-			],
-			[
-				"sele",
-				"select"
 			],
 			[
 				"tab",
@@ -54,14 +90,6 @@
 			[
 				"message",
 				"message-full"
-			],
-			[
-				"pad",
-				"padding: "
-			],
-			[
-				"flex",
-				"flex-grow: "
 			],
 			[
 				"search",
@@ -164,10 +192,6 @@
 				"category-tree"
 			],
 			[
-				"padd",
-				"padding-left: "
-			],
-			[
 				"butt-n",
 				"button--full-width"
 			],
@@ -262,10 +286,6 @@
 			[
 				"cons",
 				"console.log('$0');"
-			],
-			[
-				"margin-",
-				"margin-right: "
 			],
 			[
 				"__prima",
@@ -384,10 +404,6 @@
 				"layouts"
 			],
 			[
-				"table",
-				"table-layout"
-			],
-			[
 				"tabl",
 				"table-layout"
 			],
@@ -498,56 +514,56 @@
 			[
 				"left",
 				"leftLink"
-			],
-			[
-				"right",
-				"rightLink"
-			],
-			[
-				"e",
-				"ethical-management-system"
-			],
-			[
-				"ceo",
-				"ceo-greeting-page"
-			],
-			[
-				"clas",
-				"classList"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "views/product/index.jade",
+			"file": "assets/styles/pages/contact.scss",
 			"settings":
 			{
-				"buffer_size": 3618,
+				"buffer_size": 855,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "assets/styles/pages/product.scss",
+			"file": "assets/styles/pages/faq.scss",
 			"settings":
 			{
-				"buffer_size": 3219,
+				"buffer_size": 879,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "assets/scripts/app.js",
+			"file": "assets/styles/pages/home.scss",
 			"settings":
 			{
-				"buffer_size": 5217,
+				"buffer_size": 3553,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "assets/styles/modules/button.scss",
+			"file": "views/home/index.jade",
 			"settings":
 			{
-				"buffer_size": 1108,
+				"buffer_size": 4062,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/styles/modules/user-bar.scss",
+			"settings":
+			{
+				"buffer_size": 803,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/help-contact/index.jade",
+			"settings":
+			{
+				"buffer_size": 1488,
 				"line_ending": "Unix"
 			}
 		}
@@ -626,59 +642,74 @@
 	"expanded_folders":
 	[
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/img",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/dashboard-buy",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/dashboard-customize",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/dashboard-inbox",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/dashboard-inbox-new",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/dashboard-sell"
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/cart",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/checkout-2"
 	],
 	"file_history":
 	[
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/select.scss",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/pages/product.scss",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/product/index.jade",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/form.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/app.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/checkout/index.jade",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/checkout-2/index.jade",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/help-contact/index.jade",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/category/index.jade",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/product/index.jade",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/product.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/pages/category.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/preview.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/pages/checkout.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/breadcrumb.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/pages/product.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/scripts/app.js",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/text-box.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/select.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/hr.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/layouts/header/top-search.jade",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/layouts/header/user-bar.jade",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/layouts/header.jade",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/cart/index.jade",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/pages/cart.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/pages/step.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/cols.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/steps.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/checkbox.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/top-search.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/table.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/container.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/footer.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/flex.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/base/colors.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/base/mixins.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/user-bar.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/sell-2/index.jade",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/dashboard-buy/index.jade",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/pages/profile.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/profile/index.jade",
+		"/Users/thiendo/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/button.scss",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/layouts/sell-layout.jade",
+		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/help-contact/index.jade",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/help-faq/index.jade",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/pages/dashboard.scss",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/sell-3/index.jade",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/pages/faq.scss",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/dashboard-inbox/index.jade",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/dashboard-inbox-new/index.jade",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/sell-2/index.jade",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/button.scss",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/form.scss",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/layouts/sell-layout.jade",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/dashboard-buy/index.jade",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/sell-5/index.jade",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/dashboard-sell/index.jade",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/flex.scss",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/cols.scss",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/app.scss",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/table.scss",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/dashboard-customize/index.jade",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/base/reset.scss",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/scripts/app.js",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/pages/sell.scss",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/sell-4/index.jade",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/layouts/layout.jade",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/search/index.jade",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/home/index.jade",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/views/cart/index.jade",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/vendors/lato/latofonts.css",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/layouts/head.jade",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/layouts/header.jade",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/fonts/stylesheet.css",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/base/fonts.scss",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/pages/home.scss",
 		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/image-holder.scss",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/base/colors.scss",
-		"/Users/thiendo/Documents/Development/dwarvesf/ebachhoa/code/assets/styles/modules/product.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/ebachhoa.sublime-project",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/base/fonts.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/fonts/stylesheet.css",
@@ -697,7 +728,6 @@
 		"/Users/thiendo/Documents/Development/ebachhoa/code/views/sell-5/index.jade",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/views/product/index.jade",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/product.scss",
-		"/Users/thiendo/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/product.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/scripts/app-react.jsx",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/views/dashboard-buy/index.jade",
@@ -745,27 +775,7 @@
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/steps.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/checkbox.scss",
 		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/select.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/text.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/range.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/image-holder.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/label.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/footer.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/fluid-footer.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/cart.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/gray-footer.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/base/all.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/hr.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/upgrade.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/price-col.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/tab.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/setting.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/views/help-faq/index.jade",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/base/icons.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/contact.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/faq.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/views/user/index.jade",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/icon.scss",
-		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/pages/fqa.scss"
+		"/Users/thiendo/Documents/Development/ebachhoa/code/assets/styles/modules/text.scss"
 	],
 	"find":
 	{
@@ -788,6 +798,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"br ",
+			"br",
 			"\"#\"",
 			".db-product-alpha",
 			"Lato",
@@ -913,9 +925,7 @@
 			"detail-table",
 			"   l   ",
 			"-sp",
-			".flex",
-			"\\+enactment-link\\((.*)\\)",
-			"li.enactment-tab__link: a\\(href=(\".\")\\) (.*)"
+			".flex"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1061,202 +1071,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "views/product/index.jade",
+					"file": "assets/styles/pages/contact.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3618,
+						"buffer_size": 855,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1644,
-								1644
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 72.0,
-						"translation.y": 398.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 1,
-					"file": "assets/styles/pages/product.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3219,
-						"regions":
-						{
-							"gutter_color_1006":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#986794.png",
-								"regions":
-								[
-									[
-										1056,
-										1099
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1373":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#804f7c.png",
-								"regions":
-								[
-									[
-										1476,
-										1530
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1377":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#804f7c.png",
-								"regions":
-								[
-									[
-										1440,
-										1513
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1392":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#804f7c.png",
-								"regions":
-								[
-									[
-										1681,
-										1681
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1399":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#804f7c.png",
-								"regions":
-								[
-									[
-										1434,
-										1507
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1413":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#804f7c.png",
-								"regions":
-								[
-									[
-										1441,
-										1514
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2448":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#E2F0D9.png",
-								"regions":
-								[
-									[
-										2524,
-										2541
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2459":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#E2F0D9.png",
-								"regions":
-								[
-									[
-										2524,
-										2541
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2512":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#70AD47.png",
-								"regions":
-								[
-									[
-										2525,
-										2542
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2524":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#70AD47.png",
-								"regions":
-								[
-									[
-										2524,
-										2541
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_977":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#986794.png",
-								"regions":
-								[
-									[
-										1056,
-										1099
-									]
-								],
-								"scope": "gutter_color"
-							}
-						},
-						"selection":
-						[
-							[
-								1889,
-								1889
+								390,
+								390
 							]
 						],
 						"settings":
@@ -1266,56 +1098,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 75.0,
+						"translation.y": 230.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "assets/scripts/app.js",
+					"buffer": 1,
+					"file": "assets/styles/pages/faq.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5217,
+						"buffer_size": 879,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4386,
-								4392
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 803.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "assets/styles/modules/button.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1108,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								610,
-								684
+								75,
+								75
 							]
 						],
 						"settings":
@@ -1324,10 +1127,132 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 202.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/styles/pages/home.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3553,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1102,
+								1102
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 939.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "views/home/index.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4062,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1410,
+								1410
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 231.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "assets/styles/modules/user-bar.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 803,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								289,
+								289
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "views/help-contact/index.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1488,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1071,
+								1071
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1389,12 +1314,168 @@
 		"selected_items":
 		[
 			[
+				"home",
+				"views/home/index.jade"
+			],
+			[
+				"faq",
+				"assets/styles/pages/faq.scss"
+			],
+			[
+				"form",
+				"assets/styles/modules/form.scss"
+			],
+			[
+				"conta",
+				"views/help-contact/index.jade"
+			],
+			[
+				"contac",
+				"assets/styles/pages/contact.scss"
+			],
+			[
+				"user",
+				"assets/styles/modules/user-bar.scss"
+			],
+			[
+				"app",
+				"assets/styles/app.scss"
+			],
+			[
+				"previe",
+				"assets/styles/modules/preview.scss"
+			],
+			[
+				"produ",
+				"views/product/index.jade"
+			],
+			[
+				"produc",
+				"assets/styles/pages/product.scss"
+			],
+			[
 				"scrip",
 				"assets/scripts/app.js"
 			],
 			[
-				"produc",
-				"views/product/index.jade"
+				"bread",
+				"assets/styles/modules/breadcrumb.scss"
+			],
+			[
+				"categor",
+				"views/category/index.jade"
+			],
+			[
+				"cate",
+				"assets/styles/pages/category.scss"
+			],
+			[
+				"check",
+				"assets/styles/pages/checkout.scss"
+			],
+			[
+				"te",
+				"assets/styles/modules/text-box.scss"
+			],
+			[
+				"sele",
+				"assets/styles/modules/select.scss"
+			],
+			[
+				"checkou",
+				"assets/styles/pages/checkout.scss"
+			],
+			[
+				"hr",
+				"assets/styles/modules/hr.scss"
+			],
+			[
+				"steps",
+				"assets/styles/modules/steps.scss"
+			],
+			[
+				"cols",
+				"assets/styles/modules/cols.scss"
+			],
+			[
+				"step",
+				"assets/styles/pages/step.scss"
+			],
+			[
+				"cart",
+				"assets/styles/pages/cart.scss"
+			],
+			[
+				"top",
+				"assets/styles/modules/top-search.scss"
+			],
+			[
+				"ap",
+				"assets/styles/app.scss"
+			],
+			[
+				"foot",
+				"assets/styles/modules/footer.scss"
+			],
+			[
+				"fle",
+				"assets/styles/modules/flex.scss"
+			],
+			[
+				"colo",
+				"assets/styles/base/colors.scss"
+			],
+			[
+				"car",
+				"views/cart/index.jade"
+			],
+			[
+				"table",
+				"assets/styles/modules/table.scss"
+			],
+			[
+				"mix",
+				"assets/styles/base/mixins.scss"
+			],
+			[
+				"us",
+				"assets/styles/modules/user-bar.scss"
+			],
+			[
+				"contain",
+				"assets/styles/modules/container.scss"
+			],
+			[
+				"user-",
+				"layouts/header/user-bar.jade"
+			],
+			[
+				"head",
+				"layouts/header.jade"
+			],
+			[
+				"sell-2",
+				"views/sell-2/index.jade"
+			],
+			[
+				"dashbo",
+				"views/dashboard-buy/index.jade"
+			],
+			[
+				"profile",
+				"assets/styles/pages/profile.scss"
+			],
+			[
+				"dash",
+				"views/dashboard-buy/index.jade"
+			],
+			[
+				"sel",
+				"layouts/sell-layout.jade"
+			],
+			[
+				"sell-",
+				"views/sell-2/index.jade"
 			],
 			[
 				"prod",
@@ -1409,14 +1490,6 @@
 				"assets/styles/modules/button.scss"
 			],
 			[
-				"faq",
-				"views/help-faq/index.jade"
-			],
-			[
-				"user",
-				"layouts/header/user-bar.jade"
-			],
-			[
 				"help-con",
 				"views/help-contact/index.jade"
 			],
@@ -1429,28 +1502,8 @@
 				"views/sell-3/index.jade"
 			],
 			[
-				"form",
-				"assets/styles/modules/form.scss"
-			],
-			[
-				"sel",
-				"layouts/sell-layout.jade"
-			],
-			[
 				"sel2",
 				"views/sell-2/index.jade"
-			],
-			[
-				"dash",
-				"assets/styles/pages/dashboard.scss"
-			],
-			[
-				"fle",
-				"assets/styles/modules/flex.scss"
-			],
-			[
-				"cols",
-				"assets/styles/modules/cols.scss"
 			],
 			[
 				"sell-5",
@@ -1461,18 +1514,6 @@
 				"views/dashboard-buy/index.jade"
 			],
 			[
-				"sele",
-				"assets/styles/modules/select.scss"
-			],
-			[
-				"app",
-				"assets/styles/app.scss"
-			],
-			[
-				"table",
-				"assets/styles/modules/table.scss"
-			],
-			[
 				"dashse",
 				"views/dashboard-sell/index.jade"
 			],
@@ -1481,20 +1522,12 @@
 				"views/sell-4/index.jade"
 			],
 			[
-				"sell-2",
-				"views/sell-2/index.jade"
-			],
-			[
 				"sell",
 				"layouts/sell-layout.jade"
 			],
 			[
 				"lay",
 				"layouts/layout.jade"
-			],
-			[
-				"home",
-				"views/home/index.jade"
 			],
 			[
 				"searc",
@@ -1509,14 +1542,6 @@
 				"assets/styles/base/reset.scss"
 			],
 			[
-				"cart",
-				"views/cart/index.jade"
-			],
-			[
-				"head",
-				"layouts/head.jade"
-			],
-			[
 				"styl",
 				"assets/styles/fonts/stylesheet.css"
 			],
@@ -1529,16 +1554,8 @@
 				"assets/styles/modules/image-holder.scss"
 			],
 			[
-				"colo",
-				"assets/styles/base/colors.scss"
-			],
-			[
 				"a",
 				"assets/styles/app.scss"
-			],
-			[
-				"bread",
-				"assets/styles/modules/breadcrumb.scss"
 			],
 			[
 				"top-s",
@@ -1549,20 +1566,8 @@
 				"assets/styles/modules/breadcrumb.scss"
 			],
 			[
-				"top",
-				"assets/styles/modules/top-search.scss"
-			],
-			[
-				"conta",
-				"assets/styles/modules/container.scss"
-			],
-			[
 				"pro",
 				"views/product/index.jade"
-			],
-			[
-				"cate",
-				"views/category/index.jade"
 			],
 			[
 				"app-",
@@ -1617,24 +1622,12 @@
 				"assets/styles/modules/accordion.scss"
 			],
 			[
-				"ap",
-				"assets/styles/app.scss"
-			],
-			[
-				"te",
-				"assets/styles/modules/text-box.scss"
-			],
-			[
 				"header",
 				"layouts/header.jade"
 			],
 			[
 				"tab",
 				"assets/styles/modules/table.scss"
-			],
-			[
-				"car",
-				"views/cart/index.jade"
 			],
 			[
 				"con",
@@ -1653,28 +1646,12 @@
 				"assets/styles/modules/button.scss"
 			],
 			[
-				"profile",
-				"assets/styles/pages/profile.scss"
-			],
-			[
 				"prof",
 				"assets/styles/pages/profile.scss"
 			],
 			[
 				"profil",
 				"views/profile/index.jade"
-			],
-			[
-				"step",
-				"assets/styles/pages/step.scss"
-			],
-			[
-				"steps",
-				"assets/styles/modules/steps.scss"
-			],
-			[
-				"check",
-				"assets/styles/modules/checkbox.scss"
 			],
 			[
 				"range",
@@ -1713,10 +1690,6 @@
 				"assets/styles/modules/all.scss"
 			],
 			[
-				"contain",
-				"assets/styles/modules/container.scss"
-			],
-			[
 				"flex",
 				"assets/styles/modules/flex.scss"
 			],
@@ -1743,10 +1716,6 @@
 			[
 				"pagesall",
 				"assets/styles/pages/all.scss"
-			],
-			[
-				"hr",
-				"assets/styles/modules/hr.scss"
 			],
 			[
 				"up",
@@ -1785,10 +1754,6 @@
 				"assets/styles/modules/top-search.scss"
 			],
 			[
-				"contac",
-				"assets/styles/pages/contact.scss"
-			],
-			[
 				"cont",
 				"assets/styles/modules/container.scss"
 			],
@@ -1803,10 +1768,6 @@
 			[
 				"ico",
 				"assets/styles/base/icons.scss"
-			],
-			[
-				"mix",
-				"assets/styles/base/mixins.scss"
 			],
 			[
 				"for",
@@ -1861,44 +1822,8 @@
 				"assets/styles/modules/container.scss"
 			],
 			[
-				"us",
-				"assets/styles/modules/user-bar.scss"
-			],
-			[
 				"res",
 				"assets/styles/base/reset.scss"
-			],
-			[
-				"fo",
-				"assets/styles/base/fonts.scss"
-			],
-			[
-				"sc",
-				"assets/javascripts/script.js"
-			],
-			[
-				"act",
-				"assets/stylesheets/pages/act.scss"
-			],
-			[
-				"spea",
-				"assets/stylesheets/pages/speak.scss"
-			],
-			[
-				"speak",
-				"assets/stylesheets/pages/speak.scss"
-			],
-			[
-				"tabl",
-				"assets/stylesheets/modules/table.scss"
-			],
-			[
-				"text",
-				"assets/stylesheets/modules/form/text-box.scss"
-			],
-			[
-				"popu",
-				"assets/stylesheets/modules/popup.scss"
 			]
 		],
 		"width": 0.0

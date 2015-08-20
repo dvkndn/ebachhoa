@@ -41,9 +41,21 @@
 		padding: 0 10px;
 	}
 
+	@include respond-to(600px) {
+		margin: 0 -5px;
+
+		&__item {
+			padding: 0 5px;
+		}
+	}
+
 	@each $cols in 4, 5 {
 		&--#{$cols}-cols &__item {
 			flex-basis: 100%/$cols;
+
+			@include respond-to(600px) {
+				flex-basis: 50%;
+			}
 		}
 	}
 }

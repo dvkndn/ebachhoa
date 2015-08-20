@@ -21,6 +21,44 @@
 	&__tabs {
 		margin-bottom: 80px;
 	}
+
+	@include respond-to(1000px) {
+		&__description {
+			flex-grow: 0;
+			flex-shrink: 0;
+			width: 320px
+		}
+		&__img {
+			flex-shrink: 1;
+			flex-grow: 1;
+		}
+	}
+
+	@include respond-to(600px) {
+		&__main {
+			flex-direction: column;
+			margin-bottom: 20px;
+			border-bottom: 1px solid $border-gray;
+		}
+		&__img {
+			margin-right: 0;
+			padding-top: 20px;
+			border-top: solid 1px $border-gray;
+			margin-top: 10px;
+		}
+		&__tags {
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+		&__tabs {
+			margin-bottom: 20px;
+			border-bottom: 1px solid $border-gray;
+			margin-bottom: 30px;
+		}
+		&__description {
+			width: 100%;
+		}
+	}
 }
 .product-page-report {
 	padding-left: 130px;
@@ -28,6 +66,35 @@
 	justify-content: center;
 	> *:not(:last-child) {
 		margin-right: 20px;
+	}
+
+	@include respond-to(1000px) {
+		flex-wrap: wrap;
+		padding-left: 0;
+
+		&__item {
+			flex: 50%;
+			order: 1;
+			margin-right: 0 !important;
+
+			> a {
+				@extend .button--full-width;
+			}
+		}
+		&__big-item {
+			flex: 100%;
+			order: 2;
+
+			margin-top: 10px;
+		}
+	}
+
+	@include respond-to(600px) {
+		
+
+		padding-bottom: 20px;
+		border-bottom: solid 1px $border-gray;
+		margin-bottom: 20px;
 	}
 }
 .product-disclaimer {
@@ -57,12 +124,33 @@
 
 		&:not(:last-child) {
 			margin-right: 30px;
+
+			@include respond-to(800px) {
+				margin-right: 0;
+			}
 		}
+	}
+
+	@include respond-to(600px) {
+		flex-direction: column;
+
+		&__tag {
+			&:not(:last-child) {
+				margin-right: 0;
+				margin-bottom: 15px;
+			}
+		}
+
+		
 	}
 }
 
 .product-tag {
 	font-size: 14px !important;
+
+	@include respond-to(800px) {
+		font-size: 10px !important;
+	}
 
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -135,14 +223,54 @@
 		a:not(.button) {
 			color: $orange;
 		}
+
+		p:last-of-type {
+			margin-bottom: 10px;
+		}
+		.button:first-of-type {
+			margin-bottom: 10px;
+		}
 	}
 
 	&__deadline-info {
 		display: flex;
+
+		@include respond-to(600px) {
+			// flex-wrap: wrap;
+
+			.button {
+				padding: 0 20px !important;
+			}
+		}
 	}
 
 	&__deadline {
 		margin-right: 30px;
+
+		@include respond-to(600px) {
+			margin-right: 15px;
+		}
+	}
+
+	&__buttons {
+		margin-top: 20px;
+
+		> *:first-child {
+			margin-right: 20px;
+		}
+
+		@include respond-to(600px) {
+			margin-top: 10px;
+
+			> *:first-child {
+				margin-right: 10px;
+			}
+
+			.button {
+				padding: 0 10px;
+				height: 30px; line-height: 30px;
+			}
+		}
 	}
 }
 .product-deadline {
@@ -200,6 +328,7 @@
 		position: relative;
 		top: 2px;
 		margin-right: 10px;
+
 	}
 
 	&__price {
@@ -207,11 +336,49 @@
 		font-size: 24px;
 		font-weight: 700;
 		margin-bottom: 10px;
+
+		@include respond-to(1200px) {
+			font-size: 20px;
+		}
 	}
 
 	&__button, &__select {
 		&:not(:last-child) {
 			margin-bottom: 15px;
+		}
+	}
+
+	@include respond-to(1100px) {
+		&__button:not(#kpdvd) {
+			height: 40px;
+			font-size: 10px;
+			line-height: 40px;
+			padding: 0;
+			width: 140px;
+			letter-spacing: 0.5px;
+		}
+
+		&__info {
+			flex-grow: 1;
+			flex-shrink: 0;
+			padding-right: 20px;
+		}
+
+		&__action {
+			flex-grow: 0;
+			flex-shrink: 0;
+			width: 140px;
+		}
+	}
+
+	@include respond-to(600px) {
+		&__button:not(#kpdvd) {
+			width: 130px;
+			letter-spacing: 0;
+		}
+
+		&__info {
+			padding-right: 10px;
 		}
 	}
 }
@@ -223,6 +390,9 @@
 	&__counter {
 		color: $secondary-text;
 		font-size: 16px;
+		@include respond-to(1200px) {
+			font-size: 12px;
+		}
 	}
 }
 .product-buy {
@@ -231,5 +401,8 @@
 		font-size: 16px;
 		text-decoration: line-through;
 		margin-bottom: 8px;
+		@include respond-to(1200px) {
+			font-size: 12px;
+		}
 	}
 }

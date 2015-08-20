@@ -14,6 +14,11 @@
 			@extend .cols__item;
 			margin-bottom: 30px;
 			flex-basis: 25%;
+
+			@include respond-to(600px) {
+				flex-basis: 50%;
+				margin-bottom: 20px;
+			}
 		}
 
 		margin-bottom: 20px;
@@ -25,21 +30,36 @@
 		@extend .fluid;
 
 		margin-bottom: 80px;
+
+		@include respond-to(600px) {
+			height: 200px;
+			margin-bottom: 20px;
+		}
 	}
 
 	&__cat-anchor {
 		display: flex;
 		justify-content: center;
+		width: 100%;
 
 		> * {
-			flex-grow: 0;
+			flex-grow: 1;
+			@extend .cols__item;
 		}
+
+		@extend .cols;
 
 		.cat-anchor + .cat-anchor {
 			margin-left: 60px;
 		}
 
 		margin-bottom: 80px;
+
+		@include respond-to(600px) {
+			padding-bottom: 20px;
+			border-bottom: solid 1px $border-gray;
+			margin-bottom: 20px;
+		}
 	}
 
 	&__ads {
@@ -49,10 +69,24 @@
 			margin: auto;
 			display: block;
 		}
+
+
+		@include respond-to(600px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__badges {
 		margin-bottom: 80px;
+
+		@include respond-to(600px) {
+			flex-wrap: wrap;
+
+			> * {
+				flex-basis: 50%;
+				margin-bottom: 20px;
+			}
+		}
 	}
 }
 
@@ -65,6 +99,10 @@
 		position: absolute;
 		bottom: 0;
 		z-index: 2;
+
+		@include respond-to(600px) {
+			height: 50px;
+		}
 	}
 	&__thumbs-content {
 		@extend .container;
@@ -80,6 +118,11 @@
 
 		background-size: cover;
 		background-position: center;
+
+		@include respond-to(600px) {
+			width: 54px;
+			height: 30px;
+		}
 	}
 	&__thumb + &__thumb {
 		margin-left: 20px;
@@ -99,14 +142,16 @@
 }
 
 .cat-anchor {
-	width: 450px; height: 250px;
+	max-width: 450px; height: 250px;
 	display: block;
-	// margin: auto;
+	width: 100%;
+	margin: auto;
 
 	background-size: cover;
 	background-position: center;
 
 	position: relative;
+
 
 	&:hover &__content {
 		opacity: 1;
@@ -162,6 +207,18 @@
 		text-transform: uppercase;
 		font-weight: 700;
 	}
+
+
+	@include respond-to(600px) {
+		pointer-events: none;
+		height: 100px;
+
+		&__title {
+			font-size: 12px;
+			height: 30px;
+			line-height: 30px;
+		}
+	}
 }
 
 .home-footer {
@@ -185,6 +242,20 @@
 
 	&__text {
 		opacity: 0.7;
+	}
+
+	@include respond-to(600px) {
+
+		br {
+			display: none;
+		}
+
+		padding-top: 36px;
+
+		h1 {
+			font-size: 24px;
+			line-height: 36px;
+		}
 	}
 }
 

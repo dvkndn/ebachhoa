@@ -65,11 +65,23 @@
 
 		float: left;
 	}
+	&__content {
+		text-align: left;
+		line-height: 20px;
+	}
 	&__title {
 		font-size: 12px;
 		font-weight: 900;
 		display: inline-block;
 		letter-spacing: 1px;
 		text-transform: uppercase;
+	}
+	&__info {
+		color: $secondary-text;
+	}
+	&__price {
+		color: $orange;
+		font-weight: 900;
+		letter-spacing: 0.3px;
 	}
 }

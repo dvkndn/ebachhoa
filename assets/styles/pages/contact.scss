@@ -19,6 +19,34 @@
 	&__map {
 		padding-right: 50px;
 	}
+
+	@include respond-to(800px) {
+		&__content {
+			flex-wrap: wrap;
+		}
+		&__map {
+			padding-right: 0;
+			order: 2;
+		}
+		&__form {
+			order: 1;
+			padding-left: 0;
+			border-bottom: solid 1px $border-gray;
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+			border-left: none;
+		}
+	}
+
+	@include respond-to(600px) {
+		
+		.page-title {
+			display: none;
+		}
+		iframe {
+			height: 190px
+		}
+	}
 }
 .contact-map {
 	&__map {

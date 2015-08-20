@@ -19,6 +19,10 @@
 	&__left {
 		> *:not(:last-child) {
 			margin-right: 30px;
+
+			@include respond-to(600px) {
+				margin-right: 0;
+			}
 		}
 	}
 	&__right {
@@ -41,6 +45,14 @@
 	&__link {
 		&:hover {
 			color: white;
+		}
+	}
+
+	// responsive
+	@include respond-to(600px) {
+		&__hello,
+		&__left &__link {
+			display: none;
 		}
 	}
 }

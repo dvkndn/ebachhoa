@@ -1,14 +1,38 @@
 .preview {
 	display: flex;
+	margin-bottom: 20px;
 
 	&__thumbs {
 		margin-right: 20px;
+		flex-grow: 0;
+		flex-shrink: 0;
 	}
 
 	&__main {
+		flex-grow: 1;
+		text-align: right;
+	}
 
+	@include respond-to(1000px) {
+		flex-direction: column;
+
+		&__thumbs {
+			order: 2;
+			margin-right: 0;
+			margin-top: 20px;
+		}
+		&__main {
+			order: 1;
+			width: 100%;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
 	}
 }
+
 .preview-thumbs {
 	display: flex;
 	flex-direction: column;
@@ -16,11 +40,31 @@
 	&__thumb {
 		margin-bottom: 20px;
 	}
+
+	@include respond-to(1000px) {
+		flex-direction: row;
+		@extend .cols;
+
+		&__thumb {
+			@extend .cols__item;
+			width: auto;
+			flex: 25%;
+		}
+	}
 }
 .preview-thumb {
 	cursor: pointer;
 	&--selected {
 		opacity: 0.5;
 		cursor: auto;
+	}
+
+	@include respond-to(1000px) {
+		width: 100%;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
 	}
 }

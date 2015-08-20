@@ -22,3 +22,33 @@
 		margin-bottom: 30px;
 	}
 }
+.rating {
+	unicode-bidi: bidi-override;
+	direction: rtl;
+
+	&--disabled {
+		pointer-events: none;
+	}
+
+	&__star {
+		color: $orange;
+		position: relative;
+
+		cursor: pointer;
+
+		& + & {
+			margin-right: 0.5em;
+		}
+		
+
+		&:hover,
+		&:hover ~ &,
+		&.highlight:not(:hover) {
+			&:before {
+				content: "\2605";
+				position: absolute;
+				left: 0;
+			}
+		}
+	}
+}

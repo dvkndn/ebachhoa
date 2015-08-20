@@ -7,6 +7,7 @@
 		box-shadow: $border-gray 0 0 0 1px inset;
 
 		font-size: 0;
+		position: relative;
 	}
 
 	&__item {
@@ -29,4 +30,25 @@
 	&__item > a {
 		display: block;
 	}
+
+	@include respond-to(630px) {
+		&__item {
+			height: 30px;
+			line-height: 30px;
+		}
+	}
+
+	@include respond-to(1000px) {
+		&__item {
+			width: 150px;
+		}
+	}
+
+	@include respond-to(760px) {
+		&__list {
+			width: 100%;
+			overflow: scroll;
+			white-space: nowrap;
+		}
+	}	
 }
