@@ -39,6 +39,11 @@
 	padding-bottom: 30px;
 	margin-bottom: 50px;
 
+	@include respond-to(600px) {
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+
 	&__header {
 		margin-bottom: 30px;
 
@@ -52,10 +57,18 @@
 			}
 		}
 
+		@include respond-to(600px) {
+			margin-bottom: 20px;
+		}
+
 	}
 	&__title {
 		font-size: 24px;
 		font-weight: 900;
+
+		@include respond-to(600px) {
+			font-size: 20px;
+		}
 	}
 	&__list {
 		margin-bottom: 30px;

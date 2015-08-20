@@ -20,13 +20,12 @@ block content
 					.profile__img
 					h1.profile__name Tuấn Minh
 				.fluid-header__tabs.selector
-					.fluid-header__tab.selected: a(href = "#") trang cá nhân
-					.fluid-header__tab: a(href = "#") tất cả
-					.fluid-header__tab: a(href = "#") niêm yết
-					.fluid-header__tab: a(href = "#") đấu giá
+					.fluid-header__tab.selected: a(href = "../profile") trang cá nhân
+					.fluid-header__tab: a(href = "../profile-product") niêm yết
+					.fluid-header__tab: a(href = "../profile-product") đấu giá
 		.profile-page__body.browse-main
 			section.db-section
-				header.db-section__header
+				header.db-section__header.profile-fix__title
 					h1.db-section__title 154 nhận xét
 					.rating.rating--disabled
 						span.rating__star ☆
@@ -34,16 +33,29 @@ block content
 						span.rating__star.highlight ☆
 						span.rating__star.highlight ☆
 						span.rating__star.highlight ☆
-			section.db-section
-				header.db-section__header
-					h1.db-section__title Đăng nhận xét của bạn:
 				.comment-list
 					.comment
 						.comment__img-wrapper
 							div.comment__img
 						.comment__content
-							h1.comment__title Lorem ipsum
-							p.comment__description 
+							.comment__header
+								.comment__rating
+									.rating.rating--disabled
+										span.rating__star ☆
+										span.rating__star ☆
+										span.rating__star.highlight ☆
+										span.rating__star.highlight ☆
+										span.rating__star.highlight ☆
+								h1.comment__title Detailed review of the Fire Phone. Good first attempt by Amazon on this very innovative yet somewhat flawed phone.
+							h2.comment__user
+								span Nhận xét bởi 
+								a(href = "#") Tuấn Minh 
+								span vào 4 ngày trước
+							p.comment__description Let me preface this by saying, my 4-star rating is based on what this phone IS, not what it ISN'T as this is the only fair way to review the phone. But, I am going to go over both so you know what you're getting yourself into:
+			section.db-section
+				header.db-section__header
+					h1.db-section__title Đăng nhận xét của bạn:
+				
 				form.form.form--profile
 					+form-row("Đánh giá")
 						div.profile-fix__rating: .rating
@@ -56,17 +68,3 @@ block content
 						input(type = "text").text-box.text-box--full-width
 					+form-row("Nội dung")
 						textarea(rows = "4").text-box.text-box--full-width.text-box--multi-lines
-			//- .browse-main__body
-				.product-list.product-list--5-cols
-					- for (var i = 0; i < 20; i++)
-						- var imgId = Math.floor(Math.random() * 10) + 1
-						.product-list__item
-							.product
-								a.product__link-wrapper(href = "../product")
-									img(src = "../../assets/images/product/#{imgId}-small.jpg",
-										width = "auto", height = "auto").product__thumb
-									h1.product__title Lorem ipsum
-									h2.product__normal-price Niêm yết: 2.300.000 ₫
-									h3.product__highlight-price Giá đấu: 2.400.000 ₫
-			//- .browse-main__pagination
-				include ../../layouts/pagination.jade

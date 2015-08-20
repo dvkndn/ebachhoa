@@ -143,5 +143,28 @@
 		&:nth-child(-n + 2) {
 			margin-bottom: 10px;
 		}
+
+		@include respond-to(600px) {
+			margin-left: 0 !important;
+			margin-bottom: 10px !important;
+		}
+	}
+}
+
+@include respond-to(600px) {
+	.sell-product-detail__sell-type {
+		display: block;
+	}
+	.sell-product-detail__description {
+		margin-top: 10px;
+	}
+	.label br {
+		display: none;
+	}
+	.checkbox + .text-box {
+		width: 190px !important;
+	}
+	.radio__label + .text-box {
+		width: 190px !important;
 	}
 }

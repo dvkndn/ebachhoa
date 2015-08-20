@@ -11,14 +11,29 @@
 		&:before, &:after {
 			@include pseudo-base;
 			background-color: $secondary-text;
+			top: 0; left: 0; right: 0; bottom: 0;
+			margin: auto;
 		}
 		&:before {
-			top: 47px; left: 35px;
+			
 			width: 30px; height: 6px;
 		}
 		&:after {
-			top: 35px; left: 47px;
 			width: 6px; height: 30px;
+		}
+	}
+
+	@include respond-to(600px) {
+		width: 50px; height: 50px;
+
+		&--add {
+			&:before {
+
+				width: 15px; height: 3px;
+			}
+			&:after {
+				width: 3px; height: 15px;
+			}
 		}
 	}
 }
@@ -32,5 +47,9 @@
 
 	&__label {
 		margin-right: 20px;
+
+		@include respond-to(600px) {
+			margin-right: 10px;
+		}
 	}
 }

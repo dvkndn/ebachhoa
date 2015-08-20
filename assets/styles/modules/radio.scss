@@ -51,6 +51,10 @@
 	&__row {
 		height: 40px;
 		margin-bottom: 5px;
+
+		@include respond-to(600px) {
+			height: auto;
+		}
 	}
 	&__row &__label {
 		line-height: 40px;

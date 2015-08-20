@@ -1,3 +1,46 @@
 .search-tree {
 	// border: solid 1px $border-gray;
 }
+
+.search-page {
+
+
+	.special-link {
+		display: none;
+	}
+
+	@include respond-to(900px) {
+		flex-direction: column;
+
+		.browse-sort__title {
+			display: none;
+		}
+		.browse-aside {
+			width: 100%;
+		}
+		.browse-aside__sort {
+			padding-bottom: 10px;
+			border-bottom: solid 1px $border-gray;
+			margin-bottom: 10px;
+		}
+
+		.category-tree {
+			display: none;
+		}
+
+		.special-label {
+			display: none;
+		}
+
+		.search-tree .form-group:not(:first-child) {
+			display: none;
+		}
+
+		.special-link {
+			display: block;
+			font-size: 14px;
+			color: $orange;
+			margin-top: 20px;
+		}
+	}
+}
