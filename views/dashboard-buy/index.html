@@ -35,7 +35,7 @@
                 <select class="top-search-box__select select select--transparent">
                   <option>Tất cả danh mục</option>
                 </select>
-                <div class="top-search-box__button top-search-box__submit-button"><a href="../search" class="button button--full-width">tìm kiếm</a></div>
+                <div class="top-search-box__button top-search-box__submit-button"><a href="../search" class="button button--full-width"><i class="icon__icon material-icons top-search-box__submit-button-icon">search</i><span class="top-search-box__submit-button-text">tìm kiếm</span></a></div>
                 <div class="top-search-box__button top-search-box__more-button"><a href="../search" class="button button--gray button--rect button--full-width">nâng cao</a></div>
               </form>
             </div>
@@ -72,816 +72,826 @@
                 <li class="cols__item db-filter__item"><a href="#" class="db-filter__link button button--line button--small">chờ giao dịch</a></li>
               </ul>
             </div>
-            <section class="db-section">
-              <header class="db-section__header">
-                <h1 class="db-section__title">Đấu giá</h1>
-                <div class="radio">
-                  <input type="radio" name="deal" value="now" checked="checked" id="deal-now" class="radio__button"/>
-                  <label for="deal-now" class="radio__label">Đang đấu giá</label>
-                </div>
-                <div class="radio">
-                  <input type="radio" name="deal" value="over" id="deal-over" class="radio__button"/>
-                  <label for="deal-over" class="radio__label">Đã thua</label>
-                </div>
-              </header>
-              <div id="deal-now-section" class="db-section__list db-products cols">
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+            <section class="db-section-wrapper">
+              <div class="db-section">
+                <header class="db-section__header">
+                  <h1 class="db-section__title">Đấu giá</h1>
+                  <div class="radio">
+                    <input type="radio" name="deal" value="now" checked="checked" id="deal-now" class="radio__button"/>
+                    <label for="deal-now" class="radio__label">Đang đấu giá</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="deal" value="over" id="deal-over" class="radio__button"/>
+                    <label for="deal-over" class="radio__label">Đã thua</label>
+                  </div>
+                </header>
+                <div id="deal-now-section" class="db-section__list db-products cols">
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
+                      </div>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer">còn 02:30:21</h2>
+                        <h3 class="db-product-description__price-own">bạn đặt 2.400.000 ₫</h3>
+                        <h1 class="db-product-description__price">2.300.000 ₫</h1>
+                        <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">24/03 - 12:12:00</h2>
+                          <h3 class="db-product-description__sub-info">20 lượt</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard">đặt giá</a>
+                        </div>
                       </div>
                     </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer">còn 02:30:21</h2>
-                      <h3 class="db-product-description__price-own">bạn đặt 2.400.000 ₫</h3>
-                      <h1 class="db-product-description__price">2.300.000 ₫</h1>
-                      <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">24/03 - 12:12:00</h2>
-                        <h3 class="db-product-description__sub-info">20 lượt</h3>
+                  </div>
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
                       </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard">đặt giá</a>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer">còn 02:30:21</h2>
+                        <h3 class="db-product-description__price-own">bạn đặt 2.400.000 ₫</h3>
+                        <h1 class="db-product-description__price">2.300.000 ₫</h1>
+                        <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">24/03 - 12:12:00</h2>
+                          <h3 class="db-product-description__sub-info">20 lượt</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard">đặt giá</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__status highlight">
+                          <h1>đang thua</h1>
+                        </div>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
+                      </div>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer"><span class="text-orange">còn 00:30:21</span></h2>
+                        <h3 class="db-product-description__price-own">bạn đặt 1.000.000 ₫</h3>
+                        <h1 class="db-product-description__price"><span class="text-orange">2.300.000 ₫</span></h1>
+                        <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">24/03 - 12:12:00</h2>
+                          <h3 class="db-product-description__sub-info">20 lượt</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard">đặt giá</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__status highlight">
+                          <h1>đang thua</h1>
+                        </div>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
+                      </div>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer">còn 22:30:21</h2>
+                        <h3 class="db-product-description__price-own">bạn đặt 1.000.000 ₫</h3>
+                        <h1 class="db-product-description__price"><span class="text-orange">2.300.000 ₫</span></h1>
+                        <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">24/03 - 12:12:00</h2>
+                          <h3 class="db-product-description__sub-info">20 lượt</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard">đặt giá</a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                <div id="deal-over-section" class="db-section__list db-products cols">
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__status highlight">
+                          <h1>đang thua</h1>
+                        </div>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
+                      </div>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer">còn 22:30:21</h2>
+                        <h3 class="db-product-description__price-own">bạn đặt 1.000.000 ₫</h3>
+                        <h1 class="db-product-description__price"><span class="text-orange">2.300.000 ₫</span></h1>
+                        <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">24/03 - 12:12:00</h2>
+                          <h3 class="db-product-description__sub-info">20 lượt</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard">đặt giá</a>
+                        </div>
                       </div>
                     </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer">còn 02:30:21</h2>
-                      <h3 class="db-product-description__price-own">bạn đặt 2.400.000 ₫</h3>
-                      <h1 class="db-product-description__price">2.300.000 ₫</h1>
-                      <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">24/03 - 12:12:00</h2>
-                        <h3 class="db-product-description__sub-info">20 lượt</h3>
+                  </div>
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__status highlight">
+                          <h1>đang thua</h1>
+                        </div>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
                       </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard">đặt giá</a>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer">còn 22:30:21</h2>
+                        <h3 class="db-product-description__price-own">bạn đặt 1.000.000 ₫</h3>
+                        <h1 class="db-product-description__price"><span class="text-orange">2.300.000 ₫</span></h1>
+                        <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">24/03 - 12:12:00</h2>
+                          <h3 class="db-product-description__sub-info">20 lượt</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard">đặt giá</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__status highlight">
+                          <h1>đang thua</h1>
+                        </div>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
+                      </div>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer">còn 22:30:21</h2>
+                        <h3 class="db-product-description__price-own">bạn đặt 1.000.000 ₫</h3>
+                        <h1 class="db-product-description__price"><span class="text-orange">2.300.000 ₫</span></h1>
+                        <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">24/03 - 12:12:00</h2>
+                          <h3 class="db-product-description__sub-info">20 lượt</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard">đặt giá</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__status highlight">
+                          <h1>đang thua</h1>
+                        </div>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
+                      </div>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer">còn 22:30:21</h2>
+                        <h3 class="db-product-description__price-own">bạn đặt 1.000.000 ₫</h3>
+                        <h1 class="db-product-description__price"><span class="text-orange">2.300.000 ₫</span></h1>
+                        <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">24/03 - 12:12:00</h2>
+                          <h3 class="db-product-description__sub-info">20 lượt</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard">đặt giá</a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__status highlight">
-                        <h1>đang thua</h1>
-                      </div>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
-                      </div>
-                    </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer"><span class="text-orange">còn 00:30:21</span></h2>
-                      <h3 class="db-product-description__price-own">bạn đặt 1.000.000 ₫</h3>
-                      <h1 class="db-product-description__price"><span class="text-orange">2.300.000 ₫</span></h1>
-                      <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">24/03 - 12:12:00</h2>
-                        <h3 class="db-product-description__sub-info">20 lượt</h3>
-                      </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard">đặt giá</a>
-                      </div>
-                    </div>
+                <footer class="db-section__footer">
+                  <div class="pagination"><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_left</i></a>
+                    <ul class="pagination__list">
+                      <li><a href="#" class="selected button button--pagination pagination__item">1</a></li>
+                      <li><a href="#" class="button button--pagination pagination__item">2</a></li>
+                      <li><a href="#" class="button button--pagination pagination__item">3</a></li>
+                    </ul><a href="#" class="button button--pagination pagination__item"><i class="material-icons">more_horiz</i></a><a href="#" class="button button--pagination pagination__item">12</a><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_right</i></a>
                   </div>
-                </div>
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__status highlight">
-                        <h1>đang thua</h1>
-                      </div>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
-                      </div>
-                    </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer">còn 22:30:21</h2>
-                      <h3 class="db-product-description__price-own">bạn đặt 1.000.000 ₫</h3>
-                      <h1 class="db-product-description__price"><span class="text-orange">2.300.000 ₫</span></h1>
-                      <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">24/03 - 12:12:00</h2>
-                        <h3 class="db-product-description__sub-info">20 lượt</h3>
-                      </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard">đặt giá</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </footer>
               </div>
-              <div id="deal-over-section" class="db-section__list db-products cols">
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__status highlight">
-                        <h1>đang thua</h1>
-                      </div>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
-                      </div>
-                    </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer">còn 22:30:21</h2>
-                      <h3 class="db-product-description__price-own">bạn đặt 1.000.000 ₫</h3>
-                      <h1 class="db-product-description__price"><span class="text-orange">2.300.000 ₫</span></h1>
-                      <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">24/03 - 12:12:00</h2>
-                        <h3 class="db-product-description__sub-info">20 lượt</h3>
-                      </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard">đặt giá</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__status highlight">
-                        <h1>đang thua</h1>
-                      </div>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
-                      </div>
-                    </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer">còn 22:30:21</h2>
-                      <h3 class="db-product-description__price-own">bạn đặt 1.000.000 ₫</h3>
-                      <h1 class="db-product-description__price"><span class="text-orange">2.300.000 ₫</span></h1>
-                      <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">24/03 - 12:12:00</h2>
-                        <h3 class="db-product-description__sub-info">20 lượt</h3>
-                      </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard">đặt giá</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__status highlight">
-                        <h1>đang thua</h1>
-                      </div>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
-                      </div>
-                    </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer">còn 22:30:21</h2>
-                      <h3 class="db-product-description__price-own">bạn đặt 1.000.000 ₫</h3>
-                      <h1 class="db-product-description__price"><span class="text-orange">2.300.000 ₫</span></h1>
-                      <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">24/03 - 12:12:00</h2>
-                        <h3 class="db-product-description__sub-info">20 lượt</h3>
-                      </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard">đặt giá</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__status highlight">
-                        <h1>đang thua</h1>
-                      </div>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
-                      </div>
-                    </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer">còn 22:30:21</h2>
-                      <h3 class="db-product-description__price-own">bạn đặt 1.000.000 ₫</h3>
-                      <h1 class="db-product-description__price"><span class="text-orange">2.300.000 ₫</span></h1>
-                      <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">24/03 - 12:12:00</h2>
-                        <h3 class="db-product-description__sub-info">20 lượt</h3>
-                      </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard">đặt giá</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <footer class="db-section__footer">
-                <div class="pagination"><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_left</i></a>
-                  <ul class="pagination__list">
-                    <li><a href="#" class="selected button button--pagination pagination__item">1</a></li>
-                    <li><a href="#" class="button button--pagination pagination__item">2</a></li>
-                    <li><a href="#" class="button button--pagination pagination__item">3</a></li>
-                  </ul><a href="#" class="button button--pagination pagination__item"><i class="material-icons">more_horiz</i></a><a href="#" class="button button--pagination pagination__item">12</a><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_right</i></a>
-                </div>
-              </footer>
             </section>
-            <section class="db-section">
-              <header class="db-section__header">
-                <h1 class="db-section__title">Thương lượng</h1>
-              </header>
-              <div class="db-section__list db-products cols">
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-products__item cols__item">
-                      <div class="db-product"></div>
+            <section class="db-section-wrapper">
+              <div class="db-section">
+                <header class="db-section__header">
+                  <h1 class="db-section__title">Thương lượng</h1>
+                </header>
+                <div class="db-section__list db-products cols">
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-products__item cols__item">
+                        <div class="db-product"></div>
+                      </div>
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__status">
+                          <h1>không đạt</h1>
+                        </div>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
+                      </div>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer">1 ngày 20:34</h2>
+                        <h3 class="db-product-description__price-own">bạn ra giá 2.400.000 ₫</h3>
+                        <h1 class="db-product-description__price">2.300.000 ₫</h1>
+                        <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">&nbsp;</h2>
+                          <h3 class="db-product-description__sub-info">2 lượt</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--orange-line">thương lượng</a>
+                        </div>
+                      </div>
                     </div>
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__status">
-                        <h1>không đạt</h1>
+                  </div>
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-products__item cols__item">
+                        <div class="db-product"></div>
                       </div>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
+                      </div>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer"><span class="text-orange">20:34</span></h2>
+                        <h3 class="db-product-description__price-own">bạn ra giá 2.400.000 ₫</h3>
+                        <h1 class="db-product-description__price">2.300.000 ₫</h1>
+                        <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">&nbsp;</h2>
+                          <h3 class="db-product-description__sub-info">2 lượt</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--orange-line">thương lượng</a>
+                        </div>
                       </div>
                     </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer">1 ngày 20:34</h2>
-                      <h3 class="db-product-description__price-own">bạn ra giá 2.400.000 ₫</h3>
-                      <h1 class="db-product-description__price">2.300.000 ₫</h1>
-                      <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">&nbsp;</h2>
-                        <h3 class="db-product-description__sub-info">2 lượt</h3>
+                  </div>
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-products__item cols__item">
+                        <div class="db-product"></div>
                       </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--orange-line">thương lượng</a>
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__status">
+                          <h1>không đạt</h1>
+                        </div>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
+                      </div>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer">1 ngày 20:34</h2>
+                        <h3 class="db-product-description__price-own">bạn ra giá 2.400.000 ₫</h3>
+                        <h1 class="db-product-description__price">2.300.000 ₫</h1>
+                        <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">&nbsp;</h2>
+                          <h3 class="db-product-description__sub-info">2 lượt</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--orange-line">thương lượng</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-products__item cols__item">
+                        <div class="db-product"></div>
+                      </div>
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__status">
+                          <h1>hết hạn</h1>
+                        </div>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
+                      </div>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer">1 ngày 20:34</h2>
+                        <h3 class="db-product-description__price-own">bạn ra giá 2.400.000 ₫</h3>
+                        <h1 class="db-product-description__price">2.300.000 ₫</h1>
+                        <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">&nbsp;</h2>
+                          <h3 class="db-product-description__sub-info">2 lượt</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--orange-line">thương lượng</a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-products__item cols__item">
-                      <div class="db-product"></div>
-                    </div>
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
-                      </div>
-                    </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer"><span class="text-orange">20:34</span></h2>
-                      <h3 class="db-product-description__price-own">bạn ra giá 2.400.000 ₫</h3>
-                      <h1 class="db-product-description__price">2.300.000 ₫</h1>
-                      <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">&nbsp;</h2>
-                        <h3 class="db-product-description__sub-info">2 lượt</h3>
-                      </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--orange-line">thương lượng</a>
-                      </div>
-                    </div>
+                <footer class="db-section__footer">
+                  <div class="pagination"><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_left</i></a>
+                    <ul class="pagination__list">
+                      <li><a href="#" class="selected button button--pagination pagination__item">1</a></li>
+                      <li><a href="#" class="button button--pagination pagination__item">2</a></li>
+                      <li><a href="#" class="button button--pagination pagination__item">3</a></li>
+                    </ul><a href="#" class="button button--pagination pagination__item"><i class="material-icons">more_horiz</i></a><a href="#" class="button button--pagination pagination__item">12</a><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_right</i></a>
                   </div>
-                </div>
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-products__item cols__item">
-                      <div class="db-product"></div>
-                    </div>
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__status">
-                        <h1>không đạt</h1>
-                      </div>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
-                      </div>
-                    </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer">1 ngày 20:34</h2>
-                      <h3 class="db-product-description__price-own">bạn ra giá 2.400.000 ₫</h3>
-                      <h1 class="db-product-description__price">2.300.000 ₫</h1>
-                      <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">&nbsp;</h2>
-                        <h3 class="db-product-description__sub-info">2 lượt</h3>
-                      </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--orange-line">thương lượng</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-products__item cols__item">
-                      <div class="db-product"></div>
-                    </div>
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__status">
-                        <h1>hết hạn</h1>
-                      </div>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
-                      </div>
-                    </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer">1 ngày 20:34</h2>
-                      <h3 class="db-product-description__price-own">bạn ra giá 2.400.000 ₫</h3>
-                      <h1 class="db-product-description__price">2.300.000 ₫</h1>
-                      <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">&nbsp;</h2>
-                        <h3 class="db-product-description__sub-info">2 lượt</h3>
-                      </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--orange-line">thương lượng</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </footer>
               </div>
-              <footer class="db-section__footer">
-                <div class="pagination"><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_left</i></a>
-                  <ul class="pagination__list">
-                    <li><a href="#" class="selected button button--pagination pagination__item">1</a></li>
-                    <li><a href="#" class="button button--pagination pagination__item">2</a></li>
-                    <li><a href="#" class="button button--pagination pagination__item">3</a></li>
-                  </ul><a href="#" class="button button--pagination pagination__item"><i class="material-icons">more_horiz</i></a><a href="#" class="button button--pagination pagination__item">12</a><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_right</i></a>
-                </div>
-              </footer>
             </section>
-            <section class="db-section">
-              <header class="db-section__header">
-                <h1 class="db-section__title">Theo dõi</h1>
-              </header>
-              <div class="db-section__list db-products cols">
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-products__item cols__item">
-                      <div class="db-product"></div>
+            <section class="db-section-wrapper">
+              <div class="db-section">
+                <header class="db-section__header">
+                  <h1 class="db-section__title">Theo dõi</h1>
+                </header>
+                <div class="db-section__list db-products cols">
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-products__item cols__item">
+                        <div class="db-product"></div>
+                      </div>
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__status">
+                          <h1>hết hàng</h1>
+                        </div>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
+                      </div>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer">23:30:21</h2>
+                        <h3 class="db-product-description__price-own">&nbsp;</h3>
+                        <h1 class="db-product-description__price">2.300.000 ₫</h1>
+                        <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">24/03 12:32:21</h2>
+                          <h3 class="db-product-description__sub-info">&nbsp;</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--gray">chi tiết</a>
+                        </div>
+                      </div>
                     </div>
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__status">
-                        <h1>hết hàng</h1>
+                  </div>
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-products__item cols__item">
+                        <div class="db-product"></div>
                       </div>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
+                      </div>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer"><span class="text-orange">00:30:21</span></h2>
+                        <h3 class="db-product-description__price-own">&nbsp;</h3>
+                        <h1 class="db-product-description__price">2.300.000 ₫</h1>
+                        <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">24/03 12:32:21</h2>
+                          <h3 class="db-product-description__sub-info"><a href="#">cho vào giỏ hàng</a></h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard">mua ngay</a>
+                        </div>
                       </div>
                     </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer">23:30:21</h2>
-                      <h3 class="db-product-description__price-own">&nbsp;</h3>
-                      <h1 class="db-product-description__price">2.300.000 ₫</h1>
-                      <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">24/03 12:32:21</h2>
-                        <h3 class="db-product-description__sub-info">&nbsp;</h3>
+                  </div>
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
                       </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--gray">chi tiết</a>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer">còn 02:30:21</h2>
+                        <h3 class="db-product-description__price-own">bạn đặt 2.400.000 ₫</h3>
+                        <h1 class="db-product-description__price">2.300.000 ₫</h1>
+                        <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">24/03 - 12:12:00</h2>
+                          <h3 class="db-product-description__sub-info">20 lượt</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard">đặt giá</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-products__item cols__item">
+                        <div class="db-product"></div>
+                      </div>
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
+                      </div>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer"><span class="text-orange">00:30:21</span></h2>
+                        <h3 class="db-product-description__price-own">&nbsp;</h3>
+                        <h1 class="db-product-description__price">2.300.000 ₫</h1>
+                        <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">24/03 12:32:21</h2>
+                          <h3 class="db-product-description__sub-info"><a href="#">thương lượng</a></h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard">mua ngay</a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-products__item cols__item">
-                      <div class="db-product"></div>
-                    </div>
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
-                      </div>
-                    </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer"><span class="text-orange">00:30:21</span></h2>
-                      <h3 class="db-product-description__price-own">&nbsp;</h3>
-                      <h1 class="db-product-description__price">2.300.000 ₫</h1>
-                      <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">24/03 12:32:21</h2>
-                        <h3 class="db-product-description__sub-info"><a href="#">cho vào giỏ hàng</a></h3>
-                      </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard">mua ngay</a>
-                      </div>
-                    </div>
+                <footer class="db-section__footer">
+                  <div class="pagination"><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_left</i></a>
+                    <ul class="pagination__list">
+                      <li><a href="#" class="selected button button--pagination pagination__item">1</a></li>
+                      <li><a href="#" class="button button--pagination pagination__item">2</a></li>
+                      <li><a href="#" class="button button--pagination pagination__item">3</a></li>
+                    </ul><a href="#" class="button button--pagination pagination__item"><i class="material-icons">more_horiz</i></a><a href="#" class="button button--pagination pagination__item">12</a><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_right</i></a>
                   </div>
-                </div>
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
-                      </div>
-                    </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer">còn 02:30:21</h2>
-                      <h3 class="db-product-description__price-own">bạn đặt 2.400.000 ₫</h3>
-                      <h1 class="db-product-description__price">2.300.000 ₫</h1>
-                      <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">24/03 - 12:12:00</h2>
-                        <h3 class="db-product-description__sub-info">20 lượt</h3>
-                      </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard">đặt giá</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-products__item cols__item">
-                      <div class="db-product"></div>
-                    </div>
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
-                      </div>
-                    </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer"><span class="text-orange">00:30:21</span></h2>
-                      <h3 class="db-product-description__price-own">&nbsp;</h3>
-                      <h1 class="db-product-description__price">2.300.000 ₫</h1>
-                      <h3 class="db-product-description__price-ship">SHIP: + 30.000 ₫</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">24/03 12:32:21</h2>
-                        <h3 class="db-product-description__sub-info"><a href="#">thương lượng</a></h3>
-                      </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard">mua ngay</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </footer>
               </div>
-              <footer class="db-section__footer">
-                <div class="pagination"><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_left</i></a>
-                  <ul class="pagination__list">
-                    <li><a href="#" class="selected button button--pagination pagination__item">1</a></li>
-                    <li><a href="#" class="button button--pagination pagination__item">2</a></li>
-                    <li><a href="#" class="button button--pagination pagination__item">3</a></li>
-                  </ul><a href="#" class="button button--pagination pagination__item"><i class="material-icons">more_horiz</i></a><a href="#" class="button button--pagination pagination__item">12</a><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_right</i></a>
-                </div>
-              </footer>
             </section>
-            <section class="db-section">
-              <header class="db-section__header">
-                <h1 class="db-section__title">Chưa thanh toán</h1>
-              </header>
-              <div class="db-section__list db-products cols">
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__status">
-                        <h1>đã huỷ</h1>
+            <section class="db-section-wrapper">
+              <div class="db-section">
+                <header class="db-section__header">
+                  <h1 class="db-section__title">Chưa thanh toán</h1>
+                </header>
+                <div class="db-section__list db-products cols">
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__status">
+                          <h1>đã huỷ</h1>
+                        </div>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
                       </div>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer">23:30:21</h2>
+                        <h3 class="db-product-description__price-own">&nbsp;</h3>
+                        <h1 class="db-product-description__price">2.300.000 ₫</h1>
+                        <h3 class="db-product-description__price-ship">FREESHIP</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">24/03 12:32:21</h2>
+                          <h3 class="db-product-description__sub-info">&nbsp;</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--gray">chi tiết</a>
+                        </div>
                       </div>
                     </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer">23:30:21</h2>
-                      <h3 class="db-product-description__price-own">&nbsp;</h3>
-                      <h1 class="db-product-description__price">2.300.000 ₫</h1>
-                      <h3 class="db-product-description__price-ship">FREESHIP</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">24/03 12:32:21</h2>
-                        <h3 class="db-product-description__sub-info">&nbsp;</h3>
+                  </div>
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
                       </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--gray">chi tiết</a>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer"><span class="text-orange">00:30:21</span></h2>
+                        <h3 class="db-product-description__price-own">SL: 2 x 2.300.000 ₫</h3>
+                        <h1 class="db-product-description__price">4.600.000 ₫</h1>
+                        <h3 class="db-product-description__price-ship">FREESHIP</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">24/03 12:32:21</h2>
+                          <h3 class="db-product-description__sub-info">&nbsp;</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard">thanh toán</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
+                      </div>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer"><span class="text-orange">00:30:21</span></h2>
+                        <h3 class="db-product-description__price-own">SL: 2 x 2.300.000 ₫</h3>
+                        <h1 class="db-product-description__price">4.600.000 ₫</h1>
+                        <h3 class="db-product-description__price-ship">FREESHIP</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">24/03 12:32:21</h2>
+                          <h3 class="db-product-description__sub-info">&nbsp;</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard">thanh toán</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__status">
+                          <h1>đã huỷ</h1>
+                        </div>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
+                      </div>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer">23:30:21</h2>
+                        <h3 class="db-product-description__price-own">&nbsp;</h3>
+                        <h1 class="db-product-description__price">2.300.000 ₫</h1>
+                        <h3 class="db-product-description__price-ship">FREESHIP</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">24/03 12:32:21</h2>
+                          <h3 class="db-product-description__sub-info">&nbsp;</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--gray">chi tiết</a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
-                      </div>
-                    </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer"><span class="text-orange">00:30:21</span></h2>
-                      <h3 class="db-product-description__price-own">SL: 2 x 2.300.000 ₫</h3>
-                      <h1 class="db-product-description__price">4.600.000 ₫</h1>
-                      <h3 class="db-product-description__price-ship">FREESHIP</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">24/03 12:32:21</h2>
-                        <h3 class="db-product-description__sub-info">&nbsp;</h3>
-                      </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard">thanh toán</a>
-                      </div>
-                    </div>
+                <footer class="db-section__footer">
+                  <div class="pagination"><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_left</i></a>
+                    <ul class="pagination__list">
+                      <li><a href="#" class="selected button button--pagination pagination__item">1</a></li>
+                      <li><a href="#" class="button button--pagination pagination__item">2</a></li>
+                      <li><a href="#" class="button button--pagination pagination__item">3</a></li>
+                    </ul><a href="#" class="button button--pagination pagination__item"><i class="material-icons">more_horiz</i></a><a href="#" class="button button--pagination pagination__item">12</a><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_right</i></a>
                   </div>
-                </div>
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
-                      </div>
-                    </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer"><span class="text-orange">00:30:21</span></h2>
-                      <h3 class="db-product-description__price-own">SL: 2 x 2.300.000 ₫</h3>
-                      <h1 class="db-product-description__price">4.600.000 ₫</h1>
-                      <h3 class="db-product-description__price-ship">FREESHIP</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">24/03 12:32:21</h2>
-                        <h3 class="db-product-description__sub-info">&nbsp;</h3>
-                      </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard">thanh toán</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__status">
-                        <h1>đã huỷ</h1>
-                      </div>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
-                      </div>
-                    </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer">23:30:21</h2>
-                      <h3 class="db-product-description__price-own">&nbsp;</h3>
-                      <h1 class="db-product-description__price">2.300.000 ₫</h1>
-                      <h3 class="db-product-description__price-ship">FREESHIP</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">24/03 12:32:21</h2>
-                        <h3 class="db-product-description__sub-info">&nbsp;</h3>
-                      </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--gray">chi tiết</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </footer>
               </div>
-              <footer class="db-section__footer">
-                <div class="pagination"><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_left</i></a>
-                  <ul class="pagination__list">
-                    <li><a href="#" class="selected button button--pagination pagination__item">1</a></li>
-                    <li><a href="#" class="button button--pagination pagination__item">2</a></li>
-                    <li><a href="#" class="button button--pagination pagination__item">3</a></li>
-                  </ul><a href="#" class="button button--pagination pagination__item"><i class="material-icons">more_horiz</i></a><a href="#" class="button button--pagination pagination__item">12</a><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_right</i></a>
-                </div>
-              </footer>
             </section>
-            <section class="db-section">
-              <header class="db-section__header">
-                <h1 class="db-section__title">Giao dịch thành công</h1>
-              </header>
-              <div class="db-section__list db-products cols">
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__status done">
-                        <h1 class="db-product-cover__icons"><i class="material-icons selected">attach_money</i><i class="material-icons selected">local_shipping</i><i class="material-icons">redo</i><i class="material-icons selected">undo</i></h1>
-                        <h2 class="db-product-cover__icon-texts"><span class="db-product-cover__icon-text selected">đã thanh toán</span><span class="db-product-cover__icon-text selected">đã gửi hàng</span><span class="db-product-cover__icon-text">chưa gửi nhận xét</span><span class="db-product-cover__icon-text selected">đã được nhận xét</span></h2>
+            <section class="db-section-wrapper">
+              <div class="db-section">
+                <header class="db-section__header">
+                  <h1 class="db-section__title">Giao dịch thành công</h1>
+                </header>
+                <div class="db-section__list db-products cols">
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__status done">
+                          <h1 class="db-product-cover__icons"><i class="material-icons selected">attach_money</i><i class="material-icons selected">local_shipping</i><i class="material-icons">redo</i><i class="material-icons selected">undo</i></h1>
+                          <h2 class="db-product-cover__icon-texts"><span class="db-product-cover__icon-text selected">đã thanh toán</span><span class="db-product-cover__icon-text selected">đã gửi hàng</span><span class="db-product-cover__icon-text">chưa gửi nhận xét</span><span class="db-product-cover__icon-text selected">đã được nhận xét</span></h2>
+                        </div>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
                       </div>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer">&nbsp;</h2>
+                        <h3 class="db-product-description__price-own">SL: 1 x 2.300.000 ₫</h3>
+                        <h1 class="db-product-description__price">2.300.000 ₫</h1>
+                        <h3 class="db-product-description__price-ship">FREESHIP</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">30/04 12:32:21</h2>
+                          <h3 class="db-product-description__sub-info">&nbsp;</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--gray">nhận xét</a>
+                        </div>
                       </div>
                     </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer">&nbsp;</h2>
-                      <h3 class="db-product-description__price-own">SL: 1 x 2.300.000 ₫</h3>
-                      <h1 class="db-product-description__price">2.300.000 ₫</h1>
-                      <h3 class="db-product-description__price-ship">FREESHIP</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">30/04 12:32:21</h2>
-                        <h3 class="db-product-description__sub-info">&nbsp;</h3>
+                  </div>
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__status done">
+                          <h1 class="db-product-cover__icons"><i class="material-icons selected">attach_money</i><i class="material-icons selected">local_shipping</i><i class="material-icons">redo</i><i class="material-icons selected">undo</i></h1>
+                          <h2 class="db-product-cover__icon-texts"><span class="db-product-cover__icon-text selected">đã thanh toán</span><span class="db-product-cover__icon-text selected">đã gửi hàng</span><span class="db-product-cover__icon-text">chưa gửi nhận xét</span><span class="db-product-cover__icon-text selected">đã được nhận xét</span></h2>
+                        </div>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
                       </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--gray">nhận xét</a>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer">&nbsp;</h2>
+                        <h3 class="db-product-description__price-own">SL: 2 x 3.000.000 ₫</h3>
+                        <h1 class="db-product-description__price">6.000.000 ₫</h1>
+                        <h3 class="db-product-description__price-ship">FREESHIP</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">30/04 12:32:21</h2>
+                          <h3 class="db-product-description__sub-info">&nbsp;</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--gray">nhận xét</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__status done">
+                          <h1 class="db-product-cover__icons"><i class="material-icons selected">attach_money</i><i class="material-icons selected">local_shipping</i><i class="material-icons">redo</i><i class="material-icons selected">undo</i></h1>
+                          <h2 class="db-product-cover__icon-texts"><span class="db-product-cover__icon-text selected">đã thanh toán</span><span class="db-product-cover__icon-text selected">đã gửi hàng</span><span class="db-product-cover__icon-text">chưa gửi nhận xét</span><span class="db-product-cover__icon-text selected">đã được nhận xét</span></h2>
+                        </div>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
+                      </div>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer">&nbsp;</h2>
+                        <h3 class="db-product-description__price-own">SL: 1 x 2.300.000 ₫</h3>
+                        <h1 class="db-product-description__price">2.300.000 ₫</h1>
+                        <h3 class="db-product-description__price-ship">FREESHIP</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">30/04 12:32:21</h2>
+                          <h3 class="db-product-description__sub-info">&nbsp;</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--gray">chi tiết</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="db-products__item cols__item">
+                    <div class="db-product">
+                      <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
+                        <div class="db-product-cover__status done">
+                          <h1 class="db-product-cover__icons"><i class="material-icons selected">attach_money</i><i class="material-icons selected">local_shipping</i><i class="material-icons">redo</i><i class="material-icons selected">undo</i></h1>
+                          <h2 class="db-product-cover__icon-texts"><span class="db-product-cover__icon-text selected">đã thanh toán</span><span class="db-product-cover__icon-text selected">đã gửi hàng</span><span class="db-product-cover__icon-text">chưa gửi nhận xét</span><span class="db-product-cover__icon-text selected">đã được nhận xét</span></h2>
+                        </div>
+                        <div class="db-product-cover__info">
+                          <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
+                          <ul class="db-product-cover__list">
+                            <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
+                            <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
+                            <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
+                          </ul>
+                          <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
+                        </div>
+                      </div>
+                      <div class="db-product__description db-product-description">
+                        <h2 class="db-product-description__timer">&nbsp;</h2>
+                        <h3 class="db-product-description__price-own">SL: 1 x 2.300.000 ₫</h3>
+                        <h1 class="db-product-description__price">2.300.000 ₫</h1>
+                        <h3 class="db-product-description__price-ship">FREESHIP</h3>
+                        <div class="db-product-description__sub-info-area">
+                          <h2 class="db-product-description__timer-end">30/04 12:32:21</h2>
+                          <h3 class="db-product-description__sub-info">&nbsp;</h3>
+                        </div>
+                        <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--gray">nhận xét</a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__status done">
-                        <h1 class="db-product-cover__icons"><i class="material-icons selected">attach_money</i><i class="material-icons selected">local_shipping</i><i class="material-icons">redo</i><i class="material-icons selected">undo</i></h1>
-                        <h2 class="db-product-cover__icon-texts"><span class="db-product-cover__icon-text selected">đã thanh toán</span><span class="db-product-cover__icon-text selected">đã gửi hàng</span><span class="db-product-cover__icon-text">chưa gửi nhận xét</span><span class="db-product-cover__icon-text selected">đã được nhận xét</span></h2>
-                      </div>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
-                      </div>
-                    </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer">&nbsp;</h2>
-                      <h3 class="db-product-description__price-own">SL: 2 x 3.000.000 ₫</h3>
-                      <h1 class="db-product-description__price">6.000.000 ₫</h1>
-                      <h3 class="db-product-description__price-ship">FREESHIP</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">30/04 12:32:21</h2>
-                        <h3 class="db-product-description__sub-info">&nbsp;</h3>
-                      </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--gray">nhận xét</a>
-                      </div>
-                    </div>
+                <footer class="db-section__footer">
+                  <div class="pagination"><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_left</i></a>
+                    <ul class="pagination__list">
+                      <li><a href="#" class="selected button button--pagination pagination__item">1</a></li>
+                      <li><a href="#" class="button button--pagination pagination__item">2</a></li>
+                      <li><a href="#" class="button button--pagination pagination__item">3</a></li>
+                    </ul><a href="#" class="button button--pagination pagination__item"><i class="material-icons">more_horiz</i></a><a href="#" class="button button--pagination pagination__item">12</a><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_right</i></a>
                   </div>
-                </div>
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__status done">
-                        <h1 class="db-product-cover__icons"><i class="material-icons selected">attach_money</i><i class="material-icons selected">local_shipping</i><i class="material-icons">redo</i><i class="material-icons selected">undo</i></h1>
-                        <h2 class="db-product-cover__icon-texts"><span class="db-product-cover__icon-text selected">đã thanh toán</span><span class="db-product-cover__icon-text selected">đã gửi hàng</span><span class="db-product-cover__icon-text">chưa gửi nhận xét</span><span class="db-product-cover__icon-text selected">đã được nhận xét</span></h2>
-                      </div>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
-                      </div>
-                    </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer">&nbsp;</h2>
-                      <h3 class="db-product-description__price-own">SL: 1 x 2.300.000 ₫</h3>
-                      <h1 class="db-product-description__price">2.300.000 ₫</h1>
-                      <h3 class="db-product-description__price-ship">FREESHIP</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">30/04 12:32:21</h2>
-                        <h3 class="db-product-description__sub-info">&nbsp;</h3>
-                      </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--gray">chi tiết</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="db-products__item cols__item">
-                  <div class="db-product">
-                    <div class="db-product__cover db-product-cover"><img src="../../assets/images/product/1-small.jpg" width="235" height="235" class="db-product-cover__thumb"/>
-                      <div class="db-product-cover__status done">
-                        <h1 class="db-product-cover__icons"><i class="material-icons selected">attach_money</i><i class="material-icons selected">local_shipping</i><i class="material-icons">redo</i><i class="material-icons selected">undo</i></h1>
-                        <h2 class="db-product-cover__icon-texts"><span class="db-product-cover__icon-text selected">đã thanh toán</span><span class="db-product-cover__icon-text selected">đã gửi hàng</span><span class="db-product-cover__icon-text">chưa gửi nhận xét</span><span class="db-product-cover__icon-text selected">đã được nhận xét</span></h2>
-                      </div>
-                      <div class="db-product-cover__info">
-                        <h1 class="db-product-cover__title"><a href="../product" class="db-product-cover__link">product one with short description</a></h1>
-                        <ul class="db-product-cover__list">
-                          <li><span class="db-product-cover__label">Mã phiên</span><a href="../product" class="db-product-cover__link">1005001</a></li>
-                          <li><span class="db-product-cover__label">Người bán</span><a href="../profile" class="db-product-cover__link">Nguyễn Văn A</a></li>
-                          <li><span class="db-product-cover__label">Shop</span><a class="db-product-cover__link">ABC</a></li>
-                        </ul>
-                        <div class="db-product-cover__buttons"><a href="#" class="db-product-cover__button"><i class="material-icons">my_library_add</i></a><a href="#" class="db-product-cover__button"><i class="material-icons">person_add</i></a><a href="../dashboard-inbox" class="db-product-cover__button"><i class="material-icons">messenger</i></a></div>
-                      </div>
-                    </div>
-                    <div class="db-product__description db-product-description">
-                      <h2 class="db-product-description__timer">&nbsp;</h2>
-                      <h3 class="db-product-description__price-own">SL: 1 x 2.300.000 ₫</h3>
-                      <h1 class="db-product-description__price">2.300.000 ₫</h1>
-                      <h3 class="db-product-description__price-ship">FREESHIP</h3>
-                      <div class="db-product-description__sub-info-area">
-                        <h2 class="db-product-description__timer-end">30/04 12:32:21</h2>
-                        <h3 class="db-product-description__sub-info">&nbsp;</h3>
-                      </div>
-                      <div class="db-product-description__btn"><a href="#" class="button button--dashboard button--gray">nhận xét</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </footer>
               </div>
-              <footer class="db-section__footer">
-                <div class="pagination"><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_left</i></a>
-                  <ul class="pagination__list">
-                    <li><a href="#" class="selected button button--pagination pagination__item">1</a></li>
-                    <li><a href="#" class="button button--pagination pagination__item">2</a></li>
-                    <li><a href="#" class="button button--pagination pagination__item">3</a></li>
-                  </ul><a href="#" class="button button--pagination pagination__item"><i class="material-icons">more_horiz</i></a><a href="#" class="button button--pagination pagination__item">12</a><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_right</i></a>
-                </div>
-              </footer>
             </section>
           </div>
         </div>

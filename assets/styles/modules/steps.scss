@@ -47,7 +47,7 @@
 	@include respond-to(760px) {
 		&__list {
 			width: 100%;
-			overflow: scroll;
+			overflow: hidden;
 			white-space: nowrap;
 		}
 	}	

@@ -79,7 +79,7 @@ block content
 						li.cols__item.db-filter__item(class = (title === "tổng quan" ? "selected" : ""))
 							a.db-filter__link(href = "#", class = selectedClass).button.button--line.button--small= title
 			//- SECTION DIVIDER ----------
-			section.db-section
+			section.db-section-wrapper: .db-section
 				header.db-section__header
 					h1.db-section__title Đấu giá
 					.radio
@@ -139,7 +139,7 @@ block content
 				footer.db-section__footer
 					include ../../layouts/pagination.jade
 			//- SECTION DIVIDER ----------
-			section.db-section
+			section.db-section-wrapper: .db-section
 				header.db-section__header
 					h1.db-section__title Thương lượng
 				.db-section__list.db-products.cols
@@ -186,7 +186,7 @@ block content
 				footer.db-section__footer
 					include ../../layouts/pagination.jade
 			//- SECTION DIVIDER ----------
-			section.db-section
+			section.db-section-wrapper: .db-section
 				header.db-section__header
 					h1.db-section__title Theo dõi
 				.db-section__list.db-products.cols
@@ -232,7 +232,7 @@ block content
 				footer.db-section__footer
 					include ../../layouts/pagination.jade
 			//- SECTION DIVIDER ----------
-			section.db-section
+			section.db-section-wrapper: .db-section
 				header.db-section__header
 					h1.db-section__title Chưa thanh toán
 				.db-section__list.db-products.cols
@@ -276,7 +276,7 @@ block content
 				footer.db-section__footer
 					include ../../layouts/pagination.jade
 			//- SECTION DIVIDER ----------
-			section.db-section
+			section.db-section-wrapper: .db-section
 				header.db-section__header
 					h1.db-section__title Giao dịch thành công
 				.db-section__list.db-products.cols

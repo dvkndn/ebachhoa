@@ -151,6 +151,10 @@
 	}
 }
 
+.sell-5-footer-content {
+	margin-left: 260px;
+}
+
 @include respond-to(600px) {
 	.sell-product-detail__sell-type {
 		display: block;
@@ -167,4 +171,13 @@
 	.radio__label + .text-box {
 		width: 190px !important;
 	}
+	.sell-footer-content,
+	.sell-5-footer-content {
+		margin-left: 0;
+		flex-wrap: wrap;
+		> * {
+			margin-bottom: 10px;
+		}
+	}
 }
+

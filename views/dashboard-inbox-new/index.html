@@ -35,7 +35,7 @@
                 <select class="top-search-box__select select select--transparent">
                   <option>Tất cả danh mục</option>
                 </select>
-                <div class="top-search-box__button top-search-box__submit-button"><a href="../search" class="button button--full-width">tìm kiếm</a></div>
+                <div class="top-search-box__button top-search-box__submit-button"><a href="../search" class="button button--full-width"><i class="icon__icon material-icons top-search-box__submit-button-icon">search</i><span class="top-search-box__submit-button-text">tìm kiếm</span></a></div>
                 <div class="top-search-box__button top-search-box__more-button"><a href="../search" class="button button--gray button--rect button--full-width">nâng cao</a></div>
               </form>
             </div>
@@ -62,67 +62,69 @@
             </div>
           </div>
           <div class="dashboard-page__content inbox inbox--new">
-            <div class="inbox__folders">
-              <div class="inbox__button"><a href="../dashboard-inbox-new" class="button button--full-width">soạn tin nhắn	</a></div>
-              <ul class="folders">
-                <li class="accordion folder folders__item accordion--selected expanded">
-                  <h1 class="folder__title accordion__title"><a href="#">tất cả</a></h1>
-                  <ul class="folder__content accordion__content selector">
-                    <li class="folder__child selected"><a href="#">từ thành viên khác</a></li>
-                    <li class="folder__child"><a href="#">từ ebachhoa</a></li>
-                  </ul>
-                </li>
-                <li class="folder folders__item">
-                  <h1 class="folder__title"><a href="#">đã gửi</a></h1>
-                </li>
-                <li class="folder folders__item">
-                  <h1 class="folder__title"><a href="#">tin nhắn rác</a></h1>
-                </li>
-                <li class="folder folders__item accordion">
-                  <h1 class="folder__title accordion__title"><a href="#">thư mục</a></h1>
-                  <ul class="folder__content accordion__content selector">
-                    <li class="folder__child selected"><a href="#">thư mục 1</a></li>
-                    <li class="folder__child"><a href="#">thư mục 1</a></li>
-                    <li class="folder__child"><a href="#">thêm thư mục</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="inbox__message-full">
-              <div class="message-new">
-                <form class="form message-new__form">
-                  <div class="form-row">
-                    <div class="form-row__label">
-                      <label class="label">tên người nhận</label>
+            <div class="inbox__content">
+              <div class="inbox__folders">
+                <div class="inbox__button"><a href="../dashboard-inbox-new" class="button button--full-width">soạn tin nhắn	</a></div>
+                <ul class="folders">
+                  <li class="accordion folder folders__item accordion--selected expanded">
+                    <h1 class="folder__title accordion__title"><a href="#">tất cả</a></h1>
+                    <ul class="folder__content accordion__content selector">
+                      <li class="folder__child selected"><a href="#">từ thành viên khác</a></li>
+                      <li class="folder__child"><a href="#">từ ebachhoa</a></li>
+                    </ul>
+                  </li>
+                  <li class="folder folders__item">
+                    <h1 class="folder__title"><a href="#">đã gửi</a></h1>
+                  </li>
+                  <li class="folder folders__item">
+                    <h1 class="folder__title"><a href="#">tin nhắn rác</a></h1>
+                  </li>
+                  <li class="folder folders__item accordion">
+                    <h1 class="folder__title accordion__title"><a href="#">thư mục</a></h1>
+                    <ul class="folder__content accordion__content selector">
+                      <li class="folder__child selected"><a href="#">thư mục 1</a></li>
+                      <li class="folder__child"><a href="#">thư mục 1</a></li>
+                      <li class="folder__child"><a href="#">thêm thư mục</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="inbox__message-full">
+                <div class="message-new">
+                  <form class="form message-new__form">
+                    <div class="form-row">
+                      <div class="form-row__label">
+                        <label class="label">tên người nhận</label>
+                      </div>
+                      <div class="form-row__content">
+                        <input type="text" placeholder="Tên tài khoản hoặc email" class="text-box text-box--full-width"/>
+                      </div>
                     </div>
-                    <div class="form-row__content">
-                      <input type="text" placeholder="Tên tài khoản hoặc email" class="text-box text-box--full-width"/>
+                    <div class="form-row">
+                      <div class="form-row__label">
+                        <label class="label">tiêu đề</label>
+                      </div>
+                      <div class="form-row__content">
+                        <input type="text" class="text-box text-box--full-width"/>
+                      </div>
                     </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-row__label">
-                      <label class="label">tiêu đề</label>
+                    <div class="form-row">
+                      <div class="form-row__label">
+                        <label class="label">nội dung</label>
+                      </div>
+                      <div class="form-row__content">
+                        <textarea rows="6" class="text-box text-box--full-width text-box--multi-lines"></textarea>
+                      </div>
                     </div>
-                    <div class="form-row__content">
-                      <input type="text" class="text-box text-box--full-width"/>
+                    <div class="form-row">
+                      <div class="form-row__label">
+                        <label class="label"></label>
+                      </div>
+                      <div class="form-row__content"><a href="../dashboard-inbox" class="button button--wide">gửi tin nhắn</a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-row__label">
-                      <label class="label">nội dung</label>
-                    </div>
-                    <div class="form-row__content">
-                      <textarea rows="6" class="text-box text-box--full-width text-box--multi-lines"></textarea>
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-row__label">
-                      <label class="label"></label>
-                    </div>
-                    <div class="form-row__content"><a href="../dashboard-inbox" class="button button--wide">gửi tin nhắn</a>
-                    </div>
-                  </div>
-                </form>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

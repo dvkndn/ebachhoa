@@ -2,16 +2,39 @@
 	&__header {
 		background-color: $border-gray;
 		margin-bottom: 30px;
+
+		@include respond-to(600px) {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			.fluid-header__tabs {
+				flex-wrap: wrap;
+				height: auto;
+			}
+			.fluid-header__tab {
+				flex: 1 0 50%;
+				height: 30px;
+				line-height: 30px;
+			}
+			.fluid-header__tab.selected {
+				border-radius: 5px;
+			}
+		}
 	}
 
 	&__filter {
 		margin-bottom: 30px;
 	}
 
+	&__content {
+		
+	}
+
 	.sell-filter-form {
 		margin-bottom: 30px;
 	}
 }
+
+
 
 .db-filter {
 	display: flex;
@@ -32,6 +55,29 @@
 	&__link {
 		width: 100%;
 	}
+
+	@include respond-to(1000px) {
+		flex-wrap: wrap;
+		&__item {
+			flex: 0 0 auto;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.db-section-wrapper {
+	@include respond-to(1200px) {
+		overflow-y: hidden;
+		overflow-x: scroll;
+
+		// padding-bottom: 30px;
+		margin-bottom: 50px;
+		border-bottom: 1px solid $border-gray;
+	}
+
+	@include respond-to(600px) {
+		margin-bottom: 20px;
+	}
 }
 
 .db-section {
@@ -39,9 +85,17 @@
 	padding-bottom: 30px;
 	margin-bottom: 50px;
 
+	min-width: 1200px;
+
+	@include respond-to(1200px) {
+		padding-bottom: 0;
+		margin-bottom: 0;
+		border-bottom: none;
+	}
+
 	@include respond-to(600px) {
-		padding-bottom: 20px;
-		margin-bottom: 20px;
+		padding-bottom: 10px;
+		margin-bottom: 0;
 	}
 
 	&__header {
@@ -72,6 +126,10 @@
 	}
 	&__list {
 		margin-bottom: 30px;
+
+		@include respond-to(600px) {
+			margin-bottom: 10px;
+		}
 	}
 }
 
@@ -248,7 +306,6 @@
 }
 
 .inbox {
-	display: flex;
 
 	&__folders {
 		flex: 1;
@@ -276,6 +333,18 @@
 
 	&--new &__message-full {
 		flex: 5;
+	}
+
+	&__content {
+		display: flex;
+	}
+
+	@include respond-to(1000px) {
+		overflow-x: scroll;
+		overflow-y: hidden;
+		&__content {
+			min-width: 1200px;
+		}
 	}
 }
 
@@ -315,6 +384,17 @@
 		font-weight: 900;
 		margin-bottom: 30px;
 	}
+
+	@include respond-to(600px) {
+		&__checkbox {
+			display: block;
+
+			& + & {
+				margin-left: 0px;
+				margin-top: 10px;
+			}
+		}
+	}
 }
 
 .message-new {
@@ -323,6 +403,10 @@
 		padding-top: 20px;
 		.form-row {
 			margin-bottom: 20px;
+		}
+
+		@include respond-to(600px) {
+			padding-left: 20px;
 		}
 	}
 }

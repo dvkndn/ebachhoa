@@ -35,7 +35,7 @@
                 <select class="top-search-box__select select select--transparent">
                   <option>Tất cả danh mục</option>
                 </select>
-                <div class="top-search-box__button top-search-box__submit-button"><a href="../search" class="button button--full-width">tìm kiếm</a></div>
+                <div class="top-search-box__button top-search-box__submit-button"><a href="../search" class="button button--full-width"><i class="icon__icon material-icons top-search-box__submit-button-icon">search</i><span class="top-search-box__submit-button-text">tìm kiếm</span></a></div>
                 <div class="top-search-box__button top-search-box__more-button"><a href="../search" class="button button--gray button--rect button--full-width">nâng cao</a></div>
               </form>
             </div>
@@ -62,72 +62,74 @@
             </div>
           </div>
           <div class="dashboard-page__content inbox">
-            <div class="inbox__folders">
-              <div class="inbox__button"><a href="../dashboard-inbox-new" class="button button--full-width">soạn tin nhắn	</a></div>
-              <ul class="folders">
-                <li class="accordion folder folders__item accordion--selected expanded">
-                  <h1 class="folder__title accordion__title"><a href="#">tất cả</a></h1>
-                  <ul class="folder__content accordion__content selector">
-                    <li class="folder__child selected"><a href="#">từ thành viên khác</a></li>
-                    <li class="folder__child"><a href="#">từ ebachhoa</a></li>
-                  </ul>
-                </li>
-                <li class="folder folders__item">
-                  <h1 class="folder__title"><a href="#">đã gửi</a></h1>
-                </li>
-                <li class="folder folders__item">
-                  <h1 class="folder__title"><a href="#">tin nhắn rác</a></h1>
-                </li>
-                <li class="folder folders__item accordion">
-                  <h1 class="folder__title accordion__title"><a href="#">thư mục</a></h1>
-                  <ul class="folder__content accordion__content selector">
-                    <li class="folder__child selected"><a href="#">thư mục 1</a></li>
-                    <li class="folder__child"><a href="#">thư mục 1</a></li>
-                    <li class="folder__child"><a href="#">thêm thư mục</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="inbox__messages">
-              <div class="messages">
-                <ul class="messages__list selector">
-                  <li class="messages__item selected"><a href="#" class="message">
-                      <h1 class="message__title">Email title</h1>
-                      <h2 class="message__user">From: John Appleseed (john@apple.com)</h2>
-                      <p class="message__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at dapibus odio. Nullam viverra lorem ac semper ultrices.</p></a></li>
-                  <li class="messages__item"><a href="#" class="message">
-                      <h1 class="message__title">Email title</h1>
-                      <h2 class="message__user">From: John Appleseed (john@apple.com)</h2>
-                      <p class="message__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at dapibus odio. Nullam viverra lorem ac semper ultrices.</p></a></li>
-                  <li class="messages__item"><a href="#" class="message">
-                      <h1 class="message__title">Email title</h1>
-                      <h2 class="message__user">From: John Appleseed (john@apple.com)</h2>
-                      <p class="message__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at dapibus odio. Nullam viverra lorem ac semper ultrices.</p></a></li>
-                  <li class="messages__item"><a href="#" class="message">
-                      <h1 class="message__title">Email title</h1>
-                      <h2 class="message__user">From: John Appleseed (john@apple.com)</h2>
-                      <p class="message__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at dapibus odio. Nullam viverra lorem ac semper ultrices.</p></a></li>
+            <div class="inbox__content">
+              <div class="inbox__folders">
+                <div class="inbox__button"><a href="../dashboard-inbox-new" class="button button--full-width">soạn tin nhắn	</a></div>
+                <ul class="folders">
+                  <li class="accordion folder folders__item accordion--selected expanded">
+                    <h1 class="folder__title accordion__title"><a href="#">tất cả</a></h1>
+                    <ul class="folder__content accordion__content selector">
+                      <li class="folder__child selected"><a href="#">từ thành viên khác</a></li>
+                      <li class="folder__child"><a href="#">từ ebachhoa</a></li>
+                    </ul>
+                  </li>
+                  <li class="folder folders__item">
+                    <h1 class="folder__title"><a href="#">đã gửi</a></h1>
+                  </li>
+                  <li class="folder folders__item">
+                    <h1 class="folder__title"><a href="#">tin nhắn rác</a></h1>
+                  </li>
+                  <li class="folder folders__item accordion">
+                    <h1 class="folder__title accordion__title"><a href="#">thư mục</a></h1>
+                    <ul class="folder__content accordion__content selector">
+                      <li class="folder__child selected"><a href="#">thư mục 1</a></li>
+                      <li class="folder__child"><a href="#">thư mục 1</a></li>
+                      <li class="folder__child"><a href="#">thêm thư mục</a></li>
+                    </ul>
+                  </li>
                 </ul>
-                <div class="messages__pagination">
-                  <div class="pagination"><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_left</i></a>
-                    <ul class="pagination__list">
-                      <li><a href="#" class="selected button button--pagination pagination__item">1</a></li>
-                      <li><a href="#" class="button button--pagination pagination__item">2</a></li>
-                      <li><a href="#" class="button button--pagination pagination__item">3</a></li>
-                    </ul><a href="#" class="button button--pagination pagination__item"><i class="material-icons">more_horiz</i></a><a href="#" class="button button--pagination pagination__item">12</a><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_right</i></a>
+              </div>
+              <div class="inbox__messages">
+                <div class="messages">
+                  <ul class="messages__list selector">
+                    <li class="messages__item selected"><a href="#" class="message">
+                        <h1 class="message__title">Email title</h1>
+                        <h2 class="message__user">From: John Appleseed (john@apple.com)</h2>
+                        <p class="message__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at dapibus odio. Nullam viverra lorem ac semper ultrices.</p></a></li>
+                    <li class="messages__item"><a href="#" class="message">
+                        <h1 class="message__title">Email title</h1>
+                        <h2 class="message__user">From: John Appleseed (john@apple.com)</h2>
+                        <p class="message__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at dapibus odio. Nullam viverra lorem ac semper ultrices.</p></a></li>
+                    <li class="messages__item"><a href="#" class="message">
+                        <h1 class="message__title">Email title</h1>
+                        <h2 class="message__user">From: John Appleseed (john@apple.com)</h2>
+                        <p class="message__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at dapibus odio. Nullam viverra lorem ac semper ultrices.</p></a></li>
+                    <li class="messages__item"><a href="#" class="message">
+                        <h1 class="message__title">Email title</h1>
+                        <h2 class="message__user">From: John Appleseed (john@apple.com)</h2>
+                        <p class="message__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at dapibus odio. Nullam viverra lorem ac semper ultrices.</p></a></li>
+                  </ul>
+                  <div class="messages__pagination">
+                    <div class="pagination"><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_left</i></a>
+                      <ul class="pagination__list">
+                        <li><a href="#" class="selected button button--pagination pagination__item">1</a></li>
+                        <li><a href="#" class="button button--pagination pagination__item">2</a></li>
+                        <li><a href="#" class="button button--pagination pagination__item">3</a></li>
+                      </ul><a href="#" class="button button--pagination pagination__item"><i class="material-icons">more_horiz</i></a><a href="#" class="button button--pagination pagination__item">12</a><a href="#" class="button button--pagination pagination__item"><i class="material-icons">chevron_right</i></a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="inbox__message-full">
-              <div class="message-full">
-                <div class="message-full__button"><a href="../dashboard-inbox-new" class="button button--full-width">trả lời</a></div>
-                <h1 class="message-full__title">Email Title</h1>
-                <h2 class="message-full__user">From: <a href="../profile" class="text-orange">John Appleseed (john@apple.com)</a></h2>
-                <div class="message-full__content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ornare magna, eu sodales erat. Quisque id ultrices mauris, quis rhoncus urna. In commodo fringilla maximus.</p>
-                  <p>Fusce volutpat odio et dui lacinia, nec laoreet nulla blandit. Proin ac malesuada risus. Pellentesque malesuada fringilla imperdiet. Duis ut dolor ex. Praesent et bibendum felis. Aliquam tortor lorem, tincidunt nec sagittis id, vestibulum nec mauris.</p>
-                  <p>Fusce non erat id dui placerat luctus a vel orci. Curabitur non lectus egestas, hendrerit ipsum feugiat, pellentesque elit. Mauris dapibus iaculis varius. Praesent et bibendum felis. Aliquam tortor lorem, tincidunt nec sagittis id, vestibulum nec mauris.</p>
+              <div class="inbox__message-full">
+                <div class="message-full">
+                  <div class="message-full__button"><a href="../dashboard-inbox-new" class="button button--full-width">trả lời</a></div>
+                  <h1 class="message-full__title">Email Title</h1>
+                  <h2 class="message-full__user">From: <a href="../profile" class="text-orange">John Appleseed (john@apple.com)</a></h2>
+                  <div class="message-full__content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ornare magna, eu sodales erat. Quisque id ultrices mauris, quis rhoncus urna. In commodo fringilla maximus.</p>
+                    <p>Fusce volutpat odio et dui lacinia, nec laoreet nulla blandit. Proin ac malesuada risus. Pellentesque malesuada fringilla imperdiet. Duis ut dolor ex. Praesent et bibendum felis. Aliquam tortor lorem, tincidunt nec sagittis id, vestibulum nec mauris.</p>
+                    <p>Fusce non erat id dui placerat luctus a vel orci. Curabitur non lectus egestas, hendrerit ipsum feugiat, pellentesque elit. Mauris dapibus iaculis varius. Praesent et bibendum felis. Aliquam tortor lorem, tincidunt nec sagittis id, vestibulum nec mauris.</p>
+                  </div>
                 </div>
               </div>
             </div>
