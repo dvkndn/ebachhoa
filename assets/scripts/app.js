@@ -71,9 +71,11 @@ $(function() {
 
 	// remove row button
 	$(".table__remove-row-btn").on("click", function(event) {
-		$row = $(event.currentTarget).parent().parent();
-		$row.remove();
-		updateCart(event);
+		if (window.confirm("Do you really want to remove this?")) { 
+			$row = $(event.currentTarget).parent().parent();
+			$row.remove();
+			updateCart(event);
+		}
 	});
 
 	// update cart
@@ -176,7 +178,7 @@ $(function() {
 		var currentState = 0;
 		$(".product-deadline__circle").circleProgress({
 			value: 0.25,
-			size: 240,
+			size: 260,
 			startAngle: -Math.PI / 4 * 2,
 			fill: { color: "#E2F0D9" },
 			emptyFill: "#70AD47",
@@ -198,5 +200,37 @@ $(function() {
 	// breadcrumb always right
 	if ($(".breadcrumb__items").length) {
 		$(".breadcrumb__items").scrollLeft(1000);
+	};
+
+	// inbox: click on message
+	if ($(".message").length) {
+		$(".message").on("click", function(e) {
+			if ($(".inbox__message-full").css("display") == "none") {
+				window.location.href = "../dashboard-inbox-full";
+			};
+		});
+	};
+
+	// sell: sell type handler
+	if ($("#sell-type-select").length) {
+		var selector = $("#sell-type-select");
+		var wrapper = $(".sell-product-detail");
+
+		selector.on("change", function(e) {
+			if (selector.val() === "fixed") {
+				wrapper.addClass("sell-product-detail--fixed")
+				wrapper.removeClass("sell-product-detail--bid")
+			} else {
+				wrapper.addClass("sell-product-detail--bid")
+				wrapper.removeClass("sell-product-detail--fixed")
+			};
+		});
+	};
+
+	// dashboard: touch on cover
+	if ($(".db-product-cover").length) {
+		$(".db-product-cover").on("click", function(e) {
+			$(this).toggleClass("actived")
+		});
 	};
 });

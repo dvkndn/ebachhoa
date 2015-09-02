@@ -6,8 +6,8 @@ block prepend content
 block sell-content
 	.sell-category-select
 		- var col1 = ["nước hoa", "mỹ phẩm"];
-		- var col2 = ["trang điểm<br>& làm đẹp", "chăm sóc da", "chăm sóc tóc", "tắm - spa"];
-		- var col3 = ["toàn thân", "vùng mắt", "vùng mặt", "vùng môi", "móng tay - móng chân", "bộ trang điểm<br>all-in-one", "dụng cụ làm đẹp", "sản phẩm khác"];
+		- var col2 = ["trang điểm <br>& làm đẹp", "chăm sóc da", "chăm sóc tóc", "tắm - spa"];
+		- var col3 = ["toàn thân", "vùng mắt", "vùng mặt", "vùng môi", "móng tay - móng chân", "bộ trang điểm <br>all-in-one", "dụng cụ làm đẹp", "sản phẩm khác"];
 		- var col4 = ["kẻ chân mày", "mascara", "kẻ mắt", "phấn mắt"];
 		each items in [col1, col2, col3, col4]
 			.sell-category-select__list
@@ -21,7 +21,13 @@ block sell-content
 		ul.sell-category-selected__items
 			each item in ["mỹ phẩm", "trang điểm & làm đẹp", "vùng mắt", "mascara"]
 				li.sell-category-selected__item= item
-
+	.sell-category-select-small
+		each items in [col1, col2, col3, col4]
+			select.select.select--full-width
+				if (items !== col1)
+					option --
+				each item in items
+					option!= item
 block sell-footer
 	+footer-button("huỷ phiên", "../home")(class = "button--gray")
 	+footer-button("lưu bản thảo", "#")(class = "button--gray")

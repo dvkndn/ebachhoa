@@ -16,13 +16,13 @@ mixin db-product-cover(statusText, statusClasses)
 					h1.db-product-cover__icons
 						i.material-icons.selected attach_money
 						i.material-icons.selected local_shipping
-						i.material-icons redo
-						i.material-icons.selected undo
+						i.material-icons.redo-icon redo
+						i.material-icons.selected.undo-icon undo
 					h2.db-product-cover__icon-texts
-						span.db-product-cover__icon-text.selected đã thanh toán
-						span.db-product-cover__icon-text.selected đã gửi hàng
-						span.db-product-cover__icon-text chưa gửi nhận xét
-						span.db-product-cover__icon-text.selected đã được nhận xét
+						span.db-product-cover__icon-text.selected đã thanh<br>toán
+						span.db-product-cover__icon-text.selected đã gửi<br>hàng
+						span.db-product-cover__icon-text chưa gửi<br>nhận xét
+						span.db-product-cover__icon-text.selected đã được<br>nhận xét
 				else
 					h1= statusText
 		.db-product-cover__info
@@ -45,6 +45,8 @@ mixin db-product-cover(statusText, statusClasses)
 					i.material-icons person_add
 				a.db-product-cover__button(href = "../dashboard-inbox")
 					i.material-icons messenger
+			.db-product-cover__more-btn
+				a(href = "../product").button.button--full-width xem chi tiết
 
 mixin db-product-description(price, priceShip, priceOwn, timer, timerEnd, subInfo)
 	.db-product__description.db-product-description

@@ -60,7 +60,7 @@
               <li class="steps__item"><a href="#">hoàn tất</a></li>
             </ul>
           </div>
-          <div class="sell-product-detail">
+          <div class="sell-product-detail sell-product-detail--bid">
             <form class="form form--sell">
               <div class="form-group">
                 <div class="form-row">
@@ -69,8 +69,9 @@
                   </div>
                   <div class="form-row__content">
                     <div class="sell-product-detail__sell-type">
-                      <select class="select">
-                        <option>đấu giá</option>
+                      <select id="sell-type-select" name="sell-type" class="select">
+                        <option value="bid">đấu giá</option>
+                        <option value="fixed">niêm yết</option>
                       </select>
                       <div class="sell-product-detail__description">
                         <p><span class="text-dark">Đấu giá:</span> Đăng bán sản phẩm và để cộng đồng user định giá bán thông qua hình thức trả giá theo lượt. </p>
@@ -141,33 +142,71 @@
                     </select>
                   </div>
                 </div>
-                <div class="form-row">
-                  <div class="form-row__label">
-                    <label class="label">giá khởi điểm (VND)</label>
-                  </div>
-                  <div class="form-row__content">
-                    <input type="text" class="text-box"/>
+                <div class="fixed">
+                  <div class="form-row">
+                    <div class="form-row__label">
+                      <label class="label">giá niêm yết</label>
+                    </div>
+                    <div class="form-row__content">
+                      <input type="text" class="text-box"/>
+                    </div>
                   </div>
                 </div>
-                <div class="form-row">
-                  <div class="form-row__label">
-                    <label class="label">bước giá</label>
+                <div class="bid">
+                  <div class="form-row">
+                    <div class="form-row__label">
+                      <label class="label">giá khởi điểm (VND)</label>
+                    </div>
+                    <div class="form-row__content">
+                      <input type="text" class="text-box"/>
+                    </div>
                   </div>
-                  <div class="form-row__content">
-                    <div class="radio">
-                      <div class="radio__row">
-                        <input type="radio" name="price-step" value="default" checked="checked" id="price-step-default" class="radio__button"/>
-                        <label for="price-step-default" class="radio__label">Sử dụng Bước giá mặc định</label>
-                      </div>
-                      <div class="radio__row">
-                        <input type="radio" name="price-step" value="custom" id="price-step-custom" class="radio__button"/>
-                        <label for="price-step-custom" class="radio__label">Tuỳ chọn Bước giá </label>&nbsp;&nbsp;
-                        <input type="text" value="1.000.000" disabled="disabled" class="text-box"/>&nbsp;
-                        <label class="label label--inline">&nbsp; VND</label>
+                  <div class="form-row">
+                    <div class="form-row__label">
+                      <label class="label">bước giá</label>
+                    </div>
+                    <div class="form-row__content">
+                      <div class="radio">
+                        <div class="radio__row">
+                          <input type="radio" name="price-step" value="default" checked="checked" id="price-step-default" class="radio__button"/>
+                          <label for="price-step-default" class="radio__label">Sử dụng Bước giá mặc định</label>
+                        </div>
+                        <div class="radio__row">
+                          <input type="radio" name="price-step" value="custom" id="price-step-custom" class="radio__button"/>
+                          <label for="price-step-custom" class="radio__label">Tuỳ chọn Bước giá </label>&nbsp;&nbsp;
+                          <input type="text" value="1.000.000" disabled="disabled" class="text-box"/>&nbsp;
+                          <label class="label label--inline">&nbsp; VND</label>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="form-group fixed">
+                <div class="form-row">
+                  <div class="form-row__label">
+                    <label class="label">kích hoạt <br> thương lượng giá</label>
+                  </div>
+                  <div class="form-row__content">
+                    <div class="radio">
+                      <div class="radio__row">
+                        <input type="radio" name="price-dealing" value="default" checked="checked" id="price-dealing-default" class="radio__button"/>
+                        <label for="price-dealing-default" class="radio__label">Xem xét và phản hồi</label>
+                      </div>
+                      <div class="radio__row">
+                        <input type="radio" name="price-dealing" value="custom" id="price-dealing-custom" class="radio__button"/>
+                        <label for="price-dealing-custom" class="radio__label">Phản hồi tự động (Hệ thống sẽ tự động từ chối giá nằm dưới mức giá chấp nhận)</label>
+                      </div>
+                    </div>
+                    <div>
+                      <label class="label label--inline">Tối thiểu: </label>
+                      <input type="text" value="1.000.000" disabled="disabled" class="text-box"/>&nbsp;
+                      <label class="label label--inline">&nbsp; VND</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
                 <div class="form-row">
                   <div class="form-row__label">
                     <label class="label">thời gian bắt đầu</label>
@@ -206,7 +245,7 @@
                   </div>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group bid">
                 <div class="form-row">
                   <div class="form-row__label">
                     <label class="label">Kích hoạt <br>Giá kích hoạt phiên</label>
@@ -246,7 +285,7 @@
               <div class="form-group last">
                 <div class="form-row">
                   <div class="form-row__label">
-                    <label class="label">Kích hoạt<br>Giá kích hoạt phiên</label>
+                    <label class="label">Kích hoạt<br>tự động đăng lại</label>
                   </div>
                   <div class="form-row__content">
                     <div class="checkbox">

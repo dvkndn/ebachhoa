@@ -22,7 +22,7 @@ block content
 						li.cols__item.db-filter__item(class = (title === "tổng quan" ? "selected" : ""))
 							a.db-filter__link(href = "#", class = selectedClass).button.button--line.button--small= title
 			//- SECTION DIVIDER ----------
-			section.db-section
+			section.db-section-wrapper: .db-section
 				header.db-section__header
 					h1.db-section__title Đang bán
 				form.form.sell-filter-form.cols
@@ -37,7 +37,7 @@ block content
 						option tất cả
 				table.table.sell-table
 					colgroup
-						col(style = "width: 180px")
+						col(style = "width: 200px")
 						col
 						col(style = "width: 100px")
 						col(style = "width: 100px")
@@ -93,7 +93,7 @@ block content
 				footer.db-section__footer
 					include ../../layouts/pagination.jade
 			//- SECTION DIVIDER ----------
-			section.db-section
+			section.db-section-wrapper: .db-section
 				header.db-section__header
 					h1.db-section__title Đã bán
 				form.form.sell-filter-form.cols
@@ -108,7 +108,7 @@ block content
 						option tất cả
 				table.table.sell-table
 					colgroup
-						col(style = "width: 180px")
+						col(style = "width: 200px")
 						col
 						col(style = "width: 100px")
 						col(style = "width: 100px")
@@ -134,8 +134,8 @@ block content
 							th ngày bán
 							th: i.material-icons attach_money
 							th: i.material-icons local_shipping
-							th: i.material-icons redo
-							th: i.material-icons undo
+							th: i.material-icons.redo-icon-2 redo
+							th: i.material-icons.undo-icon-2 undo
 							th: i.material-icons chat
 							th chọn lựa
 					tbody
@@ -168,7 +168,7 @@ block content
 				footer.db-section__footer
 					include ../../layouts/pagination.jade
 			//- SECTION DIVIDER ----------
-			section.db-section
+			section.db-section-wrapper: .db-section
 				header.db-section__header
 					h1.db-section__title Chưa bán
 				form.form.sell-filter-form.cols
@@ -183,7 +183,7 @@ block content
 						option tất cả
 				table.table.sell-table
 					colgroup
-						col(style = "width: 180px")
+						col(style = "width: 200px")
 						col
 						col(style = "width: 100px")
 						col(style = "width: 100px")
@@ -240,7 +240,7 @@ block content
 				footer.db-section__footer
 					include ../../layouts/pagination.jade
 			//- SECTION DIVIDER ----------
-			section.db-section
+			section.db-section-wrapper: .db-section
 				header.db-section__header
 					h1.db-section__title Bản thảo
 				form.form.sell-filter-form.cols
@@ -255,7 +255,7 @@ block content
 						option tất cả
 				table.table.sell-table
 					colgroup
-						col(style = "width: 180px")
+						col(style = "width: 200px")
 						col
 						col(style = "width: 70px")
 						col(style = "width: 140px")

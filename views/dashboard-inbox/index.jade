@@ -37,6 +37,14 @@ block content
 							li.folder__child: a(href = "#") thêm thư mục
 			.inbox__messages
 				.messages
+					.messages__tool
+						a(href = "../dashboard-inbox-new").button.button--full-width soạn tin nhắn	
+						select.select.select--full-width
+							option tất cả tin nhắn
+							option đã gửi
+							option tin nhắn rác
+							option thư mục 1
+							option thư mục 2
 					ul.messages__list.selector
 						- for (var i = 0; i < 4; i++)
 							li.messages__item(class = (i === 0 ? "selected" : ""))

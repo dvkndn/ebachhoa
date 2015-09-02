@@ -120,6 +120,24 @@
 		> *:nth-child(2) {
 		}
 	}
+
+	&--fixed {
+		.bid {
+			display: none;
+		}
+		.fixed {
+			display: block;
+		}
+	}
+
+	&--bid {
+		.bid {
+			display: block;
+		}
+		.fixed {
+			display: none;
+		}
+	}
 }
 
 .sell-preview {
@@ -181,3 +199,32 @@
 	}
 }
 
+// sell 1
+.sell-category-select-small {
+	display: none;
+	margin-bottom: 40px;
+
+	.select {
+		margin-bottom: 20px;
+	}
+
+	@include respond-to(600px) {
+		margin-bottom: 20px;
+
+		.select {
+			margin-bottom: 10px;
+		}
+	}
+	
+}
+@include respond-to(1000px) {
+	.sell-category-select {
+		display: none;
+	}
+	.sell-category-selected {
+		display: none;
+	}
+	.sell-category-select-small {
+		display: block;
+	}
+}

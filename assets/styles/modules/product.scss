@@ -130,13 +130,22 @@
 
 	// ============
 
+	&__more-btn {
+		width: 100%;
+
+		position: absolute;
+		bottom: 10px; left: 0;
+
+		padding: 0 10px;
+	}
+
 	&__buttons {
 		display: flex;
 		justify-content: space-around;
 		width: 100%;
 
 		position: absolute;
-		bottom: 20px; left: 0;
+		bottom: 60px; left: 0;
 	}
 
 	&__button {
@@ -244,7 +253,11 @@
 		transition: transform 0.5s;
 	}
 
-	&:hover &__info {
+	.touch &.actived &__info {
+		transform: none;
+	}
+
+	.no-touch &:hover &__info {
 		transform: none;
 	}
 }

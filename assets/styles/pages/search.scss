@@ -44,3 +44,15 @@
 		}
 	}
 }
+
+.search-advance-page {
+	padding-top: 20px;
+
+	.search-tree {
+		width: 100%;
+	}
+
+	&__cancel-btn {
+		margin-bottom: 10px;
+	}
+}

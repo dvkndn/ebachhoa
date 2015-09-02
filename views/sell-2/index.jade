@@ -4,12 +4,14 @@ block prepend content
 	- var selectedStep = 1
 
 block sell-content
-	.sell-product-detail
+	.sell-product-detail.sell-product-detail--bid
 		form.form.form--sell
 			.form-group
 				+form-row("thể loại đăng")
 					div.sell-product-detail__sell-type
-						select.select: option đấu giá
+						select#sell-type-select(name = "sell-type").select
+							option(value = "bid") đấu giá
+							option(value = "fixed") niêm yết
 						div.sell-product-detail__description
 							p <span class="text-dark">Đấu giá:</span> Đăng bán sản phẩm và để cộng đồng user định giá bán thông qua hình thức trả giá theo lượt. 
 							p <span class="text-dark">Giá niêm yết:</span> Đăng bán sản phẩm với Giá bán Cố định do Người bán quyết định.
@@ -34,20 +36,39 @@ block sell-content
 					select.select(disabled): option VND (Việt Nam Đồng)
 				+form-row("tình trạng sản phẩm")
 					select.select: option Như mới
-				+form-row("giá khởi điểm (VND)")
-					input(type = "text").text-box
-				+form-row("bước giá")
+				.fixed
+					+form-row("giá niêm yết")
+						input(type = "text").text-box
+				.bid
+					+form-row("giá khởi điểm (VND)")
+						input(type = "text").text-box
+					+form-row("bước giá")
+						.radio
+							div.radio__row
+								input.radio__button(type = "radio", name = "price-step", value = "default", checked)#price-step-default
+								label.radio__label(for = "price-step-default") Sử dụng Bước giá mặc định
+							div.radio__row
+								input.radio__button(type = "radio", name = "price-step", value = "custom")#price-step-custom
+								label.radio__label(for = "price-step-custom") Tuỳ chọn Bước giá 
+								| &nbsp;&nbsp;
+								input(type = "text", value = "1.000.000", disabled).text-box
+								| &nbsp;
+								label.label.label--inline &nbsp; VND
+			.form-group.fixed
+				+form-row("kích hoạt <br> thương lượng giá")
 					.radio
 						div.radio__row
-							input.radio__button(type = "radio", name = "price-step", value = "default", checked)#price-step-default
-							label.radio__label(for = "price-step-default") Sử dụng Bước giá mặc định
+							input.radio__button(type = "radio", name = "price-dealing", value = "default", checked)#price-dealing-default
+							label.radio__label(for = "price-dealing-default") Xem xét và phản hồi
 						div.radio__row
-							input.radio__button(type = "radio", name = "price-step", value = "custom")#price-step-custom
-							label.radio__label(for = "price-step-custom") Tuỳ chọn Bước giá 
-							| &nbsp;&nbsp;
-							input(type = "text", value = "1.000.000", disabled).text-box
-							| &nbsp;
-							label.label.label--inline &nbsp; VND
+							input.radio__button(type = "radio", name = "price-dealing", value = "custom")#price-dealing-custom
+							label.radio__label(for = "price-dealing-custom") Phản hồi tự động (Hệ thống sẽ tự động từ chối giá nằm dưới mức giá chấp nhận)
+					div
+						label.label.label--inline Tối thiểu: 
+						input(type = "text", value = "1.000.000", disabled).text-box
+						| &nbsp;
+						label.label.label--inline &nbsp; VND
+			.form-group
 				+form-row("thời gian bắt đầu")
 					.radio
 						div.radio__row
@@ -66,7 +87,7 @@ block sell-content
 							label.radio__label(for = "stop-time-custom") Tuỳ chỉnh
 							| &nbsp;&nbsp;
 							select.select(disabled): option 1 ngày
-			.form-group
+			.form-group.bid
 				+form-row("Kích hoạt <br>Giá kích hoạt phiên")
 					.checkbox
 						input(type = "checkbox", checked).checkbox__button#enable-price
@@ -85,7 +106,7 @@ block sell-content
 					input(type = "range", min="0" max="100" step="10").range
 					label.label.label--inline &nbsp; 40% ~ 3.000.000 VND
 			.form-group.last
-				+form-row("Kích hoạt<br>Giá kích hoạt phiên")
+				+form-row("Kích hoạt<br>tự động đăng lại")
 					.checkbox
 						.checkbox__row
 							input(type = "checkbox", checked).checkbox__button#repost-expire
