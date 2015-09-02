@@ -3810,12 +3810,14 @@ body {
 }
 
 .messages__tool {
+  display: none;
   padding: 20px;
   border-bottom: solid 1px #EEEEEE;
 }
 
 @media screen and (max-width: 1000px) {
   .messages__tool {
+    display: block;
     padding-left: 0;
   }
 }
