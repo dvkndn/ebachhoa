@@ -23,7 +23,7 @@ block sell-content
 				li.sell-category-selected__item= item
 	.sell-category-select-small
 		each items in [col1, col2, col3, col4]
-			select.select.select--full-width
+			select.select.select--full-width.sell-category-select-small__select
 				if (items !== col1)
 					option --
 				each item in items

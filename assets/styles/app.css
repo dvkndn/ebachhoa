@@ -2717,6 +2717,38 @@ body {
   }
 }
 
+.show-all__switcher {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .show-all__switcher {
+    display: block;
+  }
+  .show-all__input {
+    display: none;
+  }
+  .show-all__item {
+    display: none;
+  }
+  .show-all__label {
+    line-height: 30px;
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #FF5E1B;
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  .show-all__label:before {
+    content: "+ hiện thêm";
+  }
+  .show-all__input:checked + .show-all__label:before {
+    content: "- ẩn";
+  }
+}
+
 .search-page .special-link {
   display: none;
 }
@@ -3488,6 +3520,20 @@ body {
   }
 }
 
+.sell-category-select-small__select {
+  background-color: white;
+  box-shadow: #EEEEEE 0 0 0 1px inset;
+  padding: 0 20px;
+  height: 50px;
+  font-size: 12px;
+}
+
+.sell-category-select-small__select:focus {
+  background-color: #FF5E1B;
+  color: white;
+  box-shadow: transparent 0 0 0 1px inset;
+}
+
 @media screen and (max-width: 1000px) {
   .sell-category-select {
     display: none;
@@ -3574,6 +3620,7 @@ body {
     -webkit-flex: 0 0 auto;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
+    width: 160px;
     margin-bottom: 10px;
   }
 }

@@ -59,11 +59,18 @@ block content
 							li.category-tree__item-2: a(href = "../category") Nữ
 							li.category-tree__item-2: a(href = "../category") Unisex
 		.browse-page__main.browse-main
-			aside.browse-main__aside
-				ul.category-list.selector
-					each title in ["tất cả", "toàn thân", "mắt", "mặt", "môi", "móng tay - móng chân", "bộ trang điểm all-in-one", "dụng cụ làm đẹp"]
+			aside.browse-main__aside.show-all
+				ul.category-list.show-all__list
+					each title in ["tất cả", "toàn thân", "mắt", "mặt", "môi"]
 						li.category-list__item(class = (title === "tất cả" ? "selected" : ""))
 							a(href = "#", class = selectedClass).button.button--line.button--small= title
+					each title in ["móng tay - móng chân", "bộ trang điểm all-in-one", "dụng cụ làm đẹp"]
+						li.category-list__item.show-all__item(class = (title === "tất cả" ? "selected" : ""))
+							a(href = "#", class = selectedClass).button.button--line.button--small= title
+					li.show-all__switcher
+						input.show-all__input(type = "checkbox" id = "show-all-categories")
+						label.show-all__label(for = "show-all-categories")
+				
 			main.browse-main__body
 				.product-list.product-list--4-cols
 					- for (var i = 0; i < 12; i++)

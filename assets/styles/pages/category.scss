@@ -91,3 +91,38 @@
 		}
 	}
 }
+
+.show-all {
+	&__switcher {
+		display: none;
+	}
+	@include respond-to(900px) {
+		&__switcher {
+			display: block;
+		}
+		&__input {
+			display: none;
+		}
+		&__item {
+			display: none;
+		}
+		&__label {
+			line-height: 30px;
+			display: inline-block;
+			font-size: 10px;
+			letter-spacing: 1px;
+			color: $orange;
+			margin-left: 5px;
+			text-transform: uppercase;
+			font-weight: 900;
+			&:before {
+				content: "+ hiện thêm"
+			}
+		}
+		&__input:checked + &__label {
+			&:before {
+				content: "- ẩn"
+			}
+		}
+	}
+}

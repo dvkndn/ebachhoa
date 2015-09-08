@@ -233,4 +233,11 @@ $(function() {
 			$(this).toggleClass("actived")
 		});
 	};
+
+	// show all handler
+	if ($(".show-all__switcher").length) {
+		$(".show-all__input").on("click", function() {
+			$(".show-all__item").toggle(this.checked);
+		})
+	};
 });
