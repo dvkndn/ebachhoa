@@ -178,7 +178,7 @@ $(function() {
 		var currentState = 0;
 		$(".product-deadline__circle").circleProgress({
 			value: 0.25,
-			size: 260,
+			size: 240,
 			startAngle: -Math.PI / 4 * 2,
 			fill: { color: "#E2F0D9" },
 			emptyFill: "#70AD47",

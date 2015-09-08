@@ -1,0 +1,25 @@
+extend ../../layouts/layout.jade
+
+mixin form-row(label)
+	.form-row
+		.form-row__label: label.label!= label
+		.form-row__content
+			block
+
+block title
+	| Login
+
+block breadcrumb
+	+breadcrumb-item("đăng nhập", "#")
+
+block content
+	.login-page
+		form.form
+			.form-group
+				+form-row("tên tài khoản")
+					input(type = "text").text-box.text-box--full-width.text-box--line
+				+form-row("mật khẩu")
+					input(type = "text").text-box.text-box--full-width.text-box--line
+			.form-group
+				+form-row("")
+					button.button.button--full-width đăng nhập

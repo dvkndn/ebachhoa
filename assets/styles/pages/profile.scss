@@ -135,3 +135,19 @@
 
 	}
 }
+@include respond-to(1200px) {
+
+	.profile-page {
+		.profile-section {
+			min-width: 0;
+			width: 100%;
+
+			&:first-child {
+				padding-bottom: 30px;
+				margin-bottom: 30px;
+				border-bottom: 1px solid $border-gray;
+			}
+		}
+	}
+
+}

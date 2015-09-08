@@ -1,7 +1,7 @@
 
 <html>
   <head>
-    <title>EBachHoa - Dashboard - Inbox</title>
+    <title>EBachHoa - Login</title>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps."/>
@@ -17,7 +17,6 @@
   </head>
   <body>
     <div id="page-container">
-      <div class="hide-breadcrumb"></div>
       <header class="main-header">
         <div class="user-bar">
           <div class="user-bar__content">
@@ -47,36 +46,45 @@
         <div class="breadcrumb__content">
           <ul class="breadcrumb__items">
                   <li class="breadcrumb__item"><a href="../home">trang chủ</a></li>
+                  <li class="breadcrumb__item"><a href="#">đăng nhập</a></li>
           </ul>
         </div>
       </div>
       <div id="main-content">
-        <div class="dashboard-page inbox-page">
-          <div class="dashboard-page__header fluid-header inbox-page__header">
-            <div class="fluid-header__content">
-              <div class="fluid-header__tabs">
-                <div class="fluid-header__tab"><a href="../dashboard-buy">quản lý mua</a></div>
-                <div class="fluid-header__tab"><a href="../dashboard-sell">quản lý bán</a></div>
-                <div class="fluid-header__tab selected"><a href="../dashboard-inbox">tin nhắn</a></div>
-                <div class="fluid-header__tab"><a href="../dashboard-customize">tuỳ chọn</a></div>
+        <div class="login-page">
+          <form class="form">
+            <div class="form-group">
+              <div class="form-row">
+                <div class="form-row__label">
+                  <label class="label">tên tài khoản</label>
+                </div>
+                <div class="form-row__content">
+                  <input type="text" class="text-box text-box--full-width text-box--line"/>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-row__label">
+                  <label class="label">mật khẩu</label>
+                </div>
+                <div class="form-row__content">
+                  <input type="text" class="text-box text-box--full-width text-box--line"/>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="dashboard-page__content">
-            <div class="message-full message-full--standalone">
-              <div class="message-full__back"><a href="../dashboard-inbox">← quay lại</a></div>
-              <div class="message-full__button"><a href="../dashboard-inbox-new" class="button button--full-width">trả lời</a></div>
-              <h1 class="message-full__title">Email Title</h1>
-              <h2 class="message-full__user">From: <a href="../profile" class="text-orange">John Appleseed (john@apple.com)</a></h2>
-              <div class="message-full__content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet ornare magna, eu sodales erat. Quisque id ultrices mauris, quis rhoncus urna. In commodo fringilla maximus.</p>
-                <p>Fusce volutpat odio et dui lacinia, nec laoreet nulla blandit. Proin ac malesuada risus. Pellentesque malesuada fringilla imperdiet. Duis ut dolor ex. Praesent et bibendum felis. Aliquam tortor lorem, tincidunt nec sagittis id, vestibulum nec mauris.</p>
-                <p>Fusce non erat id dui placerat luctus a vel orci. Curabitur non lectus egestas, hendrerit ipsum feugiat, pellentesque elit. Mauris dapibus iaculis varius. Praesent et bibendum felis. Aliquam tortor lorem, tincidunt nec sagittis id, vestibulum nec mauris.</p>
+            <div class="form-group">
+              <div class="form-row">
+                <div class="form-row__label">
+                  <label class="label"></label>
+                </div>
+                <div class="form-row__content">
+                  <button class="button button--full-width">đăng nhập</button>
+                </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
+      <footer class="footer footer--100"></footer>
       <script src="../../assets/scripts/app.js"></script>
     </div>
   </body>

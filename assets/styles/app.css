@@ -2436,17 +2436,18 @@ body {
 
 .product-deadline {
   position: relative;
-  width: 130px;
-  height: 123px;
+  width: 120px;
+  height: 120px;
   text-align: center;
-  padding-top: 12px;
+  padding-top: 19px;
 }
 
 .product-deadline__primary {
   color: #FF5E1B;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
-  margin-bottom: 2px;
+  margin-bottom: 8px;
+  margin-top: 5px;
 }
 
 .product-deadline__color {
@@ -2454,20 +2455,19 @@ body {
 }
 
 .product-deadline__big-text {
-  font-size: 36px;
+  font-size: 24px;
 }
 
 .product-deadline__secondary {
   color: #515356;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 12px;
   font-weight: 700;
 }
 
 .product-deadline__circle {
   position: absolute;
-  left: -65px;
-  top: -65px;
+  left: -60px;
+  top: -60px;
   -webkit-transform: scale(0.5);
       -ms-transform: scale(0.5);
           transform: scale(0.5);
@@ -3095,6 +3095,18 @@ body {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .profile-page .profile-section {
+    min-width: 0;
+    width: 100%;
+  }
+  .profile-page .profile-section:first-child {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #EEEEEE;
+  }
 }
 
 .upgrade-page__price-cols {
@@ -4152,9 +4164,9 @@ body {
 
 .home__cat-anchor > * {
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .home__cat-anchor .cat-anchor + .cat-anchor {
@@ -4301,13 +4313,15 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  z-index: 2;
+  position: relative;
 }
 
 .cat-anchor__content > * {
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .cat-anchor a:hover {
@@ -4337,11 +4351,29 @@ body {
   font-size: 12px;
 }
 
+.cat-anchor__item a {
+  height: 30px;
+  display: inline-block;
+  overflow: hidden;
+  width: 90%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .cat-anchor__item-cat {
   color: #515356;
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.cat-anchor__item-cat a {
+  height: 30px;
+  display: inline-block;
+  overflow: hidden;
+  width: 90%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 600px) {
@@ -4401,6 +4433,28 @@ body {
 .badge__icon {
   font-size: 50px;
   color: #B1B1B1;
+}
+
+.login-page .form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.login-page .form-group {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.login-page .form-row {
+  margin-bottom: 20px;
+}
+
+.login-page .text-box, .login-page .search-box__text-box {
+  box-shadow: #ddd 0 0 0 1px inset;
+}
+
+.login-page .text-box:focus, .login-page .search-box__text-box:focus {
+  box-shadow: #FF5E1B 0 0 0 1px inset;
 }
 
 body {

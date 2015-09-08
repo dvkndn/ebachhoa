@@ -261,34 +261,33 @@
 }
 .product-deadline {
 	position: relative;
-	width: 130px;
-	height: 123px;
+	width: 120px;
+	height: 120px;
 	text-align: center;
-	padding-top: 12px;
+	padding-top: 19px;
 
 	&__primary {
 		color: $orange;
-		font-size: 28px;
+		font-size: 20px;
 		font-weight: 700;
-		margin-bottom: 2px;
-		// margin-top: 2px;
+		margin-bottom: 8px;
+		margin-top: 5px;
 	}
 	&__color {
 		color: $orange;
 	}
 	&__big-text {
-		font-size: 36px;
+		font-size: 24px;
 	}
 	&__secondary {
 		color: $dark-text;
-		font-size: 13px;
-		line-height: 18px;
+		font-size: 12px;
 		font-weight: 700;
 	}
 	&__circle {
 		position: absolute;
-		left: -65px;
-		top: -65px;
+		left: -60px;
+		top: -60px;
 
 		transform: scale(0.5);
 	}
