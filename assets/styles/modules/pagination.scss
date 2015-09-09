@@ -35,4 +35,10 @@
 			display: inline-block;
 		}
 	}
+
+	&__text {
+		font-size: 16px;
+		color: $secondary-text;
+		padding-top: 30px;
+	}
 }

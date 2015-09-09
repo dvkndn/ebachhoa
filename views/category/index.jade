@@ -12,11 +12,16 @@ block content
 		aside.browse-page__aside.browse-aside
 			.browse-sort.browse-aside__sort
 				h1.browse-sort__title.label Sắp xếp theo:
-				select.select.select--full-width
+				select.select.select--full-width.browse-page__sort-select
 					option Giá (từ cao đến thấp)
 					option Giá (từ thấp đến cao)
 					option Phổ biến (từ cao đến thấp)
 					option Phổ biến (từ thấp đến cao)
+				h1.browse-sort__title.label Thể loại đăng
+				select.select.select--full-width
+					option Tất cả
+					option Đấu giá
+					option Mua ngay
 			.category-tree
 				ul
 					li.accordion.accordion--selected
@@ -83,4 +88,6 @@ block content
 								h2.product__normal-price Niêm yết: 2.300.000 ₫
 								h3.product__highlight-price Giá đấu: 2.400.000 ₫
 			.browse-main__pagination
-				include ../../layouts/pagination.jade
+				.pagination
+					p.pagination__text Đang tải trang 4/20...
+				//- include ../../layouts/pagination.jade

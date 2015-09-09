@@ -3,7 +3,6 @@
 	 v2.0 | 20110126
 	 License: none (public domain)
 */
-@import url(http://fonts.googleapis.com/icon?family=Material+Icons);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -154,11 +153,10 @@ body {
 }
 
 .sub-button:not(#kpdvd) {
-  border: none;
-  background: none;
-  box-shadow: none;
-  display: block;
   line-height: 1.2;
+  height: auto;
+  padding: 10px 20px;
+  font-size: 12px;
 }
 
 .container, .breadcrumb__content, .top-search__content, .user-bar__content, .fluid-header__content, .fluid-footer__content, .cart-footer__content, .slider__thumbs-content {
@@ -1140,6 +1138,10 @@ body {
   }
 }
 
+.breadcrumb__content {
+  height: 100%;
+}
+
 .breadcrumb__items {
   height: 100%;
   display: -webkit-box;
@@ -1188,6 +1190,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .preview {
+    margin-bottom: 0;
+  }
 }
 
 .preview__thumbs {
@@ -1248,6 +1256,7 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-right: 20px;
 }
 
 .preview-thumbs__thumb {
@@ -1261,6 +1270,7 @@ body {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding-right: 0;
   }
   .preview-thumbs__thumb {
     width: auto;
@@ -1534,6 +1544,12 @@ body {
 
 .pagination__list > li {
   display: inline-block;
+}
+
+.pagination__text {
+  font-size: 16px;
+  color: #B1B1B1;
+  padding-top: 30px;
 }
 
 .product {
@@ -2109,6 +2125,16 @@ body {
   margin-right: 30px;
 }
 
+.browse-page__sort-select {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .browse-page__sort-select {
+    margin-bottom: 10px;
+  }
+}
+
 .browse-main__aside {
   margin-bottom: 30px;
 }
@@ -2129,6 +2155,13 @@ body {
 .product-page__tags {
   margin-top: 20px;
   margin-bottom: 70px;
+}
+
+@media screen and (max-width: 900px) {
+  .product-page__tags {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
 }
 
 .product-page__main {
@@ -2207,7 +2240,7 @@ body {
 }
 
 .product-page-report {
-  padding-left: 130px;
+  padding-left: 140px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2219,14 +2252,35 @@ body {
 }
 
 .product-page-report > * {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   -webkit-flex-basis: auto;
       -ms-flex-preferred-size: auto;
           flex-basis: auto;
   padding: 0;
+}
+
+.product-page-report > * + * {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .product-page-report {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .product-page-report .product-page-report__big-item {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -2240,6 +2294,28 @@ body {
     padding-bottom: 20px;
     border-bottom: solid 1px #EEEEEE;
     margin-bottom: 20px;
+  }
+  .product-page-report .product-page-report__big-item {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .product-page-report .product-page-report__big-item {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    white-space: nowrap;
   }
 }
 
@@ -2316,7 +2392,23 @@ body {
   margin: 0;
 }
 
-@media screen and (max-width: 800px) {
+.product-tag br {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .product-tag br {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .product-tag br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .product-tag {
     font-size: 10px !important;
   }

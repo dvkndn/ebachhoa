@@ -12,9 +12,9 @@ block content
 	.product-page
 		.product-page__tags
 			.product-tags
-				each title in ["mới – chưa qua sử dụng", "free vận chuyển", "người bán uy tín"]
+				each title in ["mới – chưa qua <br/>sử dụng", "free <br/>vận chuyển", "người bán <br/>uy tín"]
 					.product-tags__tag
-						h1.product-tag: strong.product-tag__content= title
+						h1.product-tag: strong.product-tag__content!= title
 		.product-page__main
 			.product-page__img
 				.preview

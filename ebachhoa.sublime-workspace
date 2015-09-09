@@ -571,7 +571,7 @@
 			"file": "assets/styles/app.scss",
 			"settings":
 			{
-				"buffer_size": 512,
+				"buffer_size": 515,
 				"line_ending": "Unix"
 			}
 		},
@@ -1147,7 +1147,8 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 45.0,
@@ -1169,8 +1170,8 @@
 						"selection":
 						[
 							[
-								208,
-								208
+								316,
+								316
 							]
 						],
 						"settings":
@@ -1284,15 +1285,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 512,
+						"buffer_size": 515,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15,
-								15
+								32,
+								32
 							]
 						],
 						"settings":

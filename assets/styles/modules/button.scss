@@ -73,11 +73,8 @@
 	text-decoration: underline;
 }
 .sub-button:not(#kpdvd) {
-	border: none;
-	background: none;
-	box-shadow: none;
-	display: block;
 	line-height: 1.2;
-	// text-decoration: underline;
-	// color: $orange;
+	height: auto;
+	padding: 10px 20px;
+	font-size: 12px;
 }
