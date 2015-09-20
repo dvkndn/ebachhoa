@@ -133,6 +133,14 @@
 }
 
 .sell-table {
+	thead {
+		th {
+			img {
+				position: relative;
+				top: 2px;
+			}
+		}
+	}
 	tbody {
 		tr {
 

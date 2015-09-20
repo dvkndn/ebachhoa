@@ -15,7 +15,8 @@ block sell-content
 					each item in items
 						li.sell-category-list__item!= item
 		.sell-category-select__list
-			i.material-icons.sell-category-select__done-icon check
+			i.sell-category-select__done-icon
+				img(src = "../../assets/icons/ic_check_black_48dp.png", width = "72", height = "72")
 	.sell-page__category-selected.sell-category-selected
 		.sell-category-selected__title danh mục đã chọn:
 		ul.sell-category-selected__items

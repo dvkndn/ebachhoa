@@ -1,11 +1,8 @@
 .pagination
-	a(href = "#").button.button--pagination.pagination__item
-		i.material-icons chevron_left
+	a(href = "#").button.button--pagination.pagination__item &lt;
 	ul.pagination__list
 		- for (var i = 1; i < 4; i++)
 			li: a(href = "#" class = (i === 1 ? "selected" : "")).button.button--pagination.pagination__item= i
-	a(href = "#").button.button--pagination.pagination__item
-		i.material-icons more_horiz
+	a(href = "#").button.button--pagination.pagination__item ...
 	a(href = "#").button.button--pagination.pagination__item 12
-	a(href = "#").button.button--pagination.pagination__item
-		i.material-icons chevron_right
+	a(href = "#").button.button--pagination.pagination__item &gt;

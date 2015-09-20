@@ -221,6 +221,11 @@ body {
   margin: auto;
 }
 
+.icon__icon--img {
+  position: relative;
+  top: 1px;
+}
+
 .icon__badge {
   display: block;
   width: 16px;
@@ -1373,7 +1378,12 @@ body {
 }
 
 .top-search-box__icon {
-  color: rgba(0, 0, 0, 0.26);
+  opacity: 0.26;
+}
+
+.top-search-box__icon img {
+  position: relative;
+  top: 1px;
 }
 
 .top-search-box__button {
@@ -1720,6 +1730,7 @@ body {
   height: 36px;
   border-radius: 36px;
   border: solid 2px white;
+  padding-top: 6px;
   text-align: center;
 }
 
@@ -1765,6 +1776,7 @@ body {
 }
 
 .db-product-cover__icons i {
+  display: inline-block;
   font-size: 20px;
   line-height: 30px;
   color: rgba(255, 255, 255, 0.5);
@@ -2581,6 +2593,10 @@ body {
           justify-content: space-between;
 }
 
+.product-deal__info, .product-buy__info {
+  max-width: 200px;
+}
+
 .product-deal__action, .product-buy__action {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2595,6 +2611,17 @@ body {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .product-deal__action, .product-buy__action {
+    margin-left: 0;
+  }
 }
 
 .product-deal__icon, .product-buy__icon {
@@ -2906,6 +2933,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0.26;
 }
 
 .contact-page__form {
@@ -3807,6 +3835,11 @@ body {
   }
 }
 
+.sell-table thead th img {
+  position: relative;
+  top: 2px;
+}
+
 .sell-table tbody td:nth-child(1) {
   text-align: left;
 }
@@ -4523,8 +4556,9 @@ body {
 }
 
 .badge__icon {
-  font-size: 50px;
+  font-size: 48px;
   color: #B1B1B1;
+  opacity: 0.26;
 }
 
 .login-page .form {

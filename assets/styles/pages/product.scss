@@ -354,12 +354,21 @@
 .product-deal, .product-buy {
 	display: flex;
 	justify-content: space-between;
+	&__info {
+		max-width: 200px;
+	}
 	&__action {
 		display: flex;
 		flex-direction: column;
 
 		width: 250px;
 		flex-shrink: 0;
+		flex-grow: 1;
+		margin-left: 20px;
+		@include respond-to(1100px) {
+			margin-left: 0;
+		}
+		
 	}
 
 	&__icon {

@@ -154,6 +154,8 @@
 		border-radius: 36px;
 		border: solid 2px white;
 
+		padding-top: 6px;
+
 		text-align: center;
 
 		&:hover {
@@ -206,6 +208,8 @@
 
 	&__icons {
 		i {
+			display: inline-block;
+
 			font-size: 20px;
 			line-height: 30px;
 			color: rgba(white, 0.5);

@@ -3,13 +3,15 @@
 		a.top-search__logo(href = "../home")
 		.top-search__search-box: form.top-search-box
 			.top-search-box__icon.icon
-				i.icon__icon.material-icons search
+				i.icon__icon.icon__icon--img
+					img(src = "../../assets/icons/ic_search_black_24dp.png", width = "20", height = "20")
 			input.top-search-box__input.text-box.text-box--transparent.text-box--no-padding(type = "text")
 			select.top-search-box__select.select.select--transparent
 				option Tất cả danh mục
 			.top-search-box__button.top-search-box__submit-button
 				a.button.button--full-width(href = "../search")
-					i.icon__icon.material-icons.top-search-box__submit-button-icon search
+					i.icon__icon.icon__icon--img.top-search-box__submit-button-icon
+						img(src = "../../assets/icons/ic_search_white_24dp.png", width = "20", height = "20")
 					span.top-search-box__submit-button-text tìm kiếm
 			.top-search-box__button.top-search-box__more-button
 				a.button.button--gray.button--rect.button--full-width(href = "../search") nâng cao
